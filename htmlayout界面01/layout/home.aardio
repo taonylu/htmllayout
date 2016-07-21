@@ -9,15 +9,15 @@
 			<img src="styles/images/logo.png">
 		</div>
 		<div class="nav">
-			<a href="#" selected=true>平台首页</a>
-			<a href="#">市场管理</a>
-			<a href="#">销售管理</a>
-			<a href="#">服务管理</a>
-			<a href="#">客户管理</a>
-			<a href="#">营销中心</a>
-			<a href="#">个人办公</a>
-			<a href="#">通讯中心</a>
-			<a href="#">系统管理</a>
+			<a href="bodyer.aardio" target="#bodyer" selected=true>平台首页</a>
+			<a href="react01/bodyer.aardio" target="#bodyer">市场管理</a>
+			<a href="react02/bodyer.aardio" target="#bodyer">销售管理</a>
+			<a href="react03/bodyer.aardio" target="#bodyer">服务管理</a>
+			<a href="react04/bodyer.aardio" target="#bodyer">客户管理</a>
+			<a href="react05/bodyer.aardio" target="#bodyer">营销中心</a>
+			<a href="react06/bodyer.aardio" target="#bodyer">个人办公</a>
+			<a href="react07/bodyer.aardio" target="#bodyer">通讯中心</a>
+			<a href="react08/bodyer.aardio" target="#bodyer">系统管理</a>
 		</div>
 		<div class="tool">
 			<a command="window-min" onclick="minWindow()">0</a>

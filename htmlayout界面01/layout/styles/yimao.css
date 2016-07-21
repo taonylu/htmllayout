@@ -3,7 +3,8 @@ body[maximize]{border-radius:0}
 
 #header,#bodyer,#footer{width: 100%%;}
 
-#header{behavior:windowCommand;flow:horizontal; background-color: #0a8; overflow:hidden; cursor:default;}
+#header{flow:horizontal; background-color: #0a8; overflow:hidden; cursor:default;}
+#header{behavior:windowCommand;}
 #header .logo{width: 180px;}
 #header .nav{flow:horizontal; width: 100%%; list-style: none; margin: 0; padding: 0;}
 #header .tool{width: 80px; text-align: right;}
@@ -14,7 +15,8 @@ body[maximize]{border-radius:0}
 .nav a{color: #FFF; text-decoration: none; line-height: 52px; padding: 0 10px; font-weight: bold;cursor:default;}
 .nav a[selected=true]{background-color: #1BA35F;}
 .nav a:hover{background-color: #1BA35F;}
-.nav a{active-on!:$1(.nav a[selected=true]).selected = false,  self.selected = true;}
+.nav a{active-on!:$1(.nav a[selected=true]).selected = false, self.selected = true;}
+.nav a{behavior:~includefile;}
 
 .tool a{display:inline-block; width:max-intrinsic;height:14px;font-family:"Marlett";font-size:14px;padding:4px;color:#fff;cursor:default;}
 .tool a[command]:hover{background:#6ebccf;}
@@ -33,6 +35,7 @@ body[maximize]{border-radius:0}
 .navbar-bodyer a[selected=true]{ color: #FFF; background-color: #3f464e;}
 .navbar-bodyer a:hover{color: #FFF; background-color: #3f464e;}
 .navbar-bodyer a{active-on!:$1(.navbar-bodyer a[selected=true]).selected = false,  self.selected = true;}
+.navbar-bodyer a{behavior:~includefile;}
 
 .navbar-bodyer a.icon-home{background-image: url('images/icon-home.png');}
 .navbar-bodyer a[selected=true].icon-home{background-image: url('images/icon-home-white.png');}
@@ -77,4 +80,5 @@ body[maximize]{border-radius:0}
 
 
 
-#footer{behavior:windowCommand;background-color: #f5f5f5; font-size: 12px; padding: 5px 10px;}
+#footer{background-color: #f5f5f5; font-size: 12px; padding: 5px 10px;}
+#footer{behavior:windowCommand;}

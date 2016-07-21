@@ -1,0 +1,14 @@
+<div class="navbar-bodyer">
+	<a href="main.aardio" target="#main" class="icon-home" selected=true>市场计划</a>
+	<a href="main.aardio" target="#main" class="icon-work">市场分析</a>
+	<a href="main.aardio" target="#main" class="icon-plan">市场活动</a>
+	<a href="main.aardio" target="#main" class="icon-sell">报价管理</a>
+	<a href="main.aardio" target="#main" class="icon-order">合同管理</a>
+	<a href="main.aardio" target="#main" class="icon-project">绩效考核</a>
+	<a href="main.aardio" target="#main" class="icon-user">统计分析</a>
+</div>
+<div class="navbar-footer">
+	<a href="#" class="icon-setup">设置</a>
+	<a href="#" class="icon-help">帮助</a>
+	<a href="#" class="icon-logout">退出</a>
+</div>

@@ -1,7 +1,0 @@
-namespace web.layout.behavior.include;
-onHyperlinkClick = function(ltTarget, ltEle, x, y, mouseParams){
-	var divId = ltEle.root().queryElement(ltEle.getAttribute("panel")); //指定要显示的区域
-	var href = ltEle.href; //需要加载的页面路径
-	divId.innerHTML = "<include src='" ++ href ++ "'>err:no file!</include>";
-	return true;
-}

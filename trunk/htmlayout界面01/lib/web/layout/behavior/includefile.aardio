@@ -1,0 +1,9 @@
+//include动态加载文件
+namespace web.layout.behavior.includefile{
+	onHyperlinkClick = function(ltTarget, ltEle, x, y, mouseParams){
+		var box = ltEle.root().queryElement(ltEle.getAttribute("target")); //指定要显示的区域
+		var src = ltEle.href; //需要加载的页面路径		
+		box.innerHTML = "<include src='" ++ src ++ "'>err:no file!</include>";
+		return true;
+	}
+}

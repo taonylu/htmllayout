@@ -12,8 +12,9 @@ body[maximize]{border-radius:0}
 
 .nav li{background-color: #F00;}
 .nav a{color: #FFF; text-decoration: none; line-height: 52px; padding: 0 10px; font-weight: bold;cursor:default;}
-.nav a.active{background-color: #1BA35F;}
+.nav a[selected=true]{background-color: #1BA35F;}
 .nav a:hover{background-color: #1BA35F;}
+.nav a{active-on!:$1(.nav a[selected=true]).selected = false,  self.selected = true;}
 
 .tool a{display:inline-block; width:max-intrinsic;height:14px;font-family:"Marlett";font-size:14px;padding:4px;color:#fff;cursor:default;}
 .tool a[command]:hover{background:#6ebccf;}
@@ -29,35 +30,36 @@ body[maximize]{border-radius:0}
 
 /*navbar-bodyer*/
 .navbar-bodyer a{display:block; color: #a9b7b7; text-decoration: none; cursor:default; padding: 8px 10px 8px 40px; background-repeat: no-repeat; background-position: 17px 8px; margin-bottom: 1px;font-size: 12px;}
-.navbar-bodyer a.active{ color: #FFF; background-color: #3f464e;}
+.navbar-bodyer a[selected=true]{ color: #FFF; background-color: #3f464e;}
 .navbar-bodyer a:hover{color: #FFF; background-color: #3f464e;}
+.navbar-bodyer a{active-on!:$1(.navbar-bodyer a[selected=true]).selected = false,  self.selected = true;}
 
 .navbar-bodyer a.icon-home{background-image: url('images/icon-home.png');}
-.navbar-bodyer a.icon-home.active{background-image: url('images/icon-home-white.png');}
+.navbar-bodyer a[selected=true].icon-home{background-image: url('images/icon-home-white.png');}
 .navbar-bodyer a.icon-home:hover{background-image: url('images/icon-home-white.png');}
 
 .navbar-bodyer a.icon-work{background-image: url('images/icon-work.png');}
-.navbar-bodyer a.icon-work.active{background-image: url('images/icon-work-white.png');}
+.navbar-bodyer a[selected=true].icon-work{background-image: url('images/icon-work-white.png');}
 .navbar-bodyer a.icon-work:hover{background-image: url('images/icon-work-white.png');}
 
 .navbar-bodyer a.icon-plan{background-image: url('images/icon-plan.png');}
-.navbar-bodyer a.icon-plan.active{background-image: url('images/icon-plan-white.png');}
+.navbar-bodyer a[selected=true].icon-plan{background-image: url('images/icon-plan-white.png');}
 .navbar-bodyer a.icon-plan:hover{background-image: url('images/icon-plan-white.png');}
 
 .navbar-bodyer a.icon-sell{background-image: url('images/icon-sell.png');}
-.navbar-bodyer a.icon-sell.active{background-image: url('images/icon-sell-white.png');}
+.navbar-bodyer a[selected=true].icon-sell{background-image: url('images/icon-sell-white.png');}
 .navbar-bodyer a.icon-sell:hover{background-image: url('images/icon-sell-white.png');}
 
 .navbar-bodyer a.icon-order{background-image: url('images/icon-order.png');}
-.navbar-bodyer a.icon-order.active{background-image: url('images/icon-order-white.png');}
+.navbar-bodyer a[selected=true].icon-order{background-image: url('images/icon-order-white.png');}
 .navbar-bodyer a.icon-order:hover{background-image: url('images/icon-order-white.png');}
 
 .navbar-bodyer a.icon-project{background-image: url('images/icon-project.png');}
-.navbar-bodyer a.icon-project.active{background-image: url('images/icon-project-white.png');}
+.navbar-bodyer a[selected=true].icon-project{background-image: url('images/icon-project-white.png');}
 .navbar-bodyer a.icon-project:hover{background-image: url('images/icon-project-white.png');}
 
 .navbar-bodyer a.icon-user{background-image: url('images/icon-user.png');}
-.navbar-bodyer a.icon-user.active{background-image: url('images/icon-user-white.png');}
+.navbar-bodyer a[selected=true].icon-user{background-image: url('images/icon-user-white.png');}
 .navbar-bodyer a.icon-user:hover{background-image: url('images/icon-user-white.png');}
 
 /*navbar-footer*/

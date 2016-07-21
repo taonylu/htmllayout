@@ -1,0 +1,78 @@
+html,body{margin:0;height:100%;background:#fff;overflow:hidden;font-family:"Microsoft YaHei";font-size:14px;color:#333;}
+body[maximize]{border-radius:0}
+
+#header,#bodyer,#footer{width: 100%%;}
+
+#header{behavior:windowCommand;flow:horizontal; background-color: #0a8; overflow:hidden; cursor:default;}
+#header .logo{width: 180px;}
+#header .nav{flow:horizontal; width: 100%%; list-style: none; margin: 0; padding: 0;}
+#header .tool{width: 80px; text-align: right;}
+
+.logo img{float: left; margin: 10px;}
+
+.nav li{background-color: #F00;}
+.nav a{color: #FFF; text-decoration: none; line-height: 52px; padding: 0 10px; font-weight: bold;cursor:default;}
+.nav a.active{background-color: #1BA35F;}
+.nav a:hover{background-color: #1BA35F;}
+
+.tool a{display:inline-block; width:max-intrinsic;height:14px;font-family:"Marlett";font-size:14px;padding:4px;color:#fff;cursor:default;}
+.tool a[command]:hover{background:#6ebccf;}
+.tool a[command]:active{background:#FF0000;} 
+.tool a[command="window-restore"]{content:"2";}
+
+#bodyer{flow:horizontal;height: 100%%;}
+#bodyer .navbar{flow:vertical;width: 180px;height:100%%;background-color: #272636;}
+#bodyer .main{width: 100%%;height:100%%;}
+
+.navbar .navbar-bodyer{flow:vertical; height: 100%%; width: 100%%;}
+.navbar .navbar-footer{flow:horizontal; height: 78px; width: 100%%; display: inline-block; border-top: 1px solid #30373f; text-align: center;}
+
+/*navbar-bodyer*/
+.navbar-bodyer a{display:block; color: #a9b7b7; text-decoration: none; cursor:default; padding: 8px 10px 8px 40px; background-repeat: no-repeat; background-position: 17px 8px; margin-bottom: 1px;font-size: 12px;}
+.navbar-bodyer a.active{ color: #FFF; background-color: #3f464e;}
+.navbar-bodyer a:hover{color: #FFF; background-color: #3f464e;}
+
+.navbar-bodyer a.icon-home{background-image: url('images/icon-home.png');}
+.navbar-bodyer a.icon-home.active{background-image: url('images/icon-home-white.png');}
+.navbar-bodyer a.icon-home:hover{background-image: url('images/icon-home-white.png');}
+
+.navbar-bodyer a.icon-work{background-image: url('images/icon-work.png');}
+.navbar-bodyer a.icon-work.active{background-image: url('images/icon-work-white.png');}
+.navbar-bodyer a.icon-work:hover{background-image: url('images/icon-work-white.png');}
+
+.navbar-bodyer a.icon-plan{background-image: url('images/icon-plan.png');}
+.navbar-bodyer a.icon-plan.active{background-image: url('images/icon-plan-white.png');}
+.navbar-bodyer a.icon-plan:hover{background-image: url('images/icon-plan-white.png');}
+
+.navbar-bodyer a.icon-sell{background-image: url('images/icon-sell.png');}
+.navbar-bodyer a.icon-sell.active{background-image: url('images/icon-sell-white.png');}
+.navbar-bodyer a.icon-sell:hover{background-image: url('images/icon-sell-white.png');}
+
+.navbar-bodyer a.icon-order{background-image: url('images/icon-order.png');}
+.navbar-bodyer a.icon-order.active{background-image: url('images/icon-order-white.png');}
+.navbar-bodyer a.icon-order:hover{background-image: url('images/icon-order-white.png');}
+
+.navbar-bodyer a.icon-project{background-image: url('images/icon-project.png');}
+.navbar-bodyer a.icon-project.active{background-image: url('images/icon-project-white.png');}
+.navbar-bodyer a.icon-project:hover{background-image: url('images/icon-project-white.png');}
+
+.navbar-bodyer a.icon-user{background-image: url('images/icon-user.png');}
+.navbar-bodyer a.icon-user.active{background-image: url('images/icon-user-white.png');}
+.navbar-bodyer a.icon-user:hover{background-image: url('images/icon-user-white.png');}
+
+/*navbar-footer*/
+.navbar-footer a{display:inline-block; width: 50px; color: #a9b7b7; padding-top: 30px; margin-top: 10px; font-size: 12px; text-decoration: none; cursor:default; text-align: center;background-repeat: no-repeat; background-position: center 8px;}
+.navbar-footer a:hover{color: #FFF;}
+
+.navbar-footer a.icon-setup{background-image: url('images/icon-setup.png');}
+.navbar-footer a.icon-setup:hover{background-image: url('images/icon-setup-white.png');}
+
+.navbar-footer a.icon-help{background-image: url('images/icon-help.png');}
+.navbar-footer a.icon-help:hover{background-image: url('images/icon-help-white.png');}
+
+.navbar-footer a.icon-logout{background-image: url('images/icon-logout.png');}
+.navbar-footer a.icon-logout:hover{background-image: url('images/icon-logout-white.png');}
+
+
+
+#footer{behavior:windowCommand;background-color: #f5f5f5; font-size: 12px; padding: 5px 10px;}

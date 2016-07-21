@@ -1,0 +1,32 @@
+﻿<html>
+<head>
+	<link rel="stylesheet" href="styles/yimao.css" />
+	<link rel="stylesheet" href="styles/behavior.css" />
+</head> 
+<body>
+	<div id="header">
+		<div class="logo">
+			<img src="styles/images/logo.png">
+		</div>
+		<div class="nav">
+			<a href="#" selected=true>平台首页</a>
+			<a href="#">市场管理</a>
+			<a href="#">销售管理</a>
+			<a href="#">服务管理</a>
+			<a href="#">客户管理</a>
+			<a href="#">营销中心</a>
+			<a href="#">个人办公</a>
+			<a href="#">通讯中心</a>
+			<a href="#">系统管理</a>
+		</div>
+		<div class="tool">
+			<a command="window-min" onclick="minWindow()">0</a>
+			<a command="window-max">1</a>
+			<a command="window-close" onclick="closeWindow()">r</a>
+		</div>
+	</div>
+	<div id="bodyer">
+		<include src="bodyer.aardio">加载失败</include>
+	</div>
+	<div id="footer">Yimao软件设计(aardio+htmlayout)</div>
+</body>

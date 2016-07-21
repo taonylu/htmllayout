@@ -1,0 +1,19 @@
+<div class="navbar">
+	<div class="navbar-bodyer">
+		<a href="#" class="icon-home" selected=true>用户中心</a>
+		<a href="#" class="icon-work">工作安排</a>
+		<a href="#" class="icon-plan">日常安排</a>
+		<a href="#" class="icon-sell">销售信息</a>
+		<a href="#" class="icon-order">订单管理</a>
+		<a href="#" class="icon-project">项目管理</a>
+		<a href="#" class="icon-user">用户管理</a>
+	</div>
+	<div class="navbar-footer">
+		<a href="#" class="icon-setup">设置</a>
+		<a href="#" class="icon-help">帮助</a>
+		<a href="#" class="icon-logout">退出</a>
+	</div>
+</div>
+<div class="main" id="main">
+	<include src="main.aardio">加载失败</include>
+</div>

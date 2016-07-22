@@ -3,7 +3,6 @@ import win.ui;
 mainForm = win.form(text="Yimao软件设计";right=999;bottom=599;border="none")
 mainForm.add()
 /*}}*/
-io.open();
 
 import web.layout; 
 import web.layout.behavior.windowCommand;

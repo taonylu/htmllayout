@@ -1,0 +1,11 @@
+<div class="navbar-bodyer">
+	<a href="react02/main.aardio" target="#main" class="icon-home" selected=true>销售信息</a>
+	<a href="react02/main.aardio" target="#main" class="icon-work">渠道管理</a>
+	<a href="react02/main.aardio" target="#main" class="icon-plan">销售预测</a>
+	<a href="react02/main.aardio" target="#main" class="icon-sell">销售报价</a>
+	<a href="react02/main.aardio" target="#main" class="icon-order">订单管理</a>
+	<a href="react02/main.aardio" target="#main" class="icon-project">佣金管理</a>
+	<a href="react02/main.aardio" target="#main" class="icon-user">销售计划</a>
+	<a href="react02/main.aardio" target="#main" class="icon-user">销售分析</a>
+</div>
+<include src="setup.aardio">加载失败</include>

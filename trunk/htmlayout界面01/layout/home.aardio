@@ -1,7 +1,6 @@
 ﻿<html>
 <head>
 	<link rel="stylesheet" href="styles/yimao.css" />
-	<link rel="stylesheet" href="styles/behavior.css" />
 </head> 
 <body>
 	<div id="header">
@@ -9,7 +8,7 @@
 			<img src="styles/images/logo.png">
 		</div>
 		<div class="nav">
-			<a href="bodyer.aardio" target="#bodyer" selected=true>平台首页</a>
+			<a href="bodyer.aardio" target="#bodyer" selected=true>工作台</a>
 			<a href="react01/bodyer.aardio" target="#bodyer">市场管理</a>
 			<a href="react02/bodyer.aardio" target="#bodyer">销售管理</a>
 			<a href="react03/bodyer.aardio" target="#bodyer">服务管理</a>

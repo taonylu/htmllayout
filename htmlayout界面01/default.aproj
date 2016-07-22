@@ -2,46 +2,14 @@
 <project ver="10" name="htmlayout界面" libEmbed="true" icon="logo.ico" CompanyName="" FileDescription="htmlayout界面" LegalCopyright="Copyright (C) 作者 2016" ProductName="htmlayout界面" InternalName="htmlayout界面" FileVersion="0.0.0.1" ProductVersion="0.0.0.1" publishDir="/Publish/" ui="win" output="htmlayout界面.exe" dstrip="false">
 	<file name="main.aardio" path="main.aardio" comment="启动程序代码"/>
 	<folder name="资源文件(web.layout)" path="layout" comment="" embed="true">
-		<file name="about.aardio" path="layout\about.aardio" comment="layout\about.aardio"/>
 		<file name="bodyer.aardio" path="layout\bodyer.aardio" comment="layout\bodyer.aardio"/>
-		<file name="home.aardio" path="layout\home.aardio" comment="layout\home.aardio"/>
 		<file name="main.aardio" path="layout\main.aardio" comment="layout\main.aardio"/>
-		<folder name="styles" path="layout\styles" comment="layout\styles">
-			<file name="behavior.css" path="layout\styles\behavior.css" comment="layout\styles\behavior.css"/>
-			<file name="common.css" path="layout\styles\common.css" comment="layout\styles\common.css"/>
-			<file name="main.css" path="layout\styles\main.css" comment="layout\styles\main.css"/>
-			<file name="main.tabs.css" path="layout\styles\main.tabs.css" comment="layout\styles\main.tabs.css"/>
-			<file name="titlebar.css" path="layout\styles\titlebar.css" comment="layout\styles\titlebar.css"/>
-			<file name="yimao.css" path="layout\styles\yimao.css" comment="layout\styles\yimao.css"/>
-			<folder name="images" path="layout\styles\images" comment="layout\styles\images">
-				<file name="icon-help-white.png" path="layout\styles\images\icon-help-white.png" comment="layout\styles\images\icon-help-white.png"/>
-				<file name="icon-help.png" path="layout\styles\images\icon-help.png" comment="layout\styles\images\icon-help.png"/>
-				<file name="icon-home-white.png" path="layout\styles\images\icon-home-white.png" comment="layout\styles\images\icon-home-white.png"/>
-				<file name="icon-home.png" path="layout\styles\images\icon-home.png" comment="layout\styles\images\icon-home.png"/>
-				<file name="icon-logout-white.png" path="layout\styles\images\icon-logout-white.png" comment="layout\styles\images\icon-logout-white.png"/>
-				<file name="icon-logout.png" path="layout\styles\images\icon-logout.png" comment="layout\styles\images\icon-logout.png"/>
-				<file name="icon-order-white.png" path="layout\styles\images\icon-order-white.png" comment="layout\styles\images\icon-order-white.png"/>
-				<file name="icon-order.png" path="layout\styles\images\icon-order.png" comment="layout\styles\images\icon-order.png"/>
-				<file name="icon-plan-white.png" path="layout\styles\images\icon-plan-white.png" comment="layout\styles\images\icon-plan-white.png"/>
-				<file name="icon-plan.png" path="layout\styles\images\icon-plan.png" comment="layout\styles\images\icon-plan.png"/>
-				<file name="icon-project-white.png" path="layout\styles\images\icon-project-white.png" comment="layout\styles\images\icon-project-white.png"/>
-				<file name="icon-project.png" path="layout\styles\images\icon-project.png" comment="layout\styles\images\icon-project.png"/>
-				<file name="icon-sell-white.png" path="layout\styles\images\icon-sell-white.png" comment="layout\styles\images\icon-sell-white.png"/>
-				<file name="icon-sell.png" path="layout\styles\images\icon-sell.png" comment="layout\styles\images\icon-sell.png"/>
-				<file name="icon-setup-white.png" path="layout\styles\images\icon-setup-white.png" comment="layout\styles\images\icon-setup-white.png"/>
-				<file name="icon-setup.png" path="layout\styles\images\icon-setup.png" comment="layout\styles\images\icon-setup.png"/>
-				<file name="icon-user-white.png" path="layout\styles\images\icon-user-white.png" comment="layout\styles\images\icon-user-white.png"/>
-				<file name="icon-user.png" path="layout\styles\images\icon-user.png" comment="layout\styles\images\icon-user.png"/>
-				<file name="icon-work-white.png" path="layout\styles\images\icon-work-white.png" comment="layout\styles\images\icon-work-white.png"/>
-				<file name="icon-work.png" path="layout\styles\images\icon-work.png" comment="layout\styles\images\icon-work.png"/>
-				<file name="loading.png" path="layout\styles\images\loading.png" comment="layout\styles\images\loading.png"/>
-				<file name="logo.png" path="layout\styles\images\logo.png" comment="layout\styles\images\logo.png"/>
-				<file name="logo_128x128.png" path="layout\styles\images\logo_128x128.png" comment="layout\styles\images\logo_128x128.png"/>
-				<file name="logo_160x160.png" path="layout\styles\images\logo_160x160.png" comment="layout\styles\images\logo_160x160.png"/>
-				<file name="logo_16x16.png" path="layout\styles\images\logo_16x16.png" comment="layout\styles\images\logo_16x16.png"/>
-				<file name="logo_32x32.png" path="layout\styles\images\logo_32x32.png" comment="layout\styles\images\logo_32x32.png"/>
-				<file name="logo_64x64.png" path="layout\styles\images\logo_64x64.png" comment="layout\styles\images\logo_64x64.png"/>
-			</folder>
+		<file name="home.aardio" path="layout\home.aardio" comment="layout\home.aardio"/>
+		<file name="navbar.aardio" path="layout\navbar.aardio" comment="layout\navbar.aardio"/>
+		<folder name="react01" path="layout\react01" comment="layout\react01" embed="false">
+			<file name="navbar.aardio" path="layout\react01\navbar.aardio" comment="layout\react01\navbar.aardio"/>
+			<file name="bodyer.aardio" path="layout\react01\bodyer.aardio" comment="layout\react01\bodyer.aardio"/>
+			<file name="main.aardio" path="layout\react01\main.aardio" comment="layout\react01\main.aardio"/>
 		</folder>
 	</folder>
 </project>

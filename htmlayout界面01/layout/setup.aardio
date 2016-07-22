@@ -1,0 +1,5 @@
+<div class="navbar-footer">
+	<a href="#" class="icon-setup">设置</a>
+	<a href="#" class="icon-help">帮助</a>
+	<a href="#" class="icon-logout">退出</a>
+</div>

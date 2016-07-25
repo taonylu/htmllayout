@@ -27,5 +27,5 @@
 	<div id="bodyer">
 		<include src="bodyer.aardio">加载失败</include>
 	</div>
-	<div id="footer">Yimao软件设计(aardio+htmlayout)</div>
 </body>
+</html>

@@ -1,46 +1,24 @@
 <div class="container">
-	<div class="line bg-main">
-		<div class="x4 bg">
-			1111 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam molestiae qui numquam excepturi dolore officiis, culpa fugiat quidem quae libero voluptas dicta fuga pariatur debitis, tenetur mollitia consequuntur laborum.
-			<input type="button" class="btn" value="测试按钮">
-			<button type="button" class="btn btn-primary btn-tiny">按钮样式</button>
-			<button type="button" class="btn btn-action btn-tiny">按钮样式</button>
-			<button type="button" class="btn btn-highlight btn-tiny">按钮样式</button>
-			<button type="button" class="btn btn-caution btn-tiny">按钮样式</button>
-			<button type="button" class="btn btn-royal btn-tiny">按钮样式</button>
+	<h1>
+		张某某 欢迎您！
+	</h1>
+	<div class="baseinfo">
+		<div class="user">
+			<div class="face">
+				<img src="styles/images/logo_160x160.png">
+				<span>总经理</span>
+			</div>
+			<div class="info padding-left">
+				<h3>张某某</h3>
+				<p>销售部门</p>
+				<p>电话：13522222222</p>
+				<p>邮箱：zjutsxj@qq.com</p>
+			</div>
 		</div>
-		<div class="x4 bg">
-			2222 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, suscipit nobis. Assumenda nulla possimus quidem officia aperiam quas sed non corporis reprehenderit! Voluptatum, placeat eum expedita sunt velit voluptas assumenda!
-		</div>
-		<div class="x4 bg">
-			3333 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore iste numquam nemo fugit nihil fugiat quasi, excepturi repellendus pariatur temporibus at soluta nisi consequatur facilis odit cupiditate tenetur adipisci eius.
-		</div>
-		<div class="x4 bg">
-			4444 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore iste numquam nemo fugit nihil fugiat quasi, excepturi repellendus pariatur temporibus at soluta nisi consequatur facilis odit cupiditate tenetur adipisci eius.
-		</div>
-		<div class="x4 bg">
-			5555 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore iste numquam nemo fugit nihil fugiat quasi, excepturi repellendus pariatur temporibus at soluta nisi consequatur facilis odit cupiditate tenetur adipisci eius.
-		</div>
-		<div class="x4 bg-back">
-			6666 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore iste numquam nemo fugit nihil fugiat quasi, excepturi repellendus pariatur temporibus at soluta nisi consequatur facilis odit cupiditate tenetur adipisci eius.
-		</div>
-		<div class="x4 bg">
-			4444 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore iste numquam nemo fugit nihil fugiat quasi, excepturi repellendus pariatur temporibus at soluta nisi consequatur facilis odit cupiditate tenetur adipisci eius.
-		</div>
-		<div class="x4 bg">
-			5555 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore iste numquam nemo fugit nihil fugiat quasi, excepturi repellendus pariatur temporibus at soluta nisi consequatur facilis odit cupiditate tenetur adipisci eius.
-		</div>
-		<div class="x4 bg">
-			6666 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore iste numquam nemo fugit nihil fugiat quasi, excepturi repellendus pariatur temporibus at soluta nisi consequatur facilis odit cupiditate tenetur adipisci eius.
-		</div>
-		<div class="x4 bg">
-			4444 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore iste numquam nemo fugit nihil fugiat quasi, excepturi repellendus pariatur temporibus at soluta nisi consequatur facilis odit cupiditate tenetur adipisci eius.
-		</div>
-		<div class="x4 bg">
-			5555 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore iste numquam nemo fugit nihil fugiat quasi, excepturi repellendus pariatur temporibus at soluta nisi consequatur facilis odit cupiditate tenetur adipisci eius.
-		</div>
-		<div class="x4 bg">
-			6666 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore iste numquam nemo fugit nihil fugiat quasi, excepturi repellendus pariatur temporibus at soluta nisi consequatur facilis odit cupiditate tenetur adipisci eius.
+		<div class="zddl">
+			<div>总订单量</div>
+
 		</div>
 	</div>
 </div>
+<div id="footer">Yimao软件设计(aardio+htmlayout)</div>

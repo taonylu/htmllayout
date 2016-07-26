@@ -96,20 +96,20 @@
 						<div>标题</div>
 					</div>
 					<div class="chart-main">
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
+						<div style="height:23px;"></div>
+						<div style="height:50px;"></div>
+						<div style="height:70px;"></div>
+						<div style="height:86px;"></div>
+						<div style="height:54px;"></div>
+						<div style="height:80px;"></div>
+						<div style="height:230px;"></div>
+						<div style="height:132px;"></div>
+						<div style="height:50px;"></div>
+						<div style="height:90px;"></div>
+						<div style="height:155px;"></div>
+						<div style="height:23px;"></div>
 					</div>
-					<div class="chart-bottom bg-success">
+					<div class="chart-bottom">
 						<div>1</div>
 						<div>2</div>
 						<div>3</div>

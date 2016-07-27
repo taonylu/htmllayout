@@ -1,0 +1,21 @@
+<div id="header">
+	<div class="logo">
+		<img src="styles/images/logo.png">
+	</div>
+	<div class="nav">
+		<a href="bodyer.aardio" <? if (headnav=="home") { ?> selected=true <? } ?>>工作台</a>
+		<a href="react01/bodyer.aardio" <? if (headnav=="react01") { ?> selected=true <? } ?>>市场管理</a>
+		<a href="react02/bodyer.aardio" <? if (headnav=="react02") { ?> selected=true <? } ?>>销售管理</a>
+		<a href="react03/bodyer.aardio" <? if (headnav=="react03") { ?> selected=true <? } ?>>服务管理</a>
+		<a href="react04/bodyer.aardio" <? if (headnav=="react04") { ?> selected=true <? } ?>>客户管理</a>
+		<a href="react05/bodyer.aardio" <? if (headnav=="react05") { ?> selected=true <? } ?>>营销中心</a>
+		<a href="react06/bodyer.aardio" <? if (headnav=="react06") { ?> selected=true <? } ?>>个人办公</a>
+		<a href="react07/bodyer.aardio" <? if (headnav=="react07") { ?> selected=true <? } ?>>通讯中心</a>
+		<a href="react08/bodyer.aardio" <? if (headnav=="react08") { ?> selected=true <? } ?>>系统管理</a>
+	</div>
+	<div class="tool">
+		<a command="window-min" onclick="minWindow()">0</a>
+		<a command="window-max">1</a>
+		<a command="window-close" onclick="closeWindow()">r</a>
+	</div>
+</div>

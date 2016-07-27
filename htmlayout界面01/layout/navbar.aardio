@@ -7,4 +7,3 @@
 	<a href="main.aardio" target="#main" class="icon-project">项目管理</a>
 	<a href="main.aardio" target="#main" class="icon-user">用户管理</a>
 </div>
-<include src="setup.aardio">加载失败</include>

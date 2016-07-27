@@ -2,40 +2,40 @@
 <project ver="10" name="htmlayout界面" libEmbed="true" icon="logo.ico" CompanyName="" FileDescription="htmlayout界面" LegalCopyright="Copyright (C) 作者 2016" ProductName="htmlayout界面" InternalName="htmlayout界面" FileVersion="0.0.0.1" ProductVersion="0.0.0.1" publishDir="/Publish/" ui="win" output="htmlayout界面.exe" dstrip="false">
 	<file name="main.aardio" path="main.aardio" comment="启动程序代码"/>
 	<folder name="资源文件(web.layout)" path="layout" comment="" embed="true">
+		<file name="main.aardio" path="layout\main.aardio" comment="layout\main.aardio"/>
 		<file name="about.aardio" path="layout\about.aardio" comment="layout\about.aardio"/>
 		<file name="bodyer.aardio" path="layout\bodyer.aardio" comment="layout\bodyer.aardio"/>
 		<file name="home.aardio" path="layout\home.aardio" comment="layout\home.aardio"/>
-		<file name="main.aardio" path="layout\main.aardio" comment="layout\main.aardio"/>
 		<file name="navbar.aardio" path="layout\navbar.aardio" comment="layout\navbar.aardio"/>
-		<folder name="include" path="layout\include" comment="layout\include">
+		<folder name="include" path="layout\include" comment="layout\include" embed="false">
 			<file name="footer.aardio" path="layout\include\footer.aardio" comment="layout\include\footer.aardio"/>
 			<file name="header.aardio" path="layout\include\header.aardio" comment="layout\include\header.aardio"/>
 			<file name="setup.aardio" path="layout\include\setup.aardio" comment="layout\include\setup.aardio"/>
 		</folder>
 		<folder name="react01" path="layout\react01" comment="layout\react01">
-			<file name="bodyer.aardio" path="layout\react01\bodyer.aardio" comment="layout\react01\bodyer.aardio"/>
 			<file name="main.aardio" path="layout\react01\main.aardio" comment="layout\react01\main.aardio"/>
+			<file name="bodyer.aardio" path="layout\react01\bodyer.aardio" comment="layout\react01\bodyer.aardio"/>
 			<file name="navbar.aardio" path="layout\react01\navbar.aardio" comment="layout\react01\navbar.aardio"/>
 			<file name="table.aardio" path="layout\react01\table.aardio" comment="layout\react01\table.aardio"/>
 		</folder>
 		<folder name="react02" path="layout\react02" comment="layout\react02">
-			<file name="bodyer.aardio" path="layout\react02\bodyer.aardio" comment="layout\react02\bodyer.aardio"/>
 			<file name="main.aardio" path="layout\react02\main.aardio" comment="layout\react02\main.aardio"/>
+			<file name="bodyer.aardio" path="layout\react02\bodyer.aardio" comment="layout\react02\bodyer.aardio"/>
 			<file name="navbar.aardio" path="layout\react02\navbar.aardio" comment="layout\react02\navbar.aardio"/>
 		</folder>
 		<folder name="react03" path="layout\react03" comment="layout\react03">
-			<file name="bodyer.aardio" path="layout\react03\bodyer.aardio" comment="layout\react03\bodyer.aardio"/>
 			<file name="main.aardio" path="layout\react03\main.aardio" comment="layout\react03\main.aardio"/>
+			<file name="bodyer.aardio" path="layout\react03\bodyer.aardio" comment="layout\react03\bodyer.aardio"/>
 			<file name="navbar.aardio" path="layout\react03\navbar.aardio" comment="layout\react03\navbar.aardio"/>
 		</folder>
 		<folder name="react04" path="layout\react04" comment="layout\react04">
-			<file name="bodyer.aardio" path="layout\react04\bodyer.aardio" comment="layout\react04\bodyer.aardio"/>
 			<file name="main.aardio" path="layout\react04\main.aardio" comment="layout\react04\main.aardio"/>
+			<file name="bodyer.aardio" path="layout\react04\bodyer.aardio" comment="layout\react04\bodyer.aardio"/>
 			<file name="navbar.aardio" path="layout\react04\navbar.aardio" comment="layout\react04\navbar.aardio"/>
 		</folder>
 		<folder name="react05" path="layout\react05" comment="layout\react05">
-			<file name="bodyer.aardio" path="layout\react05\bodyer.aardio" comment="layout\react05\bodyer.aardio"/>
 			<file name="main.aardio" path="layout\react05\main.aardio" comment="layout\react05\main.aardio"/>
+			<file name="bodyer.aardio" path="layout\react05\bodyer.aardio" comment="layout\react05\bodyer.aardio"/>
 			<file name="navbar.aardio" path="layout\react05\navbar.aardio" comment="layout\react05\navbar.aardio"/>
 		</folder>
 		<folder name="react06" path="layout\react06" comment="layout\react06"/>

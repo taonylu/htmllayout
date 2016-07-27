@@ -14,7 +14,7 @@
 		<include src="navbar.aardio">加载失败</include>
 		<include src="include/setup.aardio">加载失败</include>
 	</div>
-	<div class="yscroll" id="bodyer">
+	<div id="bodyer" class="yscroll bg">
 		<include src="main.aardio">加载失败</include>
 	</div>
 	<div id="footer">

@@ -1,6 +1,6 @@
 <div class="navbar-bodyer">
 	<a href="main.aardio" target="#main" class="icon-home" selected=true>用户中心</a>
-	<a href="main.aardio" target="#main" class="icon-work">工作安排</a>
+	<a href="react01/table.aardio" target="#main" class="icon-work">表格样式</a>
 	<a href="main.aardio" target="#main" class="icon-plan">日常安排</a>
 	<a href="main.aardio" target="#main" class="icon-sell">销售信息</a>
 	<a href="main.aardio" target="#main" class="icon-order">订单管理</a>

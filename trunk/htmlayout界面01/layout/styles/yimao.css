@@ -27,10 +27,14 @@ a:focus,a:hover{color:#0a8}
 
 .yscroll{vertical-scrollbar:y-scrollbar;}
 
-#header,#bodyer,#footer{width: *;}
-
-#header{flow:horizontal; background-color: #0a8; overflow:hidden; cursor:default;}
+#container{flow:"1 1" "2 3" "2 4"; width: *; height: *;}
+#header{width: *;flow:horizontal; background-color: #0a8; overflow:hidden; cursor:default;}
 #header{behavior:windowCommand;}
+#navbar{flow:vertical;width: 180px;height:*;background-color: #272636;}
+#bodyer{width: *;height: *;}
+#footer{width: *;background-color: #f5f5f5;font-size:12px;padding:5px 10px;border-top:1px solid #ddd;text-align: right;}
+#footer{behavior:windowCommand;}
+
 #header .logo{width: 180px;}
 #header .nav{flow:horizontal; width: *; list-style: none; margin: 0; padding: 0;}
 #header .tool{width: 80px; text-align: right;}
@@ -49,12 +53,9 @@ a:focus,a:hover{color:#0a8}
 .tool a[command]:active{background:#FF0000;} 
 .tool a[command="window-restore"]{content:"2";}
 
-#bodyer{flow:horizontal;height: *;}
-#bodyer .navbar{flow:vertical;width: 180px;height:*;background-color: #272636;}
-#bodyer .main{width: *;height:*;overflow: hidden;}
 
-.navbar .navbar-bodyer{flow:vertical; height: *; width: *;}
-.navbar .navbar-footer{flow:horizontal; height: 78px; width: *; border-top: 1px solid #30373f; text-align: center;}
+#navbar .navbar-bodyer{flow:vertical; height: *; width: *;}
+#navbar .navbar-footer{flow:horizontal; height: 78px; width: *; border-top: 1px solid #30373f; text-align: center;}
 
 /*navbar-bodyer*/
 .navbar-bodyer a{display:block; color: #a9b7b7; text-decoration: none; cursor:default; padding: 8px 10px 8px 40px; background-repeat: no-repeat; background-position: 17px 8px; margin-bottom: 1px;font-size: 12px;}
@@ -88,9 +89,7 @@ a:focus,a:hover{color:#0a8}
 .navbar-footer a.icon-logout{background-image: url('images/icons/logout.png');}
 .navbar-footer a.icon-logout:hover{background-image: url('images/icons/logout-white.png');}
 
-/*footer*/
-#footer{background-color: #f5f5f5; font-size: 12px; padding: 5px 10px; border-top: 1px solid #ddd; text-align: right;}
-#footer{behavior:windowCommand;}
+
 
 /*通用CSS*/
 
@@ -216,7 +215,7 @@ a:focus,a:hover{color:#0a8}
 
 
 /*container*/
-.container{width: *; height: *; overflow: auto; background-color: #edf0f5;}
+.bodyer{width: *; height: *; overflow: auto; background-color: #edf0f5;}
 .title{font-size: 16px; background-color: #FFF; padding: 10px;}
 .title, .row1>div{margin: 8px; outline: 3px glow #CCC 0px;} /*加阴影*/
 .row1{flow:"1 2 3"; width: 100%%;}

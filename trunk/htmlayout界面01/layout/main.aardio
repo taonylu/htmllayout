@@ -1,4 +1,3 @@
-<div class="container yscroll">
 	<h1 class="title">
 		张某某 欢迎您！
 	</h1>
@@ -116,5 +115,3 @@
 			</div>
 		</div>
 	</div>
-</div>
-<div id="footer">Yimao软件设计(aardio+htmlayout)</div>

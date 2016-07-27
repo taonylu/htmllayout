@@ -28,11 +28,11 @@ a:focus,a:hover{color:#0a8}
 .yscroll{vertical-scrollbar:y-scrollbar;}
 
 #container{flow:"1 1" "2 3" "2 4"; width: *; height: *;}
-#header{width: *;flow:horizontal; background-color: #0a8; overflow:hidden; cursor:default;}
+#header{width: *;flow:horizontal; background-color: #0a8; overflow:hidden; cursor:default; height: 52px;}
 #header{behavior:windowCommand;}
 #navbar{flow:vertical;width: 180px;height:*;background-color: #272636;}
-#bodyer{width: *;height: *;}
-#footer{width: *;background-color: #f5f5f5;font-size:12px;padding:5px 10px;border-top:1px solid #ddd;text-align: right;}
+#bodyer{width: *;height: *; overflow: auto;}
+#footer{width: *;background-color: #f5f5f5;font-size:12px;padding:5px 10px;border-top:1px solid #ddd;text-align:right; height:22px;}
 #footer{behavior:windowCommand;}
 
 #header .logo{width: 180px;}
@@ -45,8 +45,6 @@ a:focus,a:hover{color:#0a8}
 .nav a{color: #FFF; text-decoration: none; line-height: 52px; padding: 0 10px; font-weight: bold;cursor:default;}
 .nav a[selected=true]{background-color: #1BA35F;}
 .nav a:hover{background-color: #1BA35F;}
-.nav a{active-on!:$1(.nav a[selected=true]).selected = false, self.selected = true;}
-.nav a{behavior:~includefile;}
 
 .tool a{display:inline-block; width:max-intrinsic;height:14px;font-family:"Marlett";font-size:14px;padding:4px;color:#fff;cursor:default;}
 .tool a[command]:hover{background:#6ebccf;}
@@ -61,8 +59,6 @@ a:focus,a:hover{color:#0a8}
 .navbar-bodyer a{display:block; color: #a9b7b7; text-decoration: none; cursor:default; padding: 8px 10px 8px 40px; background-repeat: no-repeat; background-position: 17px 8px; margin-bottom: 1px;font-size: 12px;}
 .navbar-bodyer a[selected=true]{ color: #FFF; background-color: #3f464e;}
 .navbar-bodyer a:hover{color: #FFF; background-color: #3f464e;}
-.navbar-bodyer a{active-on!:$1(.navbar-bodyer a[selected=true]).selected = false,  self.selected = true;}
-.navbar-bodyer a{behavior:~includefile;}
 
 .navbar-bodyer a.icon-home{background-image: url('images/icons/home.png');}
 .navbar-bodyer a[selected=true].icon-home,.navbar-bodyer a.icon-home:hover{background-image: url('images/icons/home-white.png');}
@@ -214,8 +210,7 @@ a:focus,a:hover{color:#0a8}
 
 
 
-/*container*/
-.bodyer{width: *; height: *; overflow: auto; background-color: #edf0f5;}
+/*首页*/
 .title{font-size: 16px; background-color: #FFF; padding: 10px;}
 .title, .row1>div{margin: 8px; outline: 3px glow #CCC 0px;} /*加阴影*/
 .row1{flow:"1 2 3"; width: 100%%;}

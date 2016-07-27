@@ -1,4 +1,3 @@
-
 <div class="navbar-bodyer">
 	<a href="react01/main.aardio" target="#main" class="icon-home" selected=true>市场计划</a>
 	<a href="react01/main.aardio" target="#main" class="icon-work">市场分析</a>
@@ -8,4 +7,3 @@
 	<a href="react01/main.aardio" target="#main" class="icon-project">绩效考核</a>
 	<a href="react01/main.aardio" target="#main" class="icon-user">统计分析</a>
 </div>
-<include src="setup.aardio">加载失败</include>

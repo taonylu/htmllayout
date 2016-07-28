@@ -89,6 +89,11 @@ a:focus,a:hover{color:#0a8}
 
 /*通用CSS*/
 
+/*面板*/
+.panel{background-color: #FFF;}
+.panel-bodyer{height: 100%%;}
+.panel-header, .panel-footer{padding: 5px 10px; background-color:#f5f7f9;}
+
 /*外间距，内间距*/
 .padding{padding: 10px;}
 .padding-top{padding-top: 10px;}
@@ -102,39 +107,6 @@ a:focus,a:hover{color:#0a8}
 .margin-bottom{margin-bottom: 10px;}
 .margin-left{margin-left: 10px;}
 
-/*背景*/
-.bg{background-color:#f5f7f9;}
-.bg-primary{background-color:#188ae2;color:#fff}
-.bg-success{background-color:#10c469;color:#fff}
-.bg-info{background-color:#35b8e0;color:#fff}
-.bg-warning{background-color:#f9c851;color:#fff}
-.bg-danger{background-color:#ff5b5b;color:#fff}
-.bg-pink{background-color:#ff8acc;color:#fff}
-.bg-purple{background-color:#5b69bc;color:#fff}
-.bg-inverse{background-color:#3b3e47;color:#fff}
-.bg-dark{background-color:#282828;color:#fff}
-.bg-white{background-color:#fff;color:#6a6c6f}
-
-/*文本*/
-.text-primary{color:#188ae2}
-.text-success{color:#10c469}
-.text-info{color:#35b8e0}
-.text-warning{color:#f9c851}
-.text-danger{color:#ff5b5b}
-.text-pink{color:#ff8acc}
-.text-purple{color:#5b69bc}
-.text-inverse{color:#3b3e47}
-.text-dark{color:#282828}
-.text-white{color:#fff}
-.text-color{color:#6a6c6f}
-
-/*字体*/
-.text-large{font-size: 24px;}
-.text-big{font-size: 16px;}
-.text-default{font-size: 14px;}
-.text-small{font-size: 12px;}
-.text-little{font-size: 10px;}
-
 /*标签*/
 .label{padding:1px 3px; color: #fff;border-radius:3px; display: block; text-align: center;}
 .label-info{background-color: #35b8e0;}
@@ -147,11 +119,6 @@ a:focus,a:hover{color:#0a8}
 .text-right{text-align:right}
 .text-center{text-align:center}
 .text-left{text-align:left}
-
-/*面板*/
-.panel{background-color: #FFF;}
-.panel .panel-bodyer{height: 100%%;}
-.panel .panel-header,.panel .panel-footer{padding: 5px 10px;}
 
 /*按钮*/
 .btn{display: inline-block;padding:5px 10px;font-size: 12px;font-weight: 400;line-height: 1.5;text-align: center;vertical-align: middle;cursor: pointer;background-image: none;border: 1px solid transparent;margin-top: 5px;margin-bottom: 5px;color: #333;background-color: #fff;border-color: #ccc; border-radius: 4px;transition:blend;}
@@ -191,6 +158,39 @@ a:focus,a:hover{color:#0a8}
 .btn{behavior:button}
 .btn:disabled{opacity: 0.75; cursor: pointer;}
 .btn:focus{outline:0}
+
+/*背景*/
+.bg{background-color:#f5f7f9;}
+.bg-primary{background-color:#188ae2;color:#fff}
+.bg-success{background-color:#10c469;color:#fff}
+.bg-info{background-color:#35b8e0;color:#fff}
+.bg-warning{background-color:#f9c851;color:#fff}
+.bg-danger{background-color:#ff5b5b;color:#fff}
+.bg-pink{background-color:#ff8acc;color:#fff}
+.bg-purple{background-color:#5b69bc;color:#fff}
+.bg-inverse{background-color:#3b3e47;color:#fff}
+.bg-dark{background-color:#282828;color:#fff}
+.bg-white{background-color:#fff;color:#6a6c6f}
+
+/*文本*/
+.text-primary{color:#188ae2}
+.text-success{color:#10c469}
+.text-info{color:#35b8e0}
+.text-warning{color:#f9c851}
+.text-danger{color:#ff5b5b}
+.text-pink{color:#ff8acc}
+.text-purple{color:#5b69bc}
+.text-inverse{color:#3b3e47}
+.text-dark{color:#282828}
+.text-white{color:#fff}
+.text-color{color:#6a6c6f}
+
+/*字体*/
+.text-large{font-size: 24px;}
+.text-big{font-size: 16px;}
+.text-default{font-size: 14px;}
+.text-small{font-size: 12px;}
+.text-little{font-size: 10px;}
 
 /*表格*/
 .table{width:100%;max-width:100%;border-collapse:collapse;border-spacing:0;font-size: 12px;}

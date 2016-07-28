@@ -1,0 +1,44 @@
+<? 
+headnav = "react01";
+leftnav = "backgroup";
+?>
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="../styles/yimao.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head> 
+<body>
+<div id="container">
+	<div id="header">
+		<include src="../include/header.aardio">加载失败</include>
+	</div>
+	<div id="navbar">
+		<include src="navbar.aardio">加载失败</include>
+		<include src="../include/setup.aardio">加载失败</include>
+	</div>
+	<div id="bodyer" class="bg">
+		<h1 class="title box-shadow">
+			背景样式
+		</h1>
+		<div class="box-shadow padding bg-white">
+			<div class="padding margin-bottom bg">默认背景色 添加样式bg</div>
+			<div class="padding margin-bottom bg-primary">Yimao 壹毛设计制作的HTMLayout样式框架，制作HL界面更加简单方便。样式bg-primary</div>
+			<div class="padding margin-bottom bg-success">Yimao 壹毛设计制作的HTMLayout样式框架，制作HL界面更加简单方便。样式bg-success</div>
+			<div class="padding margin-bottom bg-info">Yimao 壹毛设计制作的HTMLayout样式框架，制作HL界面更加简单方便。样式bg-info</div>
+			<div class="padding margin-bottom bg-warning">Yimao 壹毛设计制作的HTMLayout样式框架，制作HL界面更加简单方便。样式bg-warning</div>
+			<div class="padding margin-bottom bg-danger">Yimao 壹毛设计制作的HTMLayout样式框架，制作HL界面更加简单方便。样式bg-danger</div>
+			<div class="padding margin-bottom bg-pink">Yimao 壹毛设计制作的HTMLayout样式框架，制作HL界面更加简单方便。样式bg-pink</div>
+			<div class="padding margin-bottom bg-purple">Yimao 壹毛设计制作的HTMLayout样式框架，制作HL界面更加简单方便。样式bg-purple</div>
+			<div class="padding margin-bottom bg-inverse">Yimao 壹毛设计制作的HTMLayout样式框架，制作HL界面更加简单方便。样式bg-inverse</div>
+			<div class="padding margin-bottom bg-dark">Yimao 壹毛设计制作的HTMLayout样式框架，制作HL界面更加简单方便。样式bg-dark</div>
+			<div class="padding margin-bottom bg-white">Yimao 壹毛设计制作的HTMLayout样式框架，制作HL界面更加简单方便。样式bg-white</div>
+
+		</div>
+	</div>
+	<div id="footer">
+		<include src="../include/footer.aardio">加载失败</include>
+	</div>
+</div>
+</body>
+</html>

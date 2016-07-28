@@ -4,13 +4,13 @@
 <div class="nav">
 	<a href="/layout/home.aardio" <? if (headnav=="home") { ?> selected=true <? } ?>>工作台</a>
 	<a href="/layout/react01/table.aardio" <? if (headnav=="react01") { ?> selected=true <? } ?>>市场管理</a>
-	<a href="/layout/react02/bodyer.aardio" <? if (headnav=="react02") { ?> selected=true <? } ?>>销售管理</a>
-	<a href="/layout/react03/bodyer.aardio" <? if (headnav=="react03") { ?> selected=true <? } ?>>服务管理</a>
-	<a href="/layout/react04/bodyer.aardio" <? if (headnav=="react04") { ?> selected=true <? } ?>>客户管理</a>
-	<a href="/layout/react05/bodyer.aardio" <? if (headnav=="react05") { ?> selected=true <? } ?>>营销中心</a>
-	<a href="/layout/react06/bodyer.aardio" <? if (headnav=="react06") { ?> selected=true <? } ?>>个人办公</a>
-	<a href="/layout/react07/bodyer.aardio" <? if (headnav=="react07") { ?> selected=true <? } ?>>通讯中心</a>
-	<a href="/layout/react08/bodyer.aardio" <? if (headnav=="react08") { ?> selected=true <? } ?>>系统管理</a>
+	<a href="#">销售管理</a>
+	<a href="#">服务管理</a>
+	<a href="#">客户管理</a>
+	<a href="#">营销中心</a>
+	<a href="#">个人办公</a>
+	<a href="#">通讯中心</a>
+	<a href="#">系统管理</a>
 </div>
 <div class="tool">
 	<a command="window-min" onclick="minWindow()">0</a>

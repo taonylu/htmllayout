@@ -1,8 +1,0 @@
-<div class="navbar-bodyer">
-	<a href="react03/main.aardio" target="#main" class="icon-home" selected=true>合同档案管理</a>
-	<a href="react03/main.aardio" target="#main" class="icon-plan">产品档案管理</a>
-	<a href="react03/main.aardio" target="#main" class="icon-work">产品维护报告</a>
-	<a href="react03/main.aardio" target="#main" class="icon-sell">客户反馈</a>
-	<a href="react03/main.aardio" target="#main" class="icon-order">满意度分析</a>
-</div>
-<include src="setup.aardio">加载失败</include>

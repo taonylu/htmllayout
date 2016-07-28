@@ -1,0 +1,59 @@
+<? 
+headnav = "react01";
+leftnav = "buttons";
+?>
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="../styles/yimao.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head> 
+<body>
+<div id="container">
+	<div id="header">
+		<include src="../include/header.aardio">加载失败</include>
+	</div>
+	<div id="navbar">
+		<include src="navbar.aardio">加载失败</include>
+		<include src="../include/setup.aardio">加载失败</include>
+	</div>
+	<div id="bodyer" class="bg">
+		<h1 class="title box-shadow">
+			按钮样式
+		</h1>
+		<div class="box-shadow padding bg-white">
+			<p>按钮使用：".btn"</p>
+			<button class="btn">Default</button>
+			<button class="btn btn-primary">.btn-primary</button>
+			<button class="btn btn-success">.btn-success</button>
+			<button class="btn btn-info">.btn-info</button>
+			<button class="btn btn-warning">.btn-warning</button>
+			<button class="btn btn-danger">.btn-danger</button>
+			<button class="btn btn-purple">.btn-purple</button>
+			<button class="btn btn-pink">.btn-pink</button>
+		</div>
+		<div class="box-shadow padding bg-white">
+			<p>禁用按钮："disabled"属性</p>
+			<button class="btn" disabled>Default</button>
+			<button class="btn btn-primary" disabled>primary</button>
+			<button class="btn btn-success" disabled>success</button>
+			<button class="btn btn-info" disabled>info</button>
+			<button class="btn btn-warning" disabled>warning</button>
+			<button class="btn btn-danger" disabled>danger</button>
+			<button class="btn btn-purple" disabled>purple</button>
+			<button class="btn btn-pink" disabled>pink</button>
+		</div>
+		<div class="box-shadow padding bg-white">
+			<p>按钮尺寸</p>
+			<button class="btn btn-primary btn-lg">超大尺寸(.btn-lg)</button>
+			<button class="btn btn-primary btn-bg">大尺寸(.btn-bg)</button>
+			<button class="btn btn-primary">默认尺寸</button>
+			<button class="btn btn-primary btn-xs">小尺寸(.btn-xs)</button>
+		</div>
+	</div>
+	<div id="footer">
+		<include src="../include/footer.aardio">加载失败</include>
+	</div>
+</div>
+</body>
+</html>

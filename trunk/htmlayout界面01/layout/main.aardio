@@ -1,8 +1,8 @@
-	<h1 class="title">
+	<h1 class="title box-shadow">
 		张某某 欢迎您！
 	</h1>
 	<div class="row1">
-		<div class="user">
+		<div class="user box-shadow">
 			<div class="face">
 				<a href="#" style="background-image: url('styles/images/face.jpg');"></a>
 			</div>
@@ -14,25 +14,25 @@
 				<p>邮箱：zjutsxj@qq.com</p>
 			</div>
 		</div>
-		<div class="panel">
+		<div class="panel box-shadow">
 			<div class="panel-bodyer padding">
 				<i class="icon-32 icon-jb right"></i>
 				<p class="text-primary text-large">￥2,000元</p>
 				<p>Total Pending</p>
 			</div>
-			<div class="panel-footer bg-primary bg-inverse">总订单额</div>
+			<div class="panel-footer bg-primary">总订单额</div>
 		</div>
-		<div class="panel">
+		<div class="panel box-shadow">
 			<div class="panel-bodyer padding">
 				<i class="icon-32 icon-tz right"></i>
 				<p class="text-danger text-large">￥320,012元</p>
 				<p>Total Pending</p>
 			</div>
-			<div class="panel-footer bg-danger bg-inverse">总付款额</div>
+			<div class="panel-footer bg-danger">总付款额</div>
 		</div>
 	</div>
 	<div class="row2">
-		<div class="panel">
+		<div class="panel box-shadow">
 			<div class="panel-header bg">待办事务</div>
 			<div class="panel-bodyer">
 				<table class="table table-condensed table-hover table-striped">
@@ -57,7 +57,7 @@
 				</table>
 			</div>
 		</div>
-		<div class="panel">
+		<div class="panel box-shadow">
 			<div class="panel-header bg">内部公告</div>
 			<div class="panel-bodyer">
 				<table class="table table-condensed table-hover table-striped">
@@ -82,7 +82,7 @@
 		</div>
 	</div>
 	<div class="row3">
-		<div class="panel">
+		<div class="panel box-shadow">
 			<div class="panel-header bg">报表统计</div>
 			<div class="panel-bodyer">
 				<div class="chart">

@@ -1,6 +1,0 @@
-<div class="navbar">
-	<include src="react05/navbar.aardio">加载失败</include>
-</div>
-<div class="main" id="main">
-	<include src="react05/main.aardio">加载失败</include>
-</div>

@@ -1,4 +1,7 @@
-﻿<? headnav = "home";?>
+﻿<? 
+headnav = "home";
+leftnav = "home";
+?>
 <!doctype html>
 <html>
 <head>

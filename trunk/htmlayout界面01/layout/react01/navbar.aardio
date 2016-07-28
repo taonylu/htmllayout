@@ -1,9 +1,9 @@
 <div class="navbar-bodyer">
-	<a href="react01/main.aardio" target="#main" class="icon-home" selected=true>市场计划</a>
-	<a href="react01/main.aardio" target="#main" class="icon-work">市场分析</a>
-	<a href="react01/main.aardio" target="#main" class="icon-plan">市场活动</a>
-	<a href="react01/main.aardio" target="#main" class="icon-sell">报价管理</a>
-	<a href="react01/main.aardio" target="#main" class="icon-order">合同管理</a>
-	<a href="react01/main.aardio" target="#main" class="icon-project">绩效考核</a>
-	<a href="react01/main.aardio" target="#main" class="icon-user">统计分析</a>
+	<a href="/layout/react01/table.aardio" class="icon-home" <? if (leftnav=="table") { ?> selected=true <? } ?>>表格列表</a>
+	<a href="/layout/react01/buttons.aardio" class="icon-work" <? if (leftnav=="buttons") { ?> selected=true <? } ?>>按钮样式</a>
+	<a href="/layout/react01/backgroup.aardio" class="icon-plan" <? if (leftnav=="backgroup") { ?> selected=true <? } ?>>背景样式</a>
+	<a href="/layout/react01/table.aardio" class="icon-sell">报价管理</a>
+	<a href="/layout/react01/table.aardio" class="icon-order">合同管理</a>
+	<a href="/layout/react01/table.aardio" class="icon-project">绩效考核</a>
+	<a href="/layout/react01/table.aardio" class="icon-user">统计分析</a>
 </div>

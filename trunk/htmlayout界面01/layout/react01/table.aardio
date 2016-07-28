@@ -1,4 +1,7 @@
-<? headnav = "react01";?>
+<? 
+headnav = "react01";
+leftnav = "table";
+?>
 <!doctype html>
 <html>
 <head>
@@ -14,8 +17,177 @@
 		<include src="navbar.aardio">加载失败</include>
 		<include src="../include/setup.aardio">加载失败</include>
 	</div>
-	<div id="bodyer" class="yscroll bg">
-		<include src="main.aardio">加载失败</include>
+	<div id="bodyer" class="bg">
+		<h1 class="title box-shadow">
+			表格样式
+		</h1>
+		<div class="box-shadow bg-white">
+			<div class="padding">加表格添加.table样式，使表格分行。</div>
+			<table class="table">
+				<thead>
+					<tr>
+						<th width="20"><input type="checkbox"></th>
+						<th width="30">ID</th>
+						<th>客户名称</th>
+						<th>行业</th>
+						<th>所有者</th>
+						<th>金额</th>
+						<th width="120">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<? for(i=1; 5; 1){?>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td><?=i?></td>
+						<td>电信集团有限公司</td>
+						<td>通信</td>
+						<td>李度</td>
+						<td>￥4,480.00</td>
+						<td>
+							<a href="#">视图</a>
+							<a href="#">修改</a>
+							<a href="#">删除</a>
+						</td>
+					</tr>
+					<? } ?>
+				</tbody>
+			</table>
+		</div>
+		<div class="box-shadow bg-white">
+			<div class="padding">条纹表格，添加table-striped样式，表格每隔行增加背景</div>
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th width="20"><input type="checkbox"></th>
+						<th width="30">ID</th>
+						<th>客户名称</th>
+						<th>行业</th>
+						<th>所有者</th>
+						<th>金额</th>
+						<th width="120">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<? for(i=1; 5; 1){?>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td><?=i?></td>
+						<td>电信集团有限公司</td>
+						<td>通信</td>
+						<td>李度</td>
+						<td>￥4,480.00</td>
+						<td>
+							<a href="#">视图</a>
+							<a href="#">修改</a>
+							<a href="#">删除</a>
+						</td>
+					</tr>
+					<? } ?>
+				</tbody>
+			</table>
+		</div>
+		<div class="box-shadow bg-white">
+			<div class="padding">鼠标悬停时显示当前行的背景色，添加table-hover样式</div>
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th width="20"><input type="checkbox"></th>
+						<th width="30">ID</th>
+						<th>客户名称</th>
+						<th>行业</th>
+						<th>所有者</th>
+						<th>金额</th>
+						<th width="120">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<? for(i=1; 5; 1){?>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td><?=i?></td>
+						<td>电信集团有限公司</td>
+						<td>通信</td>
+						<td>李度</td>
+						<td>￥4,480.00</td>
+						<td>
+							<a href="#">视图</a>
+							<a href="#">修改</a>
+							<a href="#">删除</a>
+						</td>
+					</tr>
+					<? } ?>
+				</tbody>
+			</table>
+		</div>
+		<div class="box-shadow bg-white">
+			<div class="padding">带边框的表格，添加table-striped样式</div>
+			<div class="padding">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th width="20"><input type="checkbox"></th>
+							<th width="30">ID</th>
+							<th>客户名称</th>
+							<th>行业</th>
+							<th>所有者</th>
+							<th>金额</th>
+							<th width="120">操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<? for(i=1; 5; 1){?>
+						<tr>
+							<td><input type="checkbox"></td>
+							<td><?=i?></td>
+							<td>电信集团有限公司</td>
+							<td>通信</td>
+							<td>李度</td>
+							<td>￥4,480.00</td>
+							<td>
+								<a href="#">视图</a>
+								<a href="#">修改</a>
+								<a href="#">删除</a>
+							</td>
+						</tr>
+						<? } ?>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="box-shadow bg-white" style="height:300px;">
+			<div class="padding">表格头部固定，右侧显示滚动条，添加table-fixed样式。</div>
+			<table class="table table-fixed">
+				<thead>
+					<tr>
+						<th width="20"><input type="checkbox"></th>
+						<th width="30">ID</th>
+						<th>客户名称</th>
+						<th>行业</th>
+						<th>所有者</th>
+						<th>金额</th>
+						<th width="120">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<? for(i=1; 10; 1){?>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td><?=i?></td>
+						<td>电信集团有限公司</td>
+						<td>通信</td>
+						<td>李度</td>
+						<td>￥4,480.00</td>
+						<td>
+							<a href="#">视图</a>
+							<a href="#">修改</a>
+							<a href="#">删除</a>
+						</td>
+					</tr>
+					<? } ?>
+				</tbody>
+			</table>
+		</div>
 	</div>
 	<div id="footer">
 		<include src="../include/footer.aardio">加载失败</include>

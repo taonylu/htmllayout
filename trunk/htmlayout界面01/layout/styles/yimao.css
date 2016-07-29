@@ -94,16 +94,41 @@ a:focus,a:hover{color:#0a8}
 .panel-bodyer{height: 100%%;background-color: #FFF;}
 .panel-header, .panel-footer{padding: 5px 10px; background-color:#f5f7f9;}
 
-/*标签选项*/
+/*选项*/
 .tabs{behavior:tabs;}
-.strip{flow:horizontal; width: 100%%;}
-.strip div{border-bottom: 1px solid #ddd; padding: 6px 0 5px 0;}
-.strip div.split{width: 5px;}
-.strip div.other{width: 100%%;}
-.strip [panel]{padding: 5px 10px;max-width:auto; border: 1px solid #ddd;border-top-left-radius: 3px;border-top-right-radius: 3px;}
-.strip [panel][selected]{border-bottom: 0px;}
-.tabs-bodyer{padding: 10px;display: none;}
-.tabs-bodyer[selected]{display: block;}
+.tabs>.strip{flow:horizontal; width: 100%%;}
+.tabs>.strip>div{border-bottom: 1px solid #ddd; padding: 6px 0 5px 0;}
+.tabs>.strip>div.split{width: 5px;}
+.tabs>.strip>div.other{width: 100%%;}
+.tabs>.strip>[panel]{padding: 5px 10px;max-width:auto; border: 1px solid #ddd;border-top-left-radius: 3px;border-top-right-radius: 3px;}
+.tabs>.strip>[panel][selected]{border-bottom: 0px;}
+.tabs>.tabs-bodyer{padding: 10px;display: none;}
+.tabs>.tabs-bodyer[selected]{display: block;}
+.tabs.tabs-primary>.strip>div{border-color:#188ae2;}
+.tabs.tabs-success>.strip>div{border-color:#10c469;}
+.tabs.tabs-info>.strip>div{border-color:#35b8e0;}
+.tabs.tabs-warning>.strip>div{border-color:#f9c851;}
+.tabs.tabs-danger>.strip>div{border-color:#ff5b5b;}
+.tabs.tabs-purple>.strip>div{border-color:#5b69bc;}
+
+.tabs-tag{behavior:tabs;}
+.tabs-tag>.strip{flow:horizontal; width: 100%%;}
+.tabs-tag>.strip>div{border-bottom: 1px solid #ddd; padding: 5px 0 5px 0;}
+.tabs-tag>.strip>div.split{width: 5px;}
+.tabs-tag>.strip>div.other{width: 100%%;}
+.tabs-tag>.strip>[panel]{padding: 5px 10px;max-width:auto; border-bottom: 1px solid #ddd;}
+.tabs-tag>.strip>[panel][selected]{border-bottom:2px solid #188ae2;color:#188ae2;}
+.tabs-tag>.tabs-bodyer{padding: 10px;display: none;}
+.tabs-tag>.tabs-bodyer[selected]{display: block;}
+
+.tabs-box{behavior:tabs; flow:horizontal;}
+.tabs-box>.strip{height: 100%%; width: 100px; min-height: 100px;}
+.tabs-box>.strip>div{border-right: 1px solid #ddd; padding: 5px 10px;}
+.tabs-box>.strip>div.other{height: 100%%;}
+.tabs-box>.strip>[panel]{padding: 5px 10px;max-height:auto; border-right: 1px solid #ddd;}
+.tabs-box>.strip>[panel][selected]{border-right:2px solid #188ae2;color:#188ae2;}
+.tabs-box>.tabs-bodyer{padding: 5px 10px;display: none;height: 100%%;min-height: 100px;}
+.tabs-box>.tabs-bodyer[selected]{display: block;}
 
 /*外间距，内间距*/
 .padding{padding: 10px;}

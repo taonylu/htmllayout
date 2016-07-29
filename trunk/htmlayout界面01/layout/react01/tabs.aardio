@@ -22,8 +22,131 @@ leftnav = "tabs";
 			标签样式
 		</h1>
 		<div class="box-shadow padding bg-white">
-			<div class="padding bg-primary margin-bottom">实现内容标签功能</div>
+			<div class="padding bg-primary margin-bottom">
+				实现内容标签功能<br />
+			</div>
 			<div class="tabs">
+				<div class="strip">
+					<div panel="panel1" selected="true">国内新闻</div>
+					<div class="split">&nbsp;</div>
+					<div panel="panel2">国外新闻</div>
+					<div class="split">&nbsp;</div>
+					<div panel="panel3">媒体新闻</div>
+					<div class="other">&nbsp;</div>
+				</div>
+				<div class="tabs-bodyer" name="panel1" selected="true">普通的标签选项样式为 tabs</div>
+				<div class="tabs-bodyer" name="panel2">国外新闻</div>
+				<div class="tabs-bodyer" name="panel3">媒体新闻</div>
+			</div>
+		</div>
+		<div class="box-shadow padding bg-white">
+			<div class="tabs-tag">
+				<div class="strip">
+					<div panel="panel1" selected="true">国内新闻</div>
+					<div class="split">&nbsp;</div>
+					<div panel="panel2">国外新闻</div>
+					<div class="split">&nbsp;</div>
+					<div panel="panel3">媒体新闻</div>
+					<div class="other">&nbsp;</div>
+				</div>
+				<div class="tabs-bodyer" name="panel1" selected="true">如果想使用该样式的标签选项 请使用 tabs-tag</div>
+				<div class="tabs-bodyer" name="panel2">国外新闻</div>
+				<div class="tabs-bodyer" name="panel3">媒体新闻</div>
+			</div>
+		</div>
+		<div class="box-shadow padding bg-white">
+			<div class="tabs-box">
+				<div class="strip">
+					<div panel="panel1" selected="true">国内新闻</div>
+					<div panel="panel2">国外新闻</div>
+					<div panel="panel3">媒体新闻</div>
+					<div class="other"></div>
+				</div>
+				<div class="tabs-bodyer" name="panel1" selected="true">
+					如果想使用左侧标签选项，使用样式：tabs-box<br >
+
+				</div>
+				<div class="tabs-bodyer" name="panel2">国外新闻</div>
+				<div class="tabs-bodyer" name="panel3">媒体新闻</div>
+			</div>
+		</div>
+		<div class="box-shadow padding bg-white">
+			<div class="tabs tabs-primary">
+				<div class="strip">
+					<div panel="panel1" selected="true">国内新闻</div>
+					<div class="split">&nbsp;</div>
+					<div panel="panel2">国外新闻</div>
+					<div class="split">&nbsp;</div>
+					<div panel="panel3">媒体新闻</div>
+					<div class="other">&nbsp;</div>
+				</div>
+				<div class="tabs-bodyer" name="panel1" selected="true">国内新闻</div>
+				<div class="tabs-bodyer" name="panel2">国外新闻</div>
+				<div class="tabs-bodyer" name="panel3">媒体新闻</div>
+			</div>
+		</div>
+		<div class="box-shadow padding bg-white">
+			<div class="tabs tabs-success">
+				<div class="strip">
+					<div panel="panel1" selected="true">国内新闻</div>
+					<div class="split">&nbsp;</div>
+					<div panel="panel2">国外新闻</div>
+					<div class="split">&nbsp;</div>
+					<div panel="panel3">媒体新闻</div>
+					<div class="other">&nbsp;</div>
+				</div>
+				<div class="tabs-bodyer" name="panel1" selected="true">国内新闻</div>
+				<div class="tabs-bodyer" name="panel2">国外新闻</div>
+				<div class="tabs-bodyer" name="panel3">媒体新闻</div>
+			</div>
+		</div>
+		<div class="box-shadow padding bg-white">
+			<div class="tabs tabs-info">
+				<div class="strip">
+					<div panel="panel1" selected="true">国内新闻</div>
+					<div class="split">&nbsp;</div>
+					<div panel="panel2">国外新闻</div>
+					<div class="split">&nbsp;</div>
+					<div panel="panel3">媒体新闻</div>
+					<div class="other">&nbsp;</div>
+				</div>
+				<div class="tabs-bodyer" name="panel1" selected="true">国内新闻</div>
+				<div class="tabs-bodyer" name="panel2">国外新闻</div>
+				<div class="tabs-bodyer" name="panel3">媒体新闻</div>
+			</div>
+		</div>
+		<div class="box-shadow padding bg-white">
+			<div class="tabs tabs-warning">
+				<div class="strip">
+					<div panel="panel1" selected="true">国内新闻</div>
+					<div class="split">&nbsp;</div>
+					<div panel="panel2">国外新闻</div>
+					<div class="split">&nbsp;</div>
+					<div panel="panel3">媒体新闻</div>
+					<div class="other">&nbsp;</div>
+				</div>
+				<div class="tabs-bodyer" name="panel1" selected="true">国内新闻</div>
+				<div class="tabs-bodyer" name="panel2">国外新闻</div>
+				<div class="tabs-bodyer" name="panel3">媒体新闻</div>
+			</div>
+		</div>
+		<div class="box-shadow padding bg-white">
+			<div class="tabs tabs-danger">
+				<div class="strip">
+					<div panel="panel1" selected="true">国内新闻</div>
+					<div class="split">&nbsp;</div>
+					<div panel="panel2">国外新闻</div>
+					<div class="split">&nbsp;</div>
+					<div panel="panel3">媒体新闻</div>
+					<div class="other">&nbsp;</div>
+				</div>
+				<div class="tabs-bodyer" name="panel1" selected="true">国内新闻</div>
+				<div class="tabs-bodyer" name="panel2">国外新闻</div>
+				<div class="tabs-bodyer" name="panel3">媒体新闻</div>
+			</div>
+		</div>
+		<div class="box-shadow padding bg-white">
+			<div class="tabs tabs-purple">
 				<div class="strip">
 					<div panel="panel1" selected="true">国内新闻</div>
 					<div class="split">&nbsp;</div>

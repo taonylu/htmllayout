@@ -113,8 +113,7 @@ a:focus,a:hover{color:#0a8}
 
 .tabs-tag{behavior:tabs;}
 .tabs-tag>.strip{flow:horizontal; width: 100%%;}
-.tabs-tag>.strip>div{border-bottom: 1px solid #ddd; padding: 5px 0 5px 0;}
-.tabs-tag>.strip>div.split{width: 5px;}
+.tabs-tag>.strip>div{border-bottom: 1px solid #ddd; padding: 5px 0;}
 .tabs-tag>.strip>div.other{width: 100%%;}
 .tabs-tag>.strip>[panel]{padding: 5px 10px;max-width:auto; border-bottom: 1px solid #ddd;}
 .tabs-tag>.strip>[panel][selected]{border-bottom:2px solid #188ae2;color:#188ae2;}

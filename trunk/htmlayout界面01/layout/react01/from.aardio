@@ -1,0 +1,122 @@
+<? 
+headnav = "react01";
+leftnav = "from";
+?>
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="../styles/yimao.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head> 
+<body>
+<div id="container">
+	<div id="header">
+		<include src="../include/header.aardio">加载失败</include>
+	</div>
+	<div id="navbar">
+		<include src="navbar.aardio">加载失败</include>
+		<include src="../include/setup.aardio">加载失败</include>
+	</div>
+	<div id="bodyer" class="bg">
+		<h1 class="title box-shadow">
+			表单样式
+		</h1>
+		<div class="box-shadow padding bg-white">
+			<div class="padding bg-primary">表单输入框、浏览文件、选项按钮等基本效果 添加样式 .input</div>
+			<div class="padding bg-primary margin-bottom">这里只是简单的对表单里的控件进行优化。</div>
+			<form>
+				<div class="form-group">
+					<label for="text">文本</label>
+					<input type="text" class="input" id="text" novalue="Text" />
+					<span>(text)</span>
+				</div>
+				<div class="form-group">
+					<label for="password">密码类型</label>
+					<input type="password" class="input" id="password" novalue="Password" />
+					<span>(password)</span>
+				</div>
+				<div class="form-group">
+					<label for="file">文件选择</label>
+					<input type="file" id="file" novalue="Select file" class="input" />
+					<span>(file)</span>
+				</div>
+				<div class="form-group">
+					<label for="file-path">文件选择</label>
+					<input type="file-path" filter="HTML files:*.htm,*.html;Text files:*.txt;All files:*.*" id="file-path" novalue="Select file" class="input" />
+					<span>(file-path)</span>
+					文件类型限制
+				</div>
+				<div class="form-group">
+					<label for="folder-path">选择路径</label>
+					<input type="folder-path" id="folder-path" novalue="Select folder" class="input" />
+					<span>(folder-path选择路径)</span>
+					
+				</div>
+				<div class="form-group">
+					<label for="date">日期</label>
+					<input type="date" class="input" name="date" id="date" value="2016-01-24" />
+					<span>(date)</span>
+				</div>
+				<div class="form-group">
+					<label for="time">时间</label>
+					<input type="time" class="input" name="time" id="time" value="11:00:00" />
+					<span>(time)</span>
+				</div>
+				<div class="form-group">
+					<label for="number">数字</label>
+					<input type="number" class="input" name="number" id="number" value="0" value="1" size="6" step=1 minvalue=-9 maxvalue=100 />
+					<span>(number)</span>
+				</div>
+				<div class="form-group">
+					<label for="decimal">小数</label>
+					<input type="decimal" class="input" name="decimal" id="decimal" value="100" step="1.5" minvalue="10" maxvalue="1000.0" />
+					<span>(decimal)</span>
+				</div>
+				<div class="form-group">
+					<label for="decimal">格式化</label>
+					<input name="Weight" type="decimal" class="input" id="decimal" format="grouping:3; fdigits:4; leading-zero:false; decimal-sep:','; grouping-sep:'_'; negative-sign:false" />
+					<span>(decimal 小数格式化)</span>
+				</div>
+				<div class="form-group">
+					<label for="currency">金额</label>
+					<input name="Weight" class="input" type="currency" id="currency" value="0" />
+					<span>(currency)</span>
+				</div>
+				<div class="form-group">
+					<label for="textarea">内容</label>
+					<textarea class="input" id="textarea" name="Textarea" rows="4" cols="40" maxlength="1024">
+This is sample text line #1
+This is sample text line #2
+This is sample text line #3
+This is sample text line #4
+				</textarea>
+				</div>
+				<div class="form-group">
+					<label for="select">下拉</label>
+					<select name="Alignment" size="1" id="select" novalue="(no value!)" class="input">
+						<option value="left">Left</option>
+						<option value="right">Right</option>
+						<option value="center">Center</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<input type="checkbox" id="checkbox-demo-1"  />
+					<label for="checkbox-demo-1">多选</label>
+				</div>
+				<div class="form-group">
+					<input type="radio" name="radio" id="radio-demo-1"  />
+					<label for="radio-demo-1">单选(radio)</label>
+					<input type="radio" name="radio" id="radio-demo-2" />
+					<label for="radio-demo-2">单选(radio)</label>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+
+		</div>
+	</div>
+	<div id="footer">
+		<include src="../include/footer.aardio">加载失败</include>
+	</div>
+</div>
+</body>
+</html>

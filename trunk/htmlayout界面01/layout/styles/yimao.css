@@ -90,9 +90,20 @@ a:focus,a:hover{color:#0a8}
 /*通用CSS*/
 
 /*面板*/
-.panel{background-color: #FFF;}
-.panel-bodyer{height: 100%%;}
+.panel{}
+.panel-bodyer{height: 100%%;background-color: #FFF;}
 .panel-header, .panel-footer{padding: 5px 10px; background-color:#f5f7f9;}
+
+/*标签选项*/
+.tabs{behavior:tabs;}
+.strip{flow:horizontal; width: 100%%;}
+.strip div{border-bottom: 1px solid #ddd; padding: 6px 0 5px 0;}
+.strip div.split{width: 5px;}
+.strip div.other{width: 100%%;}
+.strip [panel]{padding: 5px 10px;max-width:auto; border: 1px solid #ddd;border-top-left-radius: 3px;border-top-right-radius: 3px;}
+.strip [panel][selected]{border-bottom: 0px;}
+.tabs-bodyer{padding: 10px;display: none;}
+.tabs-bodyer[selected]{display: block;}
 
 /*外间距，内间距*/
 .padding{padding: 10px;}
@@ -158,6 +169,20 @@ a:focus,a:hover{color:#0a8}
 .btn{behavior:button}
 .btn:disabled{opacity: 0.75; cursor: pointer;}
 .btn:focus{outline:0}
+
+.form-group{margin-bottom: 10px; flow:horizontal;}
+.form-group label{width: 100px; display: block;}
+.input{display:block;font-size: 12px; height:20px;background-color: #fff;color:#333;background-image: none;border: 1px solid #ddd;border-radius:2px;}
+.input[type=text]{width: 200px;}
+.input[type=date]{height:24px;padding: 1px;}
+.input[type=time]{height:24px;padding: 1px;}
+.input[type=number]{text-align: left;}
+.input[type=decimal]{text-align: left;}
+.input[type=currency]{text-align: left;}
+select.input{padding: 1px; min-width: 100px;}
+.input:focus,.input:hover{border-color:#ccc;outline:2px glow #efefef 1px;}
+.input:empty{}
+
 
 /*背景*/
 .bg{background-color:#f5f7f9;}

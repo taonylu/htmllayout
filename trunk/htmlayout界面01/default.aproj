@@ -2,14 +2,16 @@
 <project ver="10" name="htmlayout界面" libEmbed="true" icon="logo.ico" CompanyName="" FileDescription="htmlayout界面" LegalCopyright="Copyright (C) 作者 2016" ProductName="htmlayout界面" InternalName="htmlayout界面" FileVersion="0.0.0.1" ProductVersion="0.0.0.1" publishDir="/Publish/" ui="win" output="htmlayout界面.exe" dstrip="false">
 	<file name="main.aardio" path="main.aardio" comment="启动程序代码"/>
 	<folder name="资源文件(web.layout)" path="layout" comment="" embed="true">
-		<file name="main.aardio" path="layout\main.aardio" comment="layout\main.aardio"/>
 		<file name="navbar.aardio" path="layout\navbar.aardio" comment="layout\navbar.aardio"/>
+		<file name="main.aardio" path="layout\main.aardio" comment="layout\main.aardio"/>
 		<file name="home.aardio" path="layout\home.aardio" comment="layout\home.aardio"/>
 		<folder name="react01" path="layout\react01" comment="layout\react01">
 			<file name="table.aardio" path="layout\react01\table.aardio" comment="layout\react01\table.aardio"/>
 			<file name="navbar.aardio" path="layout\react01\navbar.aardio" comment="layout\react01\navbar.aardio"/>
 			<file name="buttons.aardio" path="layout\react01\buttons.aardio" comment="layout\react01\buttons.aardio"/>
 			<file name="backgroup.aardio" path="layout\react01\backgroup.aardio" comment="layout\react01\backgroup.aardio"/>
+			<file name="from.aardio" path="layout\react01\from.aardio" comment="layout\react01\from.aardio"/>
+			<file name="tabs.aardio" path="layout\react01\tabs.aardio" comment="layout\react01\tabs.aardio"/>
 		</folder>
 		<folder name="include" path="layout\include" comment="layout\include">
 			<file name="header.aardio" path="layout\include\header.aardio" comment="layout\include\header.aardio"/>

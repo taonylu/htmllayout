@@ -43,9 +43,7 @@ leftnav = "tabs";
 			<div class="tabs-tag">
 				<div class="strip">
 					<div panel="panel1" selected="true">国内新闻</div>
-					<div class="split">&nbsp;</div>
 					<div panel="panel2">国外新闻</div>
-					<div class="split">&nbsp;</div>
 					<div panel="panel3">媒体新闻</div>
 					<div class="other">&nbsp;</div>
 				</div>

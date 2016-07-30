@@ -1,0 +1,39 @@
+<? 
+headnav = "react01";
+leftnav = "marlett";
+?>
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="../styles/yimao.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head> 
+<body>
+<div id="container">
+	<div id="header">
+		<include src="../include/header.aardio">加载失败</include>
+	</div>
+	<div id="navbar">
+		<include src="navbar.aardio">加载失败</include>
+		<include src="../include/setup.aardio">加载失败</include>
+	</div>
+	<div id="bodyer" class="bg yscroll">
+		<h1 class="margin title">
+			Marlett字体图标
+		</h1>
+		<div class="margin padding bg-white border">
+			<div class="padding bg-primary margin-bottom">
+				实现内容标签功能<br />
+			</div>
+			<div class="fonticon">1234567890<br>abcedfghij<br>klmnopqrst<br>uvwxyz</div>
+			<div class="fonticon2">1234567890<br>abcedfghij<br>klmnopqrst<br>uvwxyz</div>
+			<div class="fonticon3">1234567890<br>abcedfghij<br>klmnopqrst<br>uvwxyz</div>
+		</div>
+		
+	</div>
+	<div id="footer">
+		<include src="../include/footer.aardio">加载失败</include>
+	</div>
+</div>
+</body>
+</html>

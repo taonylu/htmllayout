@@ -17,11 +17,11 @@ leftnav = "backgroup";
 		<include src="navbar.aardio">加载失败</include>
 		<include src="../include/setup.aardio">加载失败</include>
 	</div>
-	<div id="bodyer" class="bg">
-		<h1 class="title box-shadow">
+	<div id="bodyer" class="bg yscroll">
+		<h1 class="title margin">
 			背景样式
 		</h1>
-		<div class="box-shadow padding bg-white">
+		<div class="margin padding bg-white border">
 			<div class="padding margin-bottom bg">默认背景色 添加样式bg</div>
 			<div class="padding margin-bottom bg-primary">Yimao 壹毛设计制作的HTMLayout样式框架，制作HL界面更加简单方便。样式bg-primary</div>
 			<div class="padding margin-bottom bg-success">Yimao 壹毛设计制作的HTMLayout样式框架，制作HL界面更加简单方便。样式bg-success</div>

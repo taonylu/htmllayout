@@ -17,11 +17,11 @@ leftnav = "table";
 		<include src="navbar.aardio">加载失败</include>
 		<include src="../include/setup.aardio">加载失败</include>
 	</div>
-	<div id="bodyer" class="bg">
-		<h1 class="title box-shadow">
+	<div id="bodyer" class="bg yscroll">
+		<h1 class="title margin">
 			表格样式
 		</h1>
-		<div class="box-shadow bg-white">
+		<div class="margin bg-white border">
 			<div class="padding">加表格添加.table样式，使表格分行。</div>
 			<table class="table">
 				<thead>
@@ -54,7 +54,7 @@ leftnav = "table";
 				</tbody>
 			</table>
 		</div>
-		<div class="box-shadow bg-white">
+		<div class="margin bg-white border">
 			<div class="padding">条纹表格，添加table-striped样式，表格每隔行增加背景</div>
 			<table class="table table-striped">
 				<thead>
@@ -87,7 +87,7 @@ leftnav = "table";
 				</tbody>
 			</table>
 		</div>
-		<div class="box-shadow bg-white">
+		<div class="margin bg-white border">
 			<div class="padding">鼠标悬停时显示当前行的背景色，添加table-hover样式</div>
 			<table class="table table-hover">
 				<thead>
@@ -120,7 +120,7 @@ leftnav = "table";
 				</tbody>
 			</table>
 		</div>
-		<div class="box-shadow bg-white">
+		<div class="margin bg-white border">
 			<div class="padding">带边框的表格，添加table-striped样式</div>
 			<div class="padding">
 				<table class="table table-bordered">
@@ -155,7 +155,7 @@ leftnav = "table";
 				</table>
 			</div>
 		</div>
-		<div class="box-shadow bg-white" style="height:300px;">
+		<div class="margin bg-white border" style="height:300px;">
 			<div class="padding">表格头部固定，右侧显示滚动条，添加table-fixed样式。</div>
 			<table class="table table-fixed">
 				<thead>
@@ -186,6 +186,14 @@ leftnav = "table";
 					</tr>
 					<? } ?>
 				</tbody>
+				<tfood>
+					<tr>
+						<td colspan="7" class="pager">
+
+							<span>显示1到20，共25条记录</span>
+						</td>
+					</tr>
+				</tfood>
 			</table>
 		</div>
 	</div>

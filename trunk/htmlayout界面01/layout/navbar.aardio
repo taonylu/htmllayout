@@ -1,9 +1,12 @@
+<div class="navbar-header">
+	≡ 常用操作
+</div>
 <div class="navbar-bodyer">
-	<a href="home.aardio" class="icon-home" <? if (leftnav=="home") { ?> selected=true <? } ?>>用户中心</a>
-	<a href="react01/table.aardio" class="icon-work">表格样式</a>
-	<a href="react01/buttons.aardio" class="icon-plan">按钮样式</a>
-	<a href="home.aardio" class="icon-sell">销售信息</a>
-	<a href="home.aardio" class="icon-order">订单管理</a>
-	<a href="home.aardio" class="icon-project">项目管理</a>
-	<a href="home.aardio" class="icon-user">用户管理</a>
+	<a href="home.aardio" class="icon-home" <? if (leftnav=="home") { ?> selected=true <? } ?>>控制台效果</a>
+	<a href="home.aardio" class="icon-work">控制台效果</a>
+	<a href="home.aardio" class="icon-plan">控制台效果</a>
+	<a href="home.aardio" class="icon-sell">控制台效果</a>
+	<a href="home.aardio" class="icon-order">控制台效果</a>
+	<a href="home.aardio" class="icon-project">控制台效果</a>
+	<a href="home.aardio" class="icon-user">控制台效果</a>
 </div>

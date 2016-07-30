@@ -3,8 +3,8 @@
 </div>
 <div class="nav">
 	<a href="/layout/home.aardio" <? if (headnav=="home") { ?> selected=true <? } ?>>控制台</a>
-	<a href="/layout/react01/table.aardio" <? if (headnav=="react01") { ?> selected=true <? } ?>>UI样式</a>
-	<a href="#">销售管理</a>
+	<a href="/layout/ui/table.aardio" <? if (headnav=="react01") { ?> selected=true <? } ?>>UI样式</a>
+	<a href="/layout/case/home.aardio">使用案例</a>
 	<a href="#">服务管理</a>
 	<a href="#">客户管理</a>
 	<a href="#">营销中心</a>

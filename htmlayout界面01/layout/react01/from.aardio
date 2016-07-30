@@ -17,11 +17,11 @@ leftnav = "from";
 		<include src="navbar.aardio">加载失败</include>
 		<include src="../include/setup.aardio">加载失败</include>
 	</div>
-	<div id="bodyer" class="bg">
-		<h1 class="title box-shadow">
+	<div id="bodyer" class="bg yscroll">
+		<h1 class="title margin">
 			表单样式
 		</h1>
-		<div class="box-shadow padding bg-white">
+		<div class="margin padding bg-white border">
 			<div class="padding bg-primary">表单输入框、浏览文件、选项按钮等基本效果 添加样式 .input</div>
 			<div class="padding bg-primary margin-bottom">这里只是简单的对表单里的控件进行优化。</div>
 			<form>

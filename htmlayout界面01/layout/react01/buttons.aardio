@@ -17,11 +17,11 @@ leftnav = "buttons";
 		<include src="navbar.aardio">加载失败</include>
 		<include src="../include/setup.aardio">加载失败</include>
 	</div>
-	<div id="bodyer" class="bg">
-		<h1 class="title box-shadow">
+	<div id="bodyer" class="bg yscroll">
+		<h1 class="title margin">
 			按钮样式
 		</h1>
-		<div class="box-shadow padding bg-white">
+		<div class="margin padding bg-white border">
 			<p>按钮使用：".btn"</p>
 			<button class="btn">Default</button>
 			<button class="btn btn-primary">.btn-primary</button>
@@ -32,7 +32,7 @@ leftnav = "buttons";
 			<button class="btn btn-purple">.btn-purple</button>
 			<button class="btn btn-pink">.btn-pink</button>
 		</div>
-		<div class="box-shadow padding bg-white">
+		<div class="margin padding bg-white border">
 			<p>禁用按钮："disabled"属性</p>
 			<button class="btn" disabled>Default</button>
 			<button class="btn btn-primary" disabled>primary</button>
@@ -43,7 +43,7 @@ leftnav = "buttons";
 			<button class="btn btn-purple" disabled>purple</button>
 			<button class="btn btn-pink" disabled>pink</button>
 		</div>
-		<div class="box-shadow padding bg-white">
+		<div class="margin padding bg-white border">
 			<p>按钮尺寸</p>
 			<button class="btn btn-primary btn-lg">超大尺寸(.btn-lg)</button>
 			<button class="btn btn-primary btn-bg">大尺寸(.btn-bg)</button>

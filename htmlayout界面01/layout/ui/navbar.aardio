@@ -1,0 +1,12 @@
+<div class="navbar-header">
+	≡ 基础样式
+</div>
+<div class="navbar-bodyer">
+	<a href="/layout/ui/table.aardio" class="icon-home" <? if (leftnav=="table") { ?> selected=true <? } ?>>表格列表</a>
+	<a href="/layout/ui/buttons.aardio" class="icon-work" <? if (leftnav=="buttons") { ?> selected=true <? } ?>>按钮样式</a>
+	<a href="/layout/ui/backgroup.aardio" class="icon-plan" <? if (leftnav=="backgroup") { ?> selected=true <? } ?>>背景样式</a>
+	<a href="/layout/ui/from.aardio" class="icon-sell" <? if (leftnav=="from") { ?> selected=true <? } ?>>表单样式</a>
+	<a href="/layout/ui/tabs.aardio" class="icon-order" <? if (leftnav=="tabs") { ?> selected=true <? } ?>>标签样式</a>
+	<a href="/layout/ui/marlett.aardio" class="icon-project" <? if (leftnav=="marlett") { ?> selected=true <? } ?>>Marlett图标</a>
+	<a href="/layout/ui/table.aardio" class="icon-user">统计分析</a>
+</div>

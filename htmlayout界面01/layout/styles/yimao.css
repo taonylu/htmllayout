@@ -222,7 +222,7 @@ a:focus,a:hover{color:#0a8}
 .input[type=decimal]{text-align: left;}
 .input[type=currency]{text-align: left;}
 select.input{padding: 1px; min-width: 100px;}
-.input:focus,.input:hover{border-color:#ccc;outline:2px glow #efefef 1px;}
+.input:focus,.input:hover{border-color:#ccc;}
 .input:empty{}
 
 

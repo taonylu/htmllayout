@@ -1,0 +1,10 @@
+﻿//checkone 表格行选中
+namespace web.layout.behavior.checkone{
+	onButtonClick = function (ltTarget,ltOwner,reason,behaviorParams) {
+		if(ltOwner.value){
+			ltOwner.queryParent("tr").setAttribute("selected", "true");
+		}else{
+			ltOwner.queryParent("tr").setAttribute("selected", "false");
+		}
+	}
+}

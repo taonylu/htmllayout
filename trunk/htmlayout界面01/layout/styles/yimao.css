@@ -259,14 +259,13 @@ select.input{padding: 1px; min-width: 100px;}
 .text-small{font-size: 12px;}
 .text-little{font-size: 10px;}
 
-.fonticon{font-family:"Wingdings";width:max-intrinsic;font-size: 36px;}
-.fonticon2{font-family:"WINGDINGS 3";width:max-intrinsic;font-size: 36px;}
-.fonticon3{font-family:"Marlett";width:max-intrinsic;font-size: 36px;}
 
 /*表格*/
 .table{width:100%;max-width:100%;border-collapse:collapse;border-spacing:0;font-size: 12px;}
 .table th{border-bottom:2px solid #ddd;vertical-align:bottom;padding:8px;text-align:left}
 .table td{border-top:1px solid #ddd;padding:8px;vertical-align:top}
+.table>tbody>tr{background-color: #FFF;}
+.table>tbody>tr[selected=true]{background-color: #ebeff4;}
 .table-striped>tbody>tr:nth-child(odd){background-color:#f9f9f9}
 .table-bordered{border-top:solid 1px #ddd;border-left:solid 1px #ddd;border-bottom:solid 1px #ddd;}
 .table-bordered td,.table-bordered th{border-right:solid 1px #ddd}
@@ -274,6 +273,8 @@ select.input{padding: 1px; min-width: 100px;}
 .table-condensed td,.table-condensed th{padding:5px}
 .table-fixed{flow: table-fixed; width: 100%%; height: 100%%; behavior:grid;}
 .table-fixed tbody{height: 100%%;vertical-scrollbar:y-scrollbar; overflow-y:auto;}
+.table .checkall{behavior:~checkall;}
+.table .check{behavior:~checkone;}
 
 /*柱状图样式*/
 .chart{flow:"1 2" "3 3"; width: 100%%; height:300px; margin-top: 20px;}

@@ -1,0 +1,20 @@
+﻿//checkall 表格行全选
+namespace web.layout.behavior.checkall{
+	onButtonClick = function (ltTarget,ltOwner,reason,behaviorParams) {
+		//..win.msgbox(ltOwner.innerHTML);
+		//指定根节点
+		var root = ltOwner.root();
+		var dataid = ltOwner.getAttribute("data-id");
+		var chklist = root.$1("#"++dataid).querySelectorAll("input[type=checkbox]");
+		//循环设置全选
+		for(k,v in chklist){
+			v.value = ltOwner.value;
+			if(ltOwner.value){
+				v.queryParent("tr").setAttribute("selected","true");
+			}else {
+				v.queryParent("tr").setAttribute("selected","false");
+			}
+		}
+	}
+		
+}

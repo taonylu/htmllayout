@@ -2,25 +2,23 @@
 <project ver="10" name="htmlayout界面" libEmbed="true" icon="logo.ico" CompanyName="" FileDescription="htmlayout界面" LegalCopyright="Copyright (C) 作者 2016" ProductName="htmlayout界面" InternalName="htmlayout界面" FileVersion="0.0.0.04" ProductVersion="0.0.0.04" publishDir="/Publish/" ui="win" output="htmlayout界面.exe" dstrip="false">
 	<file name="main.aardio" path="main.aardio" comment="启动程序代码"/>
 	<folder name="资源文件(web.layout)" path="layout" comment="" embed="true">
-		<file name="main.aardio" path="layout\main.aardio" comment="layout\main.aardio"/>
 		<file name="about.aardio" path="layout\about.aardio" comment="layout\about.aardio"/>
 		<file name="home.aardio" path="layout\home.aardio" comment="layout\home.aardio"/>
+		<file name="main.aardio" path="layout\main.aardio" comment="layout\main.aardio"/>
 		<file name="navbar.aardio" path="layout\navbar.aardio" comment="layout\navbar.aardio"/>
-		<folder name="include" path="layout\include" comment="layout\include" embed="true">
+		<folder name="include" path="layout\include" comment="layout\include">
 			<file name="footer.aardio" path="layout\include\footer.aardio" comment="layout\include\footer.aardio"/>
 			<file name="header.aardio" path="layout\include\header.aardio" comment="layout\include\header.aardio"/>
 			<file name="setup.aardio" path="layout\include\setup.aardio" comment="layout\include\setup.aardio"/>
 		</folder>
-		<folder name="react01" path="layout\react01" comment="layout\react01" embed="true">
-			<file name="backgroup.aardio" path="layout\react01\backgroup.aardio" comment="layout\react01\backgroup.aardio"/>
-			<file name="buttons.aardio" path="layout\react01\buttons.aardio" comment="layout\react01\buttons.aardio"/>
-			<file name="from.aardio" path="layout\react01\from.aardio" comment="layout\react01\from.aardio"/>
-			<file name="navbar.aardio" path="layout\react01\navbar.aardio" comment="layout\react01\navbar.aardio"/>
-			<file name="table.aardio" path="layout\react01\table.aardio" comment="layout\react01\table.aardio"/>
-			<file name="tabs.aardio" path="layout\react01\tabs.aardio" comment="layout\react01\tabs.aardio"/>
-		</folder>
-		<folder name="styles" path="layout\styles" comment="layout\styles" embed="true">
+		<folder name="styles" path="layout\styles" comment="layout\styles">
 			<file name="yimao.css" path="layout\styles\yimao.css" comment="layout\styles\yimao.css"/>
+			<folder name="fonts" path="layout\styles\fonts" comment="layout\styles\fonts">
+				<file name="iconfont.ttf" path="layout\styles\fonts\iconfont.ttf" comment="layout\styles\fonts\iconfont.ttf"/>
+				<file name="wingding.ttf" path="layout\styles\fonts\wingding.ttf" comment="layout\styles\fonts\wingding.ttf"/>
+				<file name="WINGDNG2.TTF" path="layout\styles\fonts\WINGDNG2.TTF" comment="layout\styles\fonts\WINGDNG2.TTF"/>
+				<file name="WINGDNG3.TTF" path="layout\styles\fonts\WINGDNG3.TTF" comment="layout\styles\fonts\WINGDNG3.TTF"/>
+			</folder>
 			<folder name="images" path="layout\styles\images" comment="layout\styles\images">
 				<file name="chart-bg.png" path="layout\styles\images\chart-bg.png" comment="layout\styles\images\chart-bg.png"/>
 				<file name="face.jpg" path="layout\styles\images\face.jpg" comment="layout\styles\images\face.jpg"/>
@@ -34,6 +32,13 @@
 				<file name="logo_16x16.png" path="layout\styles\images\logo_16x16.png" comment="layout\styles\images\logo_16x16.png"/>
 				<file name="logo_32x32.png" path="layout\styles\images\logo_32x32.png" comment="layout\styles\images\logo_32x32.png"/>
 				<file name="logo_64x64.png" path="layout\styles\images\logo_64x64.png" comment="layout\styles\images\logo_64x64.png"/>
+				<file name="scrollbar.png" path="layout\styles\images\scrollbar.png" comment="layout\styles\images\scrollbar.png"/>
+				<file name="scrollbar_bg.png" path="layout\styles\images\scrollbar_bg.png" comment="layout\styles\images\scrollbar_bg.png"/>
+				<file name="scrollbar_hover.png" path="layout\styles\images\scrollbar_hover.png" comment="layout\styles\images\scrollbar_hover.png"/>
+				<file name="scrollbar_next.png" path="layout\styles\images\scrollbar_next.png" comment="layout\styles\images\scrollbar_next.png"/>
+				<file name="scrollbar_next_hover.png" path="layout\styles\images\scrollbar_next_hover.png" comment="layout\styles\images\scrollbar_next_hover.png"/>
+				<file name="scrollbar_prev.png" path="layout\styles\images\scrollbar_prev.png" comment="layout\styles\images\scrollbar_prev.png"/>
+				<file name="scrollbar_prev_hover.png" path="layout\styles\images\scrollbar_prev_hover.png" comment="layout\styles\images\scrollbar_prev_hover.png"/>
 				<folder name="icons" path="layout\styles\images\icons" comment="layout\styles\images\icons">
 					<file name="help-white.png" path="layout\styles\images\icons\help-white.png" comment="layout\styles\images\icons\help-white.png"/>
 					<file name="help.png" path="layout\styles\images\icons\help.png" comment="layout\styles\images\icons\help.png"/>
@@ -57,6 +62,15 @@
 					<file name="work.png" path="layout\styles\images\icons\work.png" comment="layout\styles\images\icons\work.png"/>
 				</folder>
 			</folder>
+		</folder>
+		<folder name="ui" path="layout\ui" comment="layout\ui">
+			<file name="backgroup.aardio" path="layout\ui\backgroup.aardio" comment="layout\ui\backgroup.aardio"/>
+			<file name="buttons.aardio" path="layout\ui\buttons.aardio" comment="layout\ui\buttons.aardio"/>
+			<file name="from.aardio" path="layout\ui\from.aardio" comment="layout\ui\from.aardio"/>
+			<file name="marlett.aardio" path="layout\ui\marlett.aardio" comment="layout\ui\marlett.aardio"/>
+			<file name="navbar.aardio" path="layout\ui\navbar.aardio" comment="layout\ui\navbar.aardio"/>
+			<file name="table.aardio" path="layout\ui\table.aardio" comment="layout\ui\table.aardio"/>
+			<file name="tabs.aardio" path="layout\ui\tabs.aardio" comment="layout\ui\tabs.aardio"/>
 		</folder>
 	</folder>
 </project>

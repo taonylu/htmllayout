@@ -23,9 +23,10 @@ leftnav = "marlett";
 		</h1>
 		<div class="margin padding bg-white border">
 			<div class="padding bg-primary margin-bottom">
-				实现内容标签功能<br />
+				图标字体<br />
 			</div>
-			<div class="fonticon">1234567890<br>abcedfghij<br>klmnopqrst<br>uvwxyz</div>
+			Marlett：<div class="fonticon">1234567890<br>abcedfghij<br>klmnopqrst<br>uvwxyz</div>
+			<div class="fonticon1">1234567890<br>abcedfghij<br>klmnopqrst<br>uvwxyz</div>
 			<div class="fonticon2">1234567890<br>abcedfghij<br>klmnopqrst<br>uvwxyz</div>
 			<div class="fonticon3">1234567890<br>abcedfghij<br>klmnopqrst<br>uvwxyz</div>
 		</div>

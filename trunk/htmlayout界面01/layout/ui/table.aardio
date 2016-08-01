@@ -1,5 +1,5 @@
 <? 
-headnav = "react01";
+headnav = "ui";
 leftnav = "table";
 ?>
 <!doctype html>

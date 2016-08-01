@@ -1,6 +1,6 @@
 <? 
-headnav = "react01";
-leftnav = "marlett";
+headnav = "ui";
+leftnav = "iconfont";
 ?>
 <!doctype html>
 <html>
@@ -12,30 +12,7 @@ leftnav = "marlett";
 		font-family: "iconfont";
 		src: url("../styles/fonts/iconfont.ttf");
 	}
-	.fa-1 {
-		font:14px/1 iconfont;
-		display: block;
-		width:32px;
-		height:32px;
-		background-image:url( ../styles/fonts/si-glyph-abacus.svg);
-		fill:red;
-	}
-	.fa-2 {
-		font:14px/1 iconfont;
-		display: block;
-		width:32px;
-		height:32px;
-		background-image:url( ../styles/fonts/si-glyph-arrow-thin-right-bottom.svg);
-		fill:red;
-	}
-	.fa-3 {
-		font:14px/1 iconfont;
-		display: block;
-		width:32px;
-		height:32px;
-		background-image:url( ../styles/fonts/si-glyph-wall.svg);
-		fill:red;
-	}
+	.fa{display: block; width: 32px; height: 32px; font-family: iconfont;}
 	</style>
 </head> 
 <body>
@@ -52,9 +29,9 @@ leftnav = "marlett";
 			字体图标
 		</h1>
 		<div class="margin padding bg-white border" style="height:100%%;">
-			<p><i class="fa-1"></i></p>
-			<p><i class="fa-2"></i></p>
-			<p><i class="fa-3"></i></p>
+
+			<div class="margin"><i class="fa">&#xe64f;</i></div>
+			<div class="margin"><i class="fa">&#xe653;</i></div>
 		</div>
 		
 	</div>

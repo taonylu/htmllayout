@@ -7,6 +7,6 @@
 	<a href="/layout/ui/backgroup.aardio" class="icon-plan" <? if (leftnav=="backgroup") { ?> selected=true <? } ?>>背景样式</a>
 	<a href="/layout/ui/from.aardio" class="icon-sell" <? if (leftnav=="from") { ?> selected=true <? } ?>>表单样式</a>
 	<a href="/layout/ui/tabs.aardio" class="icon-order" <? if (leftnav=="tabs") { ?> selected=true <? } ?>>切换标签</a>
-	<a href="/layout/ui/marlett.aardio" class="icon-project" <? if (leftnav=="marlett") { ?> selected=true <? } ?>>Marlett图标</a>
-	<a href="/layout/ui/table.aardio" class="icon-user">统计分析</a>
+	<a href="/layout/ui/iconfont.aardio" class="icon-project" <? if (leftnav=="iconfont") { ?> selected=true <? } ?>>字体图标</a>
+	<a href="/layout/ui/menu.aardio" class="icon-user" <? if (leftnav=="menu") { ?> selected=true <? } ?>>菜单效果</a>
 </div>

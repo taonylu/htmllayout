@@ -6,8 +6,37 @@ leftnav = "marlett";
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<include src="../styles/fonts/font-awesome.inc.htm" />
 	<link rel="stylesheet" href="../styles/yimao.css" />
+	<style>
+	@font-face {
+		font-family: "iconfont";
+		src: url("../styles/fonts/iconfont.ttf");
+	}
+	.fa-1 {
+		font:14px/1 iconfont;
+		display: block;
+		width:32px;
+		height:32px;
+		background-image:url( ../styles/fonts/si-glyph-abacus.svg);
+		fill:red;
+	}
+	.fa-2 {
+		font:14px/1 iconfont;
+		display: block;
+		width:32px;
+		height:32px;
+		background-image:url( ../styles/fonts/si-glyph-arrow-thin-right-bottom.svg);
+		fill:red;
+	}
+	.fa-3 {
+		font:14px/1 iconfont;
+		display: block;
+		width:32px;
+		height:32px;
+		background-image:url( ../styles/fonts/si-glyph-wall.svg);
+		fill:red;
+	}
+	</style>
 </head> 
 <body>
 <div id="container">
@@ -20,10 +49,12 @@ leftnav = "marlett";
 	</div>
 	<div id="bodyer" class="bg yscroll">
 		<h1 class="margin title">
-			Marlett字体图标
+			字体图标
 		</h1>
 		<div class="margin padding bg-white border" style="height:100%%;">
-			<p><i class="fa fa-camera-retro"></i> fa-camera-retro </p>
+			<p><i class="fa-1"></i></p>
+			<p><i class="fa-2"></i></p>
+			<p><i class="fa-3"></i></p>
 		</div>
 		
 	</div>

@@ -2,22 +2,7 @@ html,body{margin:0;height:100%;background:#fff;overflow:hidden;font-family:"Micr
 body[maximize]{border-radius:0}
 a{color:#333;text-decoration:none}
 a:focus,a:hover{color:#0a8}
-@font-face {
-	font-family: 'FontAwesome';
-	src: url(fonts/fontawesome-webfont.ttf);
-	font-weight: normal;
-	font-style: normal;
-}
-.fa {
-	display: inline-block;
-	font-family: FontAwesome;
-	line-height: 1;
-	font-style: normal;
-	font-size: inherit;
-}
-.fa-camera-retro::before {
-	content: "\f083";
-}
+
 /*滚动条*/
 @set y-scrollbar{
 	.base{width:8px;}
@@ -144,10 +129,10 @@ a:focus,a:hover{color:#0a8}
 
 .tabs-tag{behavior:tabs;}
 .tabs-tag>.strip{flow:horizontal; width: 100%%;}
-.tabs-tag>.strip>div{border-bottom: 1px solid #ddd; padding: 5px 0;}
+.tabs-tag>.strip>div{border-bottom: 1px solid #ddd; padding: 6px 0;}
 .tabs-tag>.strip>div.other{width: 100%%;}
-.tabs-tag>.strip>[panel]{padding: 5px 10px;max-width:auto; border-bottom: 1px solid #ddd;}
-.tabs-tag>.strip>[panel][selected]{border-bottom:2px solid #188ae2;color:#188ae2;}
+.tabs-tag>.strip>[panel]{padding: 6px 10px;max-width:auto; border-bottom: 1px solid #ddd;}
+.tabs-tag>.strip>[panel][selected]{border-bottom:2px solid #188ae2;color:#188ae2;padding: 6px 10px 5px 10px;}
 .tabs-tag>.tabs-bodyer{padding: 10px;display: none;}
 .tabs-tag>.tabs-bodyer[selected]{display: block;}
 

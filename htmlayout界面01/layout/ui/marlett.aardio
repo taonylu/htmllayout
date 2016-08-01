@@ -5,8 +5,9 @@ leftnav = "marlett";
 <!doctype html>
 <html>
 <head>
-	<link rel="stylesheet" href="../styles/yimao.css" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<include src="../styles/fonts/font-awesome.inc.htm" />
+	<link rel="stylesheet" href="../styles/yimao.css" />
 </head> 
 <body>
 <div id="container">
@@ -21,14 +22,8 @@ leftnav = "marlett";
 		<h1 class="margin title">
 			Marlett字体图标
 		</h1>
-		<div class="margin padding bg-white border">
-			<div class="padding bg-primary margin-bottom">
-				图标字体<br />
-			</div>
-			Marlett：<div class="fonticon">1234567890<br>abcedfghij<br>klmnopqrst<br>uvwxyz</div>
-			<div class="fonticon1">1234567890<br>abcedfghij<br>klmnopqrst<br>uvwxyz</div>
-			<div class="fonticon2">1234567890<br>abcedfghij<br>klmnopqrst<br>uvwxyz</div>
-			<div class="fonticon3">1234567890<br>abcedfghij<br>klmnopqrst<br>uvwxyz</div>
+		<div class="margin padding bg-white border" style="height:100%%;">
+			<p><i class="fa fa-camera-retro"></i> fa-camera-retro </p>
 		</div>
 		
 	</div>

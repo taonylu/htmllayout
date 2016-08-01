@@ -50,6 +50,17 @@ leftnav = "buttons";
 			<button class="btn btn-primary">默认尺寸</button>
 			<button class="btn btn-primary btn-xs">小尺寸(.btn-xs)</button>
 		</div>
+		<div class="margin padding bg-white border">
+			<p>标签样式</p>
+			<label class="label">标签.label</label>
+			<label class="label label-primary">.label-primary</label>
+			<label class="label label-info">.label-info</label>
+			<label class="label label-success">.label-success</label>
+			<label class="label label-warning">.label-warning</label>
+			<label class="label label-purple">.label-purple</label>
+			<label class="label label-pink">.label-pink</label>
+			<label class="label label-danger">.label-danger</label>
+		</div>
 	</div>
 	<div id="footer">
 		<include src="../include/footer.aardio">加载失败</include>

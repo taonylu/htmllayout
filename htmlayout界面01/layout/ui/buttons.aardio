@@ -61,6 +61,17 @@ leftnav = "buttons";
 			<label class="label label-pink">.label-pink</label>
 			<label class="label label-danger">.label-danger</label>
 		</div>
+		<div class="margin padding bg-white border">
+			<p>按钮使用：".btn"</p>
+			<button class="btn"><i class="icon">&#x21;</i>添加</button>
+			<button class="btn btn-primary"><i class="icon">&#x45;</i>帮助</button>
+			<button class="btn btn-success"><i class="icon">&#x6d;</i>返回</button>
+			<button class="btn btn-info"><i class="icon">&#x2b;</i>删除</button>
+			<button class="btn btn-warning"><i class="icon">&#x33;</i>添加</button>
+			<button class="btn btn-danger"><i class="icon">&#x35;</i>提交</button>
+			<button class="btn btn-purple"><i class="icon">&#x65;</i>新增</button>
+			<button class="btn btn-pink"><i class="icon">&#x64;</i>用户</button>
+		</div>
 	</div>
 	<div id="footer">
 		<include src="../include/footer.aardio">加载失败</include>

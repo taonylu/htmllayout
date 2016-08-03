@@ -28,8 +28,12 @@ a:focus,a:hover{color:#0a8}
 
 /*字体图片*/
 
+@font-face {font-family: "iconfont";src: url("fonts/iconfont.ttf");}
+.icon{display: inline-block;font-family:iconfont;font-style: normal;text-rendering: auto;font-size: 24px;line-height: 24px;vertical-align: -6px;}
+
 @font-face {font-family: "fontawesome";src: url("fonts/fontawesome.ttf");}
 .fa{display: inline-block;font-family:fontawesome;font-style: normal;text-rendering: auto;font-size: 24px;line-height: 24px;vertical-align: -6px;}
+
 
 #container{flow:"1 1" "2 3" "2 4"; width: *; height: *;}
 #header{width: *;flow:horizontal; background-color: #0a8; overflow:hidden; cursor:default; height: 52px;}
@@ -61,15 +65,18 @@ a:focus,a:hover{color:#0a8}
 #navbar .navbar-footer{flow:horizontal; height: 78px; width: *; border-top: 1px solid #30373f; text-align: center;}
 
 /*navbar-bodyer*/
-.navbar-bodyer a{display:block; color: #fff; text-decoration: none; cursor:default; padding: 8px 10px 8px 20px; margin-bottom: 1px;font-size: 12px;}
-.navbar-bodyer a .fa{font-size: 14px; line-height: 14px; width: 20px; color: #a9b7b7;}
-.navbar-bodyer a[selected=true],.navbar-bodyer a[selected=true] .fa,.navbar-bodyer a[selected=true]:hover{ color: #FFF; background-color: #0a8;}
+.navbar-bodyer a{display:block; color: #fff; text-decoration: none; cursor:default; padding: 8px 10px 8px 20px; margin-bottom: 1px;font-size: 14px;}
+.navbar-bodyer a .icon{font-size: 18px; line-height: 18px; width: 20px; color: #a9b7b7;}
+.navbar-bodyer a[selected=true],
+.navbar-bodyer a[selected=true] .icon,
+.navbar-bodyer a[selected=true]:hover,
+.navbar-bodyer a[selected=true]:hover .icon{ color: #FFF; background-color: #0a8;}
 .navbar-bodyer a:hover{color: #FFF; background-color: #3f464e;}
-.navbar-bodyer a:hover .fa{color: #FFF;}
+.navbar-bodyer a:hover .icon{color: #FFF;}
 
 /*navbar-footer*/
 .navbar-footer a{display:inline-block; width: 50px; color: #a9b7b7; padding-top: 10px; margin-top: 10px; font-size: 12px; text-decoration: none; cursor:default; text-align: center;}
-.navbar-footer a .fa{display: block; font-size: 18px; line-height: 18px; margin-bottom: 5px;}
+.navbar-footer a .icon{display: block; font-size: 18px; line-height: 18px; margin-bottom: 5px;}
 .navbar-footer a:hover{color: #FFF;}
 
 /*通用CSS*/
@@ -197,6 +204,8 @@ a:focus,a:hover{color:#0a8}
 .btn{behavior:button}
 .btn:disabled{opacity: 0.75; cursor: pointer;}
 .btn:focus{outline:0}
+.btn .icon{font-size: 18px; line-height: 18px; margin-right: 5px;}
+
 
 .form-group{margin-bottom: 10px; flow:horizontal;}
 .form-group label{width: 100px; display: block;}
@@ -323,5 +332,6 @@ select.input{padding: 1px; min-width: 100px;}
 .list{height: 100%%;}
 
 .icon_list{width: 100%%;flow:h-flow;}
+.icon_list .icon{font-size: 40px; line-height: 40px; color: #10c469;}
 .icon_list>div{width: 10%;text-align: center; background-color: #EEFFFF; margin-bottom: 0;}
 .icon_list>div code{display: block; text-align: center; margin-top: 5px;}

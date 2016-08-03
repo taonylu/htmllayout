@@ -2,11 +2,11 @@
 	≡ 基础样式
 </div>
 <div class="navbar-bodyer">
-	<a href="/layout/ui/table.aardio" class="icon-home" <? if (leftnav=="table") { ?> selected=true <? } ?>>表格列表</a>
-	<a href="/layout/ui/buttons.aardio" class="icon-work" <? if (leftnav=="buttons") { ?> selected=true <? } ?>>按钮样式</a>
-	<a href="/layout/ui/backgroup.aardio" class="icon-plan" <? if (leftnav=="backgroup") { ?> selected=true <? } ?>>背景样式</a>
-	<a href="/layout/ui/from.aardio" class="icon-sell" <? if (leftnav=="from") { ?> selected=true <? } ?>>表单样式</a>
-	<a href="/layout/ui/tabs.aardio" class="icon-order" <? if (leftnav=="tabs") { ?> selected=true <? } ?>>切换标签</a>
-	<a href="/layout/ui/iconfont.aardio" class="icon-project" <? if (leftnav=="iconfont") { ?> selected=true <? } ?>>字体图标</a>
-	<a href="/layout/ui/menu.aardio" class="icon-user" <? if (leftnav=="menu") { ?> selected=true <? } ?>>菜单效果</a>
+	<a href="/layout/ui/table.aardio" <? if (leftnav=="table") { ?> selected=true <? } ?>><i class="fa">&#x2a;</i> 表格列表</a>
+	<a href="/layout/ui/buttons.aardio" <? if (leftnav=="buttons") { ?> selected=true <? } ?>><i class="fa">&#x01cb;</i> 按钮样式</a>
+	<a href="/layout/ui/backgroup.aardio" <? if (leftnav=="backgroup") { ?> selected=true <? } ?>><i class="fa">&#x5c;</i> 背景样式</a>
+	<a href="/layout/ui/from.aardio" <? if (leftnav=="from") { ?> selected=true <? } ?>><i class="fa">&#x0104;</i> 表单样式</a>
+	<a href="/layout/ui/tabs.aardio" <? if (leftnav=="tabs") { ?> selected=true <? } ?>><i class="fa">&#x01ff;</i> 切换标签</a>
+	<a href="/layout/ui/iconfont.aardio" <? if (leftnav=="iconfont") { ?> selected=true <? } ?>><i class="fa">&#x028b;</i> 字体图标</a>
+	<a href="/layout/ui/menu.aardio" <? if (leftnav=="menu") { ?> selected=true <? } ?>><i class="fa">&#x0241;</i> 菜单效果</a>
 </div>

@@ -2,11 +2,11 @@
 	≡ 常用操作
 </div>
 <div class="navbar-bodyer">
-	<a href="home.aardio" class="icon-home" <? if (leftnav=="home") { ?> selected=true <? } ?>>控制台效果</a>
-	<a href="home.aardio" class="icon-work">控制台效果</a>
-	<a href="home.aardio" class="icon-plan">控制台效果</a>
-	<a href="home.aardio" class="icon-sell">控制台效果</a>
-	<a href="home.aardio" class="icon-order">控制台效果</a>
-	<a href="home.aardio" class="icon-project">控制台效果</a>
-	<a href="home.aardio" class="icon-user">控制台效果</a>
+	<a href="home.aardio" <? if (leftnav=="home") { ?> selected=true <? } ?>><i class="fa">&#x35;</i>  控制台效果</a>
+	<a href="home.aardio"><i class="fa">&#x35;</i> 控制台效果</a>
+	<a href="home.aardio"><i class="fa">&#x35;</i> 控制台效果</a>
+	<a href="home.aardio"><i class="fa">&#x35;</i> 控制台效果</a>
+	<a href="home.aardio"><i class="fa">&#x35;</i> 控制台效果</a>
+	<a href="home.aardio"><i class="fa">&#x35;</i> 控制台效果</a>
+	<a href="home.aardio"><i class="fa">&#x35;</i> 控制台效果</a>
 </div>

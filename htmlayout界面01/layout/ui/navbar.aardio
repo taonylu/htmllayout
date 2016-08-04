@@ -2,12 +2,12 @@
 	≡ 基础样式
 </div>
 <div class="navbar-bodyer">
-	<a href="/layout/ui/table.aardio" <? if (leftnav=="table") { ?> selected=true <? } ?>><i class="icon">&#x010f;</i> 表格列表</a>
-	<a href="/layout/ui/buttons.aardio" <? if (leftnav=="buttons") { ?> selected=true <? } ?>><i class="icon">&#x0107;</i> 按钮样式</a>
-	<a href="/layout/ui/backgroup.aardio" <? if (leftnav=="backgroup") { ?> selected=true <? } ?>><i class="icon">&#x5d;</i> 背景样式</a>
-	<a href="/layout/ui/from.aardio" <? if (leftnav=="from") { ?> selected=true <? } ?>><i class="icon">&#x0100;</i> 表单样式</a>
-	<a href="/layout/ui/tabs.aardio" <? if (leftnav=="tabs") { ?> selected=true <? } ?>><i class="icon">&#x0106;</i> 切换标签</a>
-	<a href="/layout/ui/iconfont.aardio" <? if (leftnav=="iconfont") { ?> selected=true <? } ?>><i class="icon">&#x0104;</i> iconfont图标</a>
-	<a href="/layout/ui/fontawesome.aardio" <? if (leftnav=="fontawesome") { ?> selected=true <? } ?>><i class="icon">&#x0104;</i> fontawesome图标</a>
-	<a href="/layout/ui/menu.aardio" <? if (leftnav=="menu") { ?> selected=true <? } ?>><i class="icon">&#x0101;</i> 菜单效果</a>
+	<a href="/layout/ui/table.aardio" <? if (leftnav=="table") { ?> selected=true <? } ?>><i class="fa">&#xaf;</i> 表格列表</a>
+	<a href="/layout/ui/buttons.aardio" <? if (leftnav=="buttons") { ?> selected=true <? } ?>><i class="fa">&#x2a;</i> 按钮样式</a>
+	<a href="/layout/ui/backgroup.aardio" <? if (leftnav=="backgroup") { ?> selected=true <? } ?>><i class="fa">&#x4d;</i> 背景样式</a>
+	<a href="/layout/ui/from.aardio" <? if (leftnav=="from") { ?> selected=true <? } ?>><i class="fa">&#x54;</i> 表单样式</a>
+	<a href="/layout/ui/tabs.aardio" <? if (leftnav=="tabs") { ?> selected=true <? } ?>><i class="fa">&#xb5;</i> 切换标签</a>
+	<a href="/layout/ui/iconfont.aardio" <? if (leftnav=="iconfont") { ?> selected=true <? } ?>><i class="fa">&#xe1;</i> iconfont图标</a>
+	<a href="/layout/ui/fontawesome.aardio" <? if (leftnav=="fontawesome") { ?> selected=true <? } ?>><i class="fa">&#xe1;</i> fontawesome图标</a>
+	<a href="/layout/ui/menu.aardio" <? if (leftnav=="menu") { ?> selected=true <? } ?>><i class="fa">&#xa0;</i> 菜单效果</a>
 </div>

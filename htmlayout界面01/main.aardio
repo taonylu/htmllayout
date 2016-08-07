@@ -1,4 +1,4 @@
-//RUNAS//
+/* //RUNAS// win10 跳出安全验证*/
 import win.ui;
 /*DSG{{*/
 mainForm = win.form(text="Yimao软件设计";right=999;bottom=599;border="none")

@@ -27,3 +27,5 @@
 .icon_list .fa{font-size: 32px; line-height: 32px; color: #188ae2;}
 .icon_list>div{width: 10%;text-align: center; background-color: #EEFFFF; margin-bottom: 0;}
 .icon_list>div code{display: block; text-align: center; margin-top: 5px; font-size: 12px; background-color:#188ae2; color: #FFF; }
+
+#login1{behavior:~"case.login";}

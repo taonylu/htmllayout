@@ -1,0 +1,16 @@
+/*登录*/
+
+#container{flow:vertical; width: *; height: *;}
+#header{behavior:windowCommand;width: *; height: 100px;flow:horizontal; background-color: #0a8;}
+#header .logo{width: *; text-align: center;}
+#header .tool{width: 20px;}
+.tool a[command]{display:inline-block; width:max-intrinsic;height:14px;font-family:"Marlett";font-size:14px;padding:4px;color:#fff;cursor:default;}
+.tool a[command]:hover{background:#6ebccf;}
+.tool a[command]:active{background:#FF0000;} 
+.tool a[command="window-restore"]{content:"2";}
+#bodyer{width: *; height: *;}
+#footer{width: *; padding: 5px; text-align: center;}
+
+.login,.registered{background-color:#f3f5f6; color:#768399; text-align: center;}
+.registered{}
+

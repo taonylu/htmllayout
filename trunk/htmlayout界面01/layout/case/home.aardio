@@ -1,0 +1,40 @@
+<? 
+headnav = "case";
+leftnav = "home";
+?>
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="/layout/styles/yimao.css" />
+	<link rel="stylesheet" href="/layout/styles/main.css" />
+	<link rel="stylesheet" href="/layout/styles/styles.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head> 
+<body>
+<div id="container">
+	<div id="header">
+		<include src="../include/header.aardio">加载失败</include>
+	</div>
+	<div id="navbar">
+		<include src="navbar.aardio">加载失败</include>
+		<include src="../include/setup.aardio">加载失败</include>
+	</div>
+	<div id="bodyer" class="bg yscroll">
+		<h1 class="title margin">
+			登录界面
+		</h1>
+	
+		
+		<div class="margin bg-white border">
+			<div class="padding">
+				登录界面展示<br>
+				<button class="btn" id="login1">登录</button>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<include src="../include/footer.aardio">加载失败</include>
+	</div>
+</div>
+</body>
+</html>

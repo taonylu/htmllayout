@@ -55,7 +55,6 @@ a:focus,a:hover{color:#0a8}
 .tool a[command]:active{background:#FF0000;} 
 .tool a[command="window-restore"]{content:"2";}
 
-
 #navbar .navbar-header{width: *; padding:10px 0px 10px 20px; color: #aeb9c2;border-bottom: 1px solid #30373f;}
 #navbar .navbar-bodyer{flow:vertical; height: *; width: *;}
 #navbar .navbar-footer{flow:horizontal; height: 78px; width: *; border-top: 1px solid #30373f; text-align: center;}
@@ -71,6 +70,7 @@ a:focus,a:hover{color:#0a8}
 .navbar-bodyer a:hover .fa{color: #FFF;}
 
 /*navbar-footer*/
+.navbar-footer a{behavior:~"navbar.footer";}
 .navbar-footer a{display:inline-block; width: 50px; color: #a9b7b7; padding-top: 10px; margin-top: 10px; font-size: 12px; text-decoration: none; cursor:default; text-align: center;}
 .navbar-footer a .fa{display: block; font-size: 18px; line-height: 18px; margin-bottom: 5px;}
 .navbar-footer a:hover{color: #FFF;}
@@ -202,7 +202,7 @@ a:focus,a:hover{color:#0a8}
 .btn:focus{outline:0}
 .btn .fa{font-size: 14px; line-height: 14px; margin-right: 5px;}
 
-
+/*输入框*/
 .form-group{margin-bottom: 10px; flow:horizontal;}
 .form-group label{width: 100px; display: block;}
 .input{display:block;font-size: 12px; height:20px;background-color: #fff;color:#333;background-image: none;border: 1px solid #ddd;border-radius:2px;}
@@ -249,7 +249,6 @@ select.input{padding: 1px; min-width: 100px;}
 .text-default{font-size: 14px;}
 .text-small{font-size: 12px;}
 .text-little{font-size: 10px;}
-
 
 /*表格*/
 .table{width:100%;max-width:100%;border-collapse:collapse;border-spacing:0;font-size: 12px;}
@@ -313,11 +312,10 @@ select.input{padding: 1px; min-width: 100px;}
 .menu-bar menu li:current,
 .menu-bar menu li:hover:owns-popup{background-color:#188ae2;color:#FFF}
 .menu-bar menu .divider{height: 1px;margin:2px;overflow: hidden;background-color: #e5e5e5;border-bottom: 1px solid #fff;}
-/*图标菜单*/
 .menu-bar.menu-fa menu li{padding-left: 10px;}
 .menu-bar.menu-fa .fa{font-size: 13px;line-height: 13px;}
 
-
+/*右键菜单*/
 .right-menu,.right-menu menu{behavior:menu;flow:vertical;display:none;padding:1px;max-width:max-intrinsic;border:1px solid rgba(0,0,0,0.2);background-color: #FFF;color:#333;margin:0;font-size: 12px;}
 .right-menu li{width:*;padding-left:24px;padding-right:12px;padding-top:4px;padding-bottom:4px;foreground-repeat:no-repeat;foreground-position:2px 50%;color:windowtext}
 .right-menu li:rtl{width:*;padding-right:24px;padding-left:12px;foreground-repeat:no-repeat;foreground-position-right:2px;foreground-position-top:50%;text-align:right;color:windowtext}
@@ -329,12 +327,16 @@ select.input{padding: 1px; min-width: 100px;}
 .right-menu li:current,
 .right-menu li:hover:owns-popup{background-color:#188ae2;color:#FFF}
 .right-menu .divider{height: 1px;margin:2px;overflow: hidden;background-color: #e5e5e5;border-bottom: 1px solid #fff;}
-
 .right-menu.menu-fa li{padding-left: 10px;}
 .right-menu.menu-fa .fa{font-size: 13px;line-height: 13px;}
 
 /*分页*/
 .pager{background-color: #FFF; border: 1px solid #efefef; text-align: center;}
+
+
+
+
+
 
 /*首页*/
 .title{font-size: 16px; padding: 10px; background-color: #FFF; border: 1px solid #efefef;}

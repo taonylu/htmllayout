@@ -21,5 +21,11 @@
 			<file name="header.aardio" path="layout\include\header.aardio" comment="layout\include\header.aardio"/>
 			<file name="setup.aardio" path="layout\include\setup.aardio" comment="layout\include\setup.aardio"/>
 		</folder>
+		<folder name="about" path="layout\about" comment="layout\about">
+			<file name="index.aardio" path="layout\about\index.aardio" comment="layout\about\index.aardio"/>
+		</folder>
+	</folder>
+	<folder name="res" path="res" comment="res" embed="false">
+		<file name="about.aardio" path="res\about.aardio" comment="res\about.aardio"/>
 	</folder>
 </project>

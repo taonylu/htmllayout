@@ -1,5 +1,5 @@
 <div class="navbar-footer">
-	<a href="#"><i class="fa">&#x33;</i>设置</a>
-	<a href="#"><i class="fa">&#x0105;</i>帮助</a>
-	<a href="#"><i class="fa">&#x017b;</i>退出</a>
+	<a href="#" id="navbar_footer_setup"><i class="fa">&#x33;</i>设置</a>
+	<a href="#" id="navbar_footer_help"><i class="fa">&#x0105;</i>帮助</a>
+	<a href="#" id="navbar_footer_logout"><i class="fa">&#x017b;</i>退出</a>
 </div>

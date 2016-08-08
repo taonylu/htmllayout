@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="/layout/styles/alert.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head> 
+<body>
+<div id="container">
+	<div id="header">
+		<div class="title">关于Yimao软件</div>
+		<div class="tool">
+			<a command="window-close" onclick="closeWindow()">r</a>
+		</div>
+	</div>
+	<div id="bodyer" class="about">
+		<div class="logo"></div>
+		<div class="softname">
+			<h1>Yimao软件开发</h1>
+			<span class="version">当前版本(1.0.0.1)</span>
+		</div>
+		<richtext class="details yscroll">
+			<p>Yimao软件专业定制开发各类应用型软件</p>
+			<p>Yimao软件专业定制开发各种语言的网站平台后台系统</p>
+			<p>Yimao软件专业定制开发各种界面(Html5+Css3；Htmlayout等)</p>
+			<p>Yimao软件专业定制开发各类应用型软件</p>
+			<p>Yimao软件专业定制开发各种语言的网站平台后台系统</p>
+			<p>Yimao软件专业定制开发各种界面(Html5+Css3；Htmlayout等)</p>
+		</richtext>
+	</div>
+	<div id="footer">Yimao软件开发</div>
+</div>
+</body>
+</html>

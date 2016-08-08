@@ -1,0 +1,21 @@
+﻿//footer
+namespace web.layout.behavior.navbar.footer
+
+onHyperlinkClick = {
+	// 事件可以是一个函数或列表,如果是列表键名匹配节点的id或name属性 
+	navbar_footer_setup = function (ltTarget,ltOwner,reason,behaviorParams) {
+		ltOwner.getForm().msgbox( ltOwner.innerText )
+	}
+	
+	// 事件可以是一个函数或列表,如果是列表键名匹配节点的id或name属性 
+	navbar_footer_help = function (ltTarget,ltOwner,reason,behaviorParams) {
+		var frmChild,wb = ..mainForm.loadForm("\res\about.aardio");
+		frmChild.doModal();
+	}
+	
+	// 事件可以是一个函数或列表,如果是列表键名匹配节点的id或name属性
+	//退出
+	navbar_footer_logout = function (ltTarget,ltOwner,reason,behaviorParams) {
+		ltOwner.getForm().close();
+	}	
+}

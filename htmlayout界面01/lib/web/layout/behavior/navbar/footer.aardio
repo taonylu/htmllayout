@@ -10,7 +10,8 @@ onHyperlinkClick = {
 	// 事件可以是一个函数或列表,如果是列表键名匹配节点的id或name属性 
 	navbar_footer_help = function (ltTarget,ltOwner,reason,behaviorParams) {
 		var frmChild,wb = ..mainForm.loadForm("\res\about.aardio");
-		frmChild.doModal();
+		//禁止父窗口
+		frmChild.doModal(..mainForm);
 	}
 	
 	// 事件可以是一个函数或列表,如果是列表键名匹配节点的id或name属性

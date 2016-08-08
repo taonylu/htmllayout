@@ -1,0 +1,29 @@
+/*首页*/
+.title{font-size: 16px; padding: 10px; background-color: #FFF; border: 1px solid #efefef;}
+.border{border: 1px solid #efefef;}
+.row1{flow:"1 2 3"; width: 100%%;}
+.row1 .user{flow:"1 2"; width: 40%%; font-size: 14px; margin-right: 10px;background-color: #FFF; border: 1px solid #efefef;}
+.row1 .panel{width: 30%%; height: 100%%;}
+
+.user .face{width: 30%%; height:100%%; text-align: center; padding: 10px;}
+.user .face a{width:100px; height: 100px; border:2px solid #FFF; border-radius: 50%; display: block; overflow: hidden; font-size: 16px; font-weight: bold; margin: auto; color: #FFF; text-decoration: none; line-height:100px; content: " ";}
+.user .face a{background-repeat: no-repeat; background-position: center; background-size: 100% 100%;}
+.user .face a:hover{content: "编辑头像"; border-color: #0a8;}
+.user .info{width: 70%%; height:100%%;}
+.user .info h3{margin:0; padding: 5px 0;}
+.user .info p{margin:0; padding: 5px 0;}
+.fa-index{color:#eee;}
+
+
+.row2{flow:"1 2"; width: 100%%;}
+.row2 .panel{width: 50%%; height: 100%%;}
+
+.row3{width: 100%%;}
+
+.list{height: 100%%;}
+
+.icon_list{width: 100%%;flow:h-flow;}
+.icon_list .icon{font-size: 40px; line-height: 40px; color: #188ae2;}
+.icon_list .fa{font-size: 32px; line-height: 32px; color: #188ae2;}
+.icon_list>div{width: 10%;text-align: center; background-color: #EEFFFF; margin-bottom: 0;}
+.icon_list>div code{display: block; text-align: center; margin-top: 5px; font-size: 12px; background-color:#188ae2; color: #FFF; }

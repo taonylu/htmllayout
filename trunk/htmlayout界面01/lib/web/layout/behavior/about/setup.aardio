@@ -1,0 +1,14 @@
+﻿//about.setup
+namespace web.layout.behavior.about.setup
+
+onButtonClick = {
+	//保存设置
+	about_setup_save = function (ltTarget,ltOwner,reason,behaviorParams) {
+		//获取数据保存设置
+		ltOwner.getForm().close();
+	}
+	//关闭设置窗口
+	about_setup_cancel = function (ltTarget,ltOwner,reason,behaviorParams) {
+		ltOwner.getForm().close();
+	}
+}

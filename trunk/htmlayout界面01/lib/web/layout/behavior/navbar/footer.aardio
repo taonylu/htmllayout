@@ -4,7 +4,9 @@ namespace web.layout.behavior.navbar.footer
 onHyperlinkClick = {
 	// 事件可以是一个函数或列表,如果是列表键名匹配节点的id或name属性 
 	navbar_footer_setup = function (ltTarget,ltOwner,reason,behaviorParams) {
-		ltOwner.getForm().msgbox( ltOwner.innerText )
+		var frmChild,wb = ..mainForm.loadForm("\res\setup.aardio");
+		//禁止父窗口
+		frmChild.doModal(..mainForm);
 	}
 	
 	// 事件可以是一个函数或列表,如果是列表键名匹配节点的id或name属性 

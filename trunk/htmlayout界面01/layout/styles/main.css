@@ -1,0 +1,44 @@
+/*框架CSS*/
+#container{flow:"1 1" "2 3" "2 4"; width: *; height: *;}
+#header{width: *;flow:horizontal; background-color: #0a8; overflow:hidden; cursor:default; height: 52px;}
+#header{behavior:windowCommand;}
+#navbar{flow:vertical;width: 180px;height:*;background-color: #272636;}
+#bodyer{width: *;height: *; overflow: auto;}
+#footer{width: *;background-color: #f5f5f5;font-size:12px;padding:5px 10px;border-top:1px solid #ddd;text-align:right; height:12px;}
+#footer{behavior:windowCommand;}
+
+#header .logo{width: 180px;}
+#header .nav{flow:horizontal; width: *; list-style: none; margin: 0; padding: 0;}
+#header .tool{width: 80px; text-align: right;}
+
+.logo img{float: left; margin: 10px; }
+
+.nav li{background-color: #F00;}
+.nav a{color: #FFF; text-decoration: none; line-height: 52px; padding: 0 10px; font-weight: bold;cursor:default;}
+.nav a[selected=true]{background-color: #1BA35F;}
+.nav a:hover{background-color: #1BA35F;}
+
+.tool a{display:inline-block; width:max-intrinsic;height:14px;font-family:"Marlett";font-size:14px;padding:4px;color:#fff;cursor:default;}
+.tool a[command]:hover{background:#6ebccf;}
+.tool a[command]:active{background:#FF0000;} 
+.tool a[command="window-restore"]{content:"2";}
+
+#navbar .navbar-header{width: *; padding:10px 0px 10px 20px; color: #aeb9c2;border-bottom: 1px solid #30373f;}
+#navbar .navbar-bodyer{flow:vertical; height: *; width: *;}
+#navbar .navbar-footer{flow:horizontal; height: 78px; width: *; border-top: 1px solid #30373f; text-align: center;}
+
+/*navbar-bodyer*/
+.navbar-bodyer a{display:block; color: #fff; text-decoration: none; cursor:default; padding: 8px 10px 8px 20px; margin-bottom: 1px;font-size: 12px;}
+.navbar-bodyer a .fa{font-size: 14px; line-height: 14px; width: 20px; color: #a9b7b7;}
+.navbar-bodyer a[selected=true],
+.navbar-bodyer a[selected=true] .fa,
+.navbar-bodyer a[selected=true]:hover,
+.navbar-bodyer a[selected=true]:hover .fa{ color: #FFF; background-color: #0a8;}
+.navbar-bodyer a:hover{color: #FFF; background-color: #3f464e;}
+.navbar-bodyer a:hover .fa{color: #FFF;}
+
+/*navbar-footer*/
+.navbar-footer a{behavior:~"navbar.footer";}
+.navbar-footer a{display:inline-block; width: 50px; color: #a9b7b7; padding-top: 10px; margin-top: 10px; font-size: 12px; text-decoration: none; cursor:default; text-align: center;}
+.navbar-footer a .fa{display: block; font-size: 18px; line-height: 18px; margin-bottom: 5px;}
+.navbar-footer a:hover{color: #FFF;}

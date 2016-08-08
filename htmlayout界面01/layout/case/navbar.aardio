@@ -1,0 +1,6 @@
+<div class="navbar-header">
+	≡ 使用案例
+</div>
+<div class="navbar-bodyer">
+	<a href="/layout/case/home.aardio" <? if (leftnav=="home") { ?> selected=true <? } ?>><i class="fa">&#xaf;</i> 登录演示</a>
+</div>

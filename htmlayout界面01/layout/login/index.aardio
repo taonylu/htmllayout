@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="/layout/styles/yimao.css" />
+	<link rel="stylesheet" href="/layout/styles/login.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head> 
+<body>
+<div id="container">
+	<div id="header">
+		<div class="logo"><img src="/layout/styles/images/logo_login.png"></div>
+		<div class="tool"><a command="window-close" onclick="closeWindow()">r</a></div>		
+	</div>
+	<div id="bodyer">
+		登录
+	</div>
+	<div id="footer">
+		<button class="btn">登录</button>
+	</div>
+</div>
+</body>
+</html>

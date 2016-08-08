@@ -1,0 +1,10 @@
+﻿//演示登录界面
+namespace web.layout.behavior.case.login
+
+onButtonClick = {
+	
+	login1 = function (ltTarget,ltOwner,reason,behaviorParams) {
+		var frmChild,wb = ..mainForm.loadForm("\res\login.aardio");
+		frmChild.doModal(..mainForm);
+	}
+}

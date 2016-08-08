@@ -2,20 +2,28 @@
 <project ver="10" name="htmlayout界面" libEmbed="true" icon="logo.ico" CompanyName="Yimao软件设计" FileDescription="htmlayout界面" LegalCopyright="Copyright (C) 壹毛 2016" ProductName="htmlayout界面" InternalName="htmlayout界面" FileVersion="0.0.0.04" ProductVersion="0.0.0.04" publishDir="/Publish/" ui="win" output="htmlayout界面.exe" dstrip="false">
 	<file name="main.aardio" path="main.aardio" comment="启动程序代码"/>
 	<folder name="资源文件(web.layout)" path="layout" comment="" embed="true">
-		<file name="home.aardio" path="layout\home.aardio" comment="layout\home.aardio"/>
 		<file name="main.aardio" path="layout\main.aardio" comment="layout\main.aardio"/>
+		<file name="home.aardio" path="layout\home.aardio" comment="layout\home.aardio"/>
 		<file name="navbar.aardio" path="layout\navbar.aardio" comment="layout\navbar.aardio"/>
 		<folder name="about" path="layout\about" comment="layout\about">
 			<file name="index.aardio" path="layout\about\index.aardio" comment="layout\about\index.aardio"/>
 			<file name="setup.aardio" path="layout\about\setup.aardio" comment="layout\about\setup.aardio"/>
+		</folder>
+		<folder name="case" path="layout\case" comment="layout\case">
+			<file name="home.aardio" path="layout\case\home.aardio" comment="layout\case\home.aardio"/>
+			<file name="navbar.aardio" path="layout\case\navbar.aardio" comment="layout\case\navbar.aardio"/>
 		</folder>
 		<folder name="include" path="layout\include" comment="layout\include">
 			<file name="footer.aardio" path="layout\include\footer.aardio" comment="layout\include\footer.aardio"/>
 			<file name="header.aardio" path="layout\include\header.aardio" comment="layout\include\header.aardio"/>
 			<file name="setup.aardio" path="layout\include\setup.aardio" comment="layout\include\setup.aardio"/>
 		</folder>
+		<folder name="login" path="layout\login" comment="layout\login">
+			<file name="index.aardio" path="layout\login\index.aardio" comment="layout\login\index.aardio"/>
+		</folder>
 		<folder name="styles" path="layout\styles" comment="layout\styles">
 			<file name="alert.css" path="layout\styles\alert.css" comment="layout\styles\alert.css"/>
+			<file name="login.css" path="layout\styles\login.css" comment="layout\styles\login.css"/>
 			<file name="main.css" path="layout\styles\main.css" comment="layout\styles\main.css"/>
 			<file name="styles.css" path="layout\styles\styles.css" comment="layout\styles\styles.css"/>
 			<file name="yimao.css" path="layout\styles\yimao.css" comment="layout\styles\yimao.css"/>
@@ -82,6 +90,7 @@
 	</folder>
 	<folder name="res" path="res" comment="res" embed="false">
 		<file name="about.aardio" path="res\about.aardio" comment="res\about.aardio"/>
+		<file name="login.aardio" path="res\login.aardio" comment="res\login.aardio"/>
 		<file name="setup.aardio" path="res\setup.aardio" comment="res\setup.aardio"/>
 	</folder>
 </project>

@@ -25,6 +25,5 @@
 
 /*软件设置*/
 .setup{padding: 2px;}
-.tabs-bodyer{font-size: 12px;}
-#footer-tool{width: *;behavior:windowCommand;background-color: #f5f5f5; border-top:1px solid #ddd; text-align: right; padding-right: 5px;}
+#footer-tool{width: *;behavior:windowCommand;background-color: #f5f5f5; border-top:1px solid #ddd; text-align: right; padding-right: 15px;}
 #footer-tool button{behavior:~"about.setup";}

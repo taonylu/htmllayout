@@ -7,7 +7,7 @@
 				<a href="#" style="background-image: url('styles/images/face.jpg');"></a>
 			</div>
 			<div class="info padding-left">
-				<i class="icon-32 icon-user right margin-right margin-top"></i>
+				<i class="fa right margin-right margin-top fa-index">&#x28;</i>
 				<h3>张某某</h3>
 				<p>销售部门</p>
 				<p>电话：13522222222</p>
@@ -16,7 +16,7 @@
 		</div>
 		<div class="panel panel-primary margin">
 			<div class="panel-bodyer padding">
-				<i class="icon-32 icon-jb right"></i>
+				<i class="fa right fa-index">&#x0149;</i>
 				<p class="text-primary text-large">￥2,000元</p>
 				<p>Total Pending</p>
 			</div>
@@ -24,7 +24,7 @@
 		</div>
 		<div class="panel panel-danger margin">
 			<div class="panel-bodyer padding">
-				<i class="icon-32 icon-tz right"></i>
+				<i class="fa right fa-index">&#x0184;</i>
 				<p class="text-danger text-large">￥320,012元</p>
 				<p>Total Pending</p>
 			</div>

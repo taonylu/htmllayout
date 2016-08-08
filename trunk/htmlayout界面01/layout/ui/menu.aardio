@@ -7,49 +7,6 @@ leftnav = "menu";
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" href="../styles/yimao.css" />
-	<link rel="stylesheet" href="../styles/std-menu.css" />
-	<style>
-    ul#menu-bar 
-    {
-      margin:0;
-      border-bottom:1px solid threedface;
-      border-left:1px solid transparent;
-    }
-    
-    ul#menu-bar:focus 
-    {
-      //border-left:1px solid highlight;
-    }
-    
-
-    ul#menu-bar > li 
-    {
-      margin:0 8px;
-      background-color:threedface;
-    }
-    
-    /* table menu */    
-    menu.table 
-    {
-      border-spacing:1px;
-    }
-    menu.table td[role="menu-item"]
-    { 
-      border:1px solid threedface; 
-    }
-    menu.table td[role="menu-item"]:current
-    { 
-      background-color:highlight; color:highlighttext; 
-    }
-    menu.table caption
-    {
-      padding:2px;
-      font-size:8.5pt;
-      background-color: threedlightshadow;
-      color: threedshadow;
-    }
-        
-  </style>
 </head> 
 <body>
 <div id="container">
@@ -65,56 +22,138 @@ leftnav = "menu";
 			菜单栏目
 		</h1>
 		<div class="margin padding bg-white border">
-			<ul id="menu-bar">
-			  <li>Simple
+			<div class="padding">点击鼠标左键，查看效果。</div>		
+			<ul class="menu-bar">
+			  <li>文件(F)
 			    <menu class="cool">
-			      <li title="Hello world!">First item (with tooltip)</li>
-			      <li accesskey="^2">Second item<span class="accesskey">Ctrl+<font color="red">2</font></span></li>
-			      <li>Third item
+			      <li title="新建文件" accesskey="^N">新建文件(N)<span class="accesskey">Ctrl+N</span></li>
+			      <li title="打开文件" accesskey="^O">打开文件(O)...<span class="accesskey">Ctrl+O</span></li>
+			      <li title="打开文件夹">打开文件夹...</li>
+			      <li title="克隆文件">克隆文件</li>
+			      <li>文件编码
 			        <menu>
-			          <li style="background-color:yellow red red yellow;">First sub-item</li>
-			          <li>Second sub-item</li>
+			          <li>UTF-8</li>
+			          <li>十六进制</li>
 			        </menu>
 			      </li>
-			      <li>Fourth item<span class="accesskey">Ctrl+<font color="red">4</font></span></li>
+			      <li accesskey="^S">保存(S)<span class="accesskey">Ctrl+S</span></li>
+			      <li accesskey="^S">另存为(A)...<span class="accesskey">Ctrl+Shift+S</span></li>
 			    </menu>
 			  </li>
-			  <li>Inputs
+			  <li>编辑(E)
 			    <menu class="cool">
-			      <li type="radio" name="myradios" id="myradios-1">First radio item</li>
-			      <li type="radio" name="myradios" id="myradios-2">Second radio item</li>
-			      <li type="radio" name="myradios" id="myradios-3">Third radio item</li>
-			      <hr/>
-			      <li type="check" name="mychecks" id="mychecks-1">First check item</li>
-			      <li type="check" name="mychecks" id="mychecks-2">Second check item</li>
-			      <li type="check" name="mychecks" id="mychecks-3">Third check item</li>
-			      <hr/>
-			      <li>Volume is <input type="hslider" name="volume" max="10" value="0" buddy="volume-buddy" /> <b id="volume-buddy">x</b> Db</li>
+			      <li id="myradios-1">撤销(U)<span class="accesskey">Ctrl+Z</span></li>
+			      <li id="myradios-2">重做(R)<span class="accesskey">Ctrl+Y</span></li>
+			      <li id="myradios-3">撤销重做</li>
+			      <div class="divider"></div>
+			      <li id="mychecks-1">复制(C)<span class="accesskey">Ctrl+C</span></li>
+			      <li id="mychecks-2">粘贴(N)<span class="accesskey">Ctrl+V</span></li>
+			      <li id="mychecks-3">删除(P)<span class="accesskey">Ctrl+X</span></li>
 			    </menu>
 			  </li>
 
-			  <li>Complex
+			  <li>查找(S)
 			    <menu class="cool">
-			      <li> 
-			        <input type="radio" name="myradios" id="myradios-1" />First
-			        <input type="radio" name="myradios" id="myradios-2" />Second
-			        <input type="radio" name="myradios" id="myradios-3" />Third
+			      <li id="mychecks-1">查找...<span class="accesskey">Ctrl+F</span></li>
+			      <li id="mychecks-2">查找下一个<span class="accesskey">F3</span></li>
+			      <li id="mychecks-2">查找前一个<span class="accesskey">Shift+F3</span></li>
+			      <div class="divider"></div>
+			      <li id="mychecks-1">替换<span class="accesskey">Ctrl+H</span></li>
+			      <li id="mychecks-2">替换一个</li>
+			    </menu>
+			  </li>
+			</ul>	
+		</div>
+		<div class="margin padding bg-white border">
+			<div class="padding">点击鼠标左键，查看效果。演示使用在每个选项下面使用图标，添加样式.menu-fa</div>		
+			<ul class="menu-bar menu-fa">
+			  <li>文件(F)
+			    <menu class="cool">
+			      <li title="新建文件" accesskey="^N"><i class="fa">&#xda;</i> 新建文件(N)<span class="accesskey">Ctrl+N</span></li>
+			      <li title="打开文件" accesskey="^O"><i class="fa">&#x0105;</i> 打开文件(O)...<span class="accesskey">Ctrl+O</span></li>
+			      <li title="打开文件夹"><i class="fa">&#xdb;</i> 打开文件夹...</li>
+			      <li title="克隆文件"><i class="fa">&#x015b;</i> 克隆文件</li>
+			      <li><i class="fa">&#x0104;</i> 文件编码
+			        <menu>
+			          <li><i class="fa">&#x0104;</i> UTF-8</li>
+			          <li><i class="fa">&#x0104;</i> 十六进制</li>
+			        </menu>
 			      </li>
-			      <hr/>
-			      <li type="check" name="mychecks" id="mychecks-1">First check item</li>
-			      <li type="check" name="mychecks" id="mychecks-2">Second check item</li>
-			      <li type="check" name="mychecks" id="mychecks-2">Third check item</li>
-			      <hr/>
-			      <li>Status:<input type="progress" name="p2" maxvalue="100" value="25"/></li>
-			      <li>Value:<input type="number" name="num" size=4 step=1 minvalue=0 maxvalue=100 value="25"/></li>
-			      <button name="just-a-button">Just a button</button>
+			      <li accesskey="^S"><i class="fa">&#xa9;</i> 保存(S)<span class="accesskey">Ctrl+S</span></li>
+			      <li accesskey="^S"><i class="fa">&#xa9;</i> 另存为(A)...<span class="accesskey">Ctrl+Shift+S</span></li>
 			    </menu>
 			  </li>
-			</ul>
+			  <li>编辑(E)
+			    <menu class="cool">
+			      <li id="myradios-1"><i class="fa">&#xd9;</i> 撤销(U)<span class="accesskey">Ctrl+Z</span></li>
+			      <li id="myradios-2"><i class="fa">&#xe2;</i> 重做(R)<span class="accesskey">Ctrl+Y</span></li>
+			      <li id="myradios-3"><i class="fa">&#xe2;</i> 撤销重做</li>
+			      <div class="divider"></div>
+			      <li id="mychecks-1"><i class="fa">&#x36;</i> 复制(C)<span class="accesskey">Ctrl+C</span></li>
+			      <li id="mychecks-2"><i class="fa">&#x0159;</i> 粘贴(N)<span class="accesskey">Ctrl+V</span></li>
+			      <li id="mychecks-3"><i class="fa">&#x34;</i> 删除(P)<span class="accesskey">Ctrl+X</span></li>
+			    </menu>
+			  </li>
 
-			
+			  <li>查找(S)
+			    <menu class="cool">
+			      <li id="mychecks-1"><i class="fa">&#x23;</i> 查找...<span class="accesskey">Ctrl+F</span></li>
+			      <li id="mychecks-2"><i class="fa">&#x23;</i> 查找下一个<span class="accesskey">F3</span></li>
+			      <li id="mychecks-2"><i class="fa">&#x23;</i> 查找前一个<span class="accesskey">Shift+F3</span></li>
+			      <div class="divider"></div>
+			      <li id="mychecks-1"><i class="fa">&#x2f;</i> 替换<span class="accesskey">Ctrl+H</span></li>
+			      <li id="mychecks-2"><i class="fa">&#x2f;</i> 替换一个</li>
+			    </menu>
+			  </li>
+			</ul>	
 		</div>
 		
+		<div class="margin padding bg-white border">
+			<div class="padding" style="context-menu:selector(menu#context);">点击鼠标右键，查看效果。在需要使用鼠标右键的地方添加样式 selector(menu#context);</div>
+			<!-- 菜单 -->
+			<popup>
+			  <menu class="right-menu" id="context">
+			    <li id="i1">复制<span class="accesskey">Ctrl+C</span></li>
+			    <li id="i2">剪切<span class="accesskey">Ctrl+X</span></li>
+			    <li id="i3">粘贴<span class="accesskey">Ctrl+V</span></li>
+			    <div class="divider"></div>
+			    <li id="i4">全选</li>
+			    <li>显示比例
+			        <menu>
+			          <li>150%</li>
+			          <li>120%</li>
+			          <li>100%</li>
+			          <li>80%</li>
+			          <li>50%</li>
+			        </menu>  
+			    </li>
+			  </menu>
+			</popup>
+		</div>
+
+		<div class="margin padding bg-white border">
+			<div class="padding" style="context-menu:selector(menu#contextfa);">点击鼠标右键，查看效果。在需要使用鼠标右键的地方添加样式 selector(menu#contextfa); 菜单前添加图标menu-fa</div>
+			<!-- 菜单 -->
+			<popup>
+			  <menu class="right-menu menu-fa" id="contextfa">
+			    <li id="i1"><i class="fa">&#x36;</i> 复制<span class="accesskey">Ctrl+C</span></li>
+			    <li id="i2"><i class="fa">&#xa6;</i> 剪切<span class="accesskey">Ctrl+X</span></li>
+			    <li id="i3"><i class="fa">&#x0159;</i> 粘贴<span class="accesskey">Ctrl+V</span></li>
+			    <div class="divider"></div>
+			    <li id="i4"><i class="fa">&#x53;</i> 全选</li>
+			    <li><i class="fa">&#xf6;</i> 显示比例
+			        <menu>
+			          <li><i class="fa">&#x2f;</i> 150%</li>
+			          <li><i class="fa">&#x2f;</i> 120%</li>
+			          <li><i class="fa">&#x23;</i> 100%</li>
+			          <li><i class="fa">&#x30;</i> 80%</li>
+			          <li><i class="fa">&#x30;</i> 50%</li>
+			        </menu>  
+			    </li>
+			  </menu>
+			</popup>
+		</div>
+
 	</div>
 	<div id="footer">
 		<include src="../include/footer.aardio">加载失败</include>

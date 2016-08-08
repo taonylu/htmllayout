@@ -21,6 +21,26 @@ leftnav = "table";
 		<h1 class="title margin">
 			表格样式
 		</h1>
+	
+		<!-- 菜单 -->
+		<popup>
+		  <menu class="right-menu" id="context">
+		    <li id="i1">复制<span class="accesskey">Ctrl+C</span></li>
+		    <li id="i2">剪切<span class="accesskey">Ctrl+X</span></li>
+		    <li id="i3">粘贴<span class="accesskey">Ctrl+V</span></li>
+		    <div class="divider"></div>
+		    <li id="i4">全选</li>
+		    <li>显示比例
+		        <menu>
+		          <li>150%</li>
+		          <li>120%</li>
+		          <li>100%</li>
+		          <li>80%</li>
+		          <li>50%</li>
+		        </menu>  
+		    </li>
+		  </menu>
+		</popup>
 		<div class="margin bg-white border">
 			<div class="padding">加表格添加.table样式，使表格分行。</div>
 			<table class="table" id="table1">
@@ -35,7 +55,7 @@ leftnav = "table";
 						<th width="120">操作</th>
 					</tr>
 				</thead>
-				<tbody>
+				<tbody style="context-menu:selector(menu#context);">
 					<? for(i=1; 5; 1){?>
 					<tr>
 						<td><input class="check" type="checkbox" /></td>
@@ -68,7 +88,7 @@ leftnav = "table";
 						<th width="120">操作</th>
 					</tr>
 				</thead>
-				<tbody>
+				<tbody style="context-menu:selector(menu#context);">
 					<? for(i=1; 5; 1){?>
 					<tr>
 						<td><input type="checkbox" class="check"></td>
@@ -101,7 +121,7 @@ leftnav = "table";
 						<th width="120">操作</th>
 					</tr>
 				</thead>
-				<tbody>
+				<tbody style="context-menu:selector(menu#context);">
 					<? for(i=1; 5; 1){?>
 					<tr>
 						<td><input type="checkbox" class="check"></td>
@@ -135,7 +155,7 @@ leftnav = "table";
 							<th width="120">操作</th>
 						</tr>
 					</thead>
-					<tbody>
+					<tbody style="context-menu:selector(menu#context);">
 						<? for(i=1; 5; 1){?>
 						<tr>
 							<td><input type="checkbox" class="check"></td>
@@ -169,7 +189,7 @@ leftnav = "table";
 						<th width="120">操作</th>
 					</tr>
 				</thead>
-				<tbody>
+				<tbody style="context-menu:selector(menu#context);">
 					<? for(i=1; 10; 1){?>
 					<tr>
 						<td><input type="checkbox" class="check"></td>

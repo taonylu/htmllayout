@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="/layout/styles/yimao.css" />
+	<link rel="stylesheet" href="/layout/styles/alert.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head> 
+<body>
+<div id="container">
+	<div id="header">
+		<div class="title">软件设置</div>
+		<div class="tool">
+			<a command="window-close" onclick="closeWindow()">r</a>
+		</div>
+	</div>
+	<div id="bodyer" class="setup">
+		<div class="tabs-box">
+			<div class="strip">
+				<div panel="panel1" selected="true">基本设置</div>
+				<div panel="panel2">数据库设置</div>
+				<div panel="panel3">代理设置</div>
+				<div panel="panel4">提醒设置</div>
+				<div class="other"></div>
+			</div>
+			<div class="tabs-bodyer" name="panel1" selected="true">
+				<div class="form-group">
+					<div class="label" for="text">基本</div>
+					<input type="checkbox" id="checkbox-demo-1"  />
+					<label for="checkbox-demo-1">开机时自动启动软件</label>
+				</div>
+				<div class="form-group">
+					<div class="label"></div>
+					<input type="checkbox" id="checkbox-demo-2"  />
+					<label for="checkbox-demo-2">启用软件自动升级</label>
+				</div>
+				<div class="form-group">
+					<div class="label">关闭窗口</div>
+					<input type="radio" name="radio-demo" id="radio-demo-3" checked />
+					<label for="radio-demo-3">隐藏到任务栏通知区域，不退出程序</label>
+				</div>
+				<div class="form-group">
+					<div class="label"></div>
+					<input type="radio" name="radio-demo" id="radio-demo-4"  />
+					<label for="radio-demo-4">退出程序</label>
+				</div>
+				<div class="form-group">
+					<div class="label">软件更新</div>
+					<input type="checkbox" id="checkbox-demo-5"  />
+					<label for="checkbox-demo-5">有更新时自动安装更新程序</label>
+				</div>
+			</div>
+			<div class="tabs-bodyer" name="panel2">
+				<div class="form-group">
+					<div class="label" for="text">连接名</div>
+					<input type="text" class="input" id="text" novalue="连接名" />
+				</div>
+				<div class="form-group">
+					<div class="label">主机名或IP</div>
+					<input type="text" class="input" id="text" novalue="主机名或者IP地址" />
+				</div>
+				<div class="form-group">
+					<div class="label">端口号</div>
+					<input type="text" class="input" id="text" novalue="端口号" />
+				</div>
+				<div class="form-group">
+					<div class="label">帐号</div>
+					<input type="text" class="input" id="text" novalue="帐号" />
+				</div>
+				<div class="form-group">
+					<div class="label">密码</div>
+					<input type="password" class="input" id="text" novalue="密码" />
+				</div>
+			</div>
+			<div class="tabs-bodyer" name="panel3">
+				<div class="form-group">
+					<div class="label" for="text">名称</div>
+					<input type="text" class="input" id="text" novalue="名称" />
+				</div>
+				<div class="form-group">
+					<div class="label">类型</div>
+					<select name="Alignment" size="1" id="select" novalue="(no value!)" class="input">
+						<option value="left">HTTP</option>
+						<option value="right">HTTPS</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<div class="label">地址</div>
+					<input type="text" class="input" id="text" novalue="地址" />
+				</div>
+				<div class="form-group">
+					<div class="label">端口</div>
+					<input type="text" class="input" id="text" novalue="端口" />
+				</div>
+				<div class="form-group">
+					<div class="label">用户名</div>
+					<input type="text" class="input" id="text" novalue="用户名" />
+				</div>
+				<div class="form-group">
+					<div class="label">密码</div>
+					<input type="password" class="input" id="text" novalue="密码" />
+				</div>
+			</div>
+			<div class="tabs-bodyer" name="panel4">
+				<div class="form-group">
+					<div class="label" for="text">提醒</div>
+					<input type="checkbox" id="checkbox-demo-1"  />
+					<label for="checkbox-demo-1">添加新数据时提醒</label>
+				</div>
+				<div class="form-group">
+					<div class="label"></div>
+					<input type="checkbox" id="checkbox-demo-2"  />
+					<label for="checkbox-demo-2">数据有更新时提醒</label>
+				</div>
+				<div class="form-group">
+					<div class="label"></div>
+					<input type="checkbox" name="checkbox-demo" id="checkbox-demo-3" checked />
+					<label for="checkbox-demo-3">数据被删除时提醒</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer-tool">
+		<button class="btn btn-primary" id="about_setup_save"><i class="fa">&#x2d;</i>保存</button>
+		<button class="btn btn-danger" id="about_setup_cancel"><i class="fa">&#x2e;</i>取消</button>
+	</div>
+</div>
+</body>
+</html>

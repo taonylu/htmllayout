@@ -27,10 +27,6 @@ a:focus,a:hover{color:#0a8}
 .yscroll{vertical-scrollbar:y-scrollbar;}
 
 /*字体图片*/
-
-@font-face {font-family: "iconfont";src: url("fonts/iconfont.ttf");}
-.icon{display: inline-block;font-family:iconfont;font-style: normal;text-rendering: auto;font-size: 24px;line-height: 24px;vertical-align: -6px;}
-
 @font-face {font-family: "fontawesome";src: url("fonts/fontawesome.ttf");}
 .fa{display: inline-block;font-family:fontawesome;font-style: normal;text-rendering: auto;font-size: 24px;line-height: 24px;vertical-align: -6px;}
 
@@ -204,7 +200,6 @@ a:focus,a:hover{color:#0a8}
 .btn{behavior:button}
 .btn:disabled{opacity: 0.75; cursor: pointer;}
 .btn:focus{outline:0}
-.btn .icon{font-size: 18px; line-height: 18px; margin-right: 5px;}
 .btn .fa{font-size: 14px; line-height: 14px; margin-right: 5px;}
 
 
@@ -302,6 +297,42 @@ select.input{padding: 1px; min-width: 100px;}
 /*加阴影 大量使用阴影会影响性能*/
 .box-shadow{outline: 3px glow #ccc 1px;}
 
+/*菜单样式*/
+.menu-bar{behavior:menu-bar;flow:horizontal;color:windowtext;margin:0;font-size: 12px; padding: 0;}
+.menu-bar>li{padding:2px 8px;margin:0;white-space:nowrap;width:max-intrinsic;display:block}
+.menu-bar>li:current{background-color:#188ae2;color:#FFF}
+.menu-bar menu{behavior:menu;flow:vertical;display:none;padding:1px;max-width:max-intrinsic;border:1px solid rgba(0,0,0,0.2);background-color: #FFF;color:#333;margin:0;}
+.menu-bar menu menu{max-width:max-intrinsic; margin-left: 2px;}
+.menu-bar menu li{width:*;padding-left:24px;padding-right:12px;padding-top:4px;padding-bottom:4px;foreground-repeat:no-repeat;foreground-position:2px 50%;color:windowtext}
+.menu-bar menu li:rtl{width:*;padding-right:24px;padding-left:12px;foreground-repeat:no-repeat;foreground-position-right:2px;foreground-position-top:50%;text-align:right;color:windowtext}
+.menu-bar menu li:disabled{color:graytext;foreground-image:none}
+.menu-bar menu li span.accesskey{display:inline-block;margin-left:*;padding-left:1em;color:windowtext}
+.menu-bar menu li:current span.accesskey{color:#FFF}
+.menu-bar menu li:has-child-of-type(menu){foreground-image:url(stock:arrow-right);foreground-repeat:no-repeat;foreground-position:100% 50%}
+.menu-bar menu li:has-child-of-type(menu):rtl{foreground-image:url(stock:arrow-left);foreground-repeat:no-repeat;foreground-position:0 50%}
+.menu-bar menu li:current,
+.menu-bar menu li:hover:owns-popup{background-color:#188ae2;color:#FFF}
+.menu-bar menu .divider{height: 1px;margin:2px;overflow: hidden;background-color: #e5e5e5;border-bottom: 1px solid #fff;}
+/*图标菜单*/
+.menu-bar.menu-fa menu li{padding-left: 10px;}
+.menu-bar.menu-fa .fa{font-size: 13px;line-height: 13px;}
+
+
+.right-menu,.right-menu menu{behavior:menu;flow:vertical;display:none;padding:1px;max-width:max-intrinsic;border:1px solid rgba(0,0,0,0.2);background-color: #FFF;color:#333;margin:0;font-size: 12px;}
+.right-menu li{width:*;padding-left:24px;padding-right:12px;padding-top:4px;padding-bottom:4px;foreground-repeat:no-repeat;foreground-position:2px 50%;color:windowtext}
+.right-menu li:rtl{width:*;padding-right:24px;padding-left:12px;foreground-repeat:no-repeat;foreground-position-right:2px;foreground-position-top:50%;text-align:right;color:windowtext}
+.right-menu li:disabled{color:graytext;foreground-image:none}
+.right-menu li span.accesskey{display:inline-block;margin-left:*;padding-left:1em;color:windowtext}
+.right-menu li:current span.accesskey{color:#FFF}
+.right-menu li:has-child-of-type(menu){foreground-image:url(stock:arrow-right);foreground-repeat:no-repeat;foreground-position:100% 50%}
+.right-menu li:has-child-of-type(menu):rtl{foreground-image:url(stock:arrow-left);foreground-repeat:no-repeat;foreground-position:0 50%}
+.right-menu li:current,
+.right-menu li:hover:owns-popup{background-color:#188ae2;color:#FFF}
+.right-menu .divider{height: 1px;margin:2px;overflow: hidden;background-color: #e5e5e5;border-bottom: 1px solid #fff;}
+
+.right-menu.menu-fa li{padding-left: 10px;}
+.right-menu.menu-fa .fa{font-size: 13px;line-height: 13px;}
+
 /*分页*/
 .pager{background-color: #FFF; border: 1px solid #efefef; text-align: center;}
 
@@ -319,11 +350,8 @@ select.input{padding: 1px; min-width: 100px;}
 .user .info{width: 70%%; height:100%%;}
 .user .info h3{margin:0; padding: 5px 0;}
 .user .info p{margin:0; padding: 5px 0;}
+.fa-index{color:#eee;}
 
-.icon-32{background-repeat: no-repeat; width: 32px; height: 32px; display: block; line-height: 32px; content: "";}
-.icon-jb{background-image: url('images/icon-jb.png');}
-.icon-tz{background-image: url('images/icon-tz.png');}
-.icon-user{background-image: url('images/icon-user.png');}
 
 .row2{flow:"1 2"; width: 100%%;}
 .row2 .panel{width: 50%%; height: 100%%;}

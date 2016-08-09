@@ -26,6 +26,7 @@
 			<file name="alert.css" path="layout\styles\alert.css" comment="layout\styles\alert.css"/>
 			<file name="login.css" path="layout\styles\login.css" comment="layout\styles\login.css"/>
 			<file name="main.css" path="layout\styles\main.css" comment="layout\styles\main.css"/>
+			<file name="print.html" path="layout\styles\print.html" comment="layout\styles\print.html"/>
 			<file name="print_tpl.html" path="layout\styles\print_tpl.html" comment="layout\styles\print_tpl.html"/>
 			<file name="styles.css" path="layout\styles\styles.css" comment="layout\styles\styles.css"/>
 			<file name="yimao.css" path="layout\styles\yimao.css" comment="layout\styles\yimao.css"/>
@@ -92,9 +93,9 @@
 		</folder>
 	</folder>
 	<folder name="res" path="res" comment="res" embed="false">
-		<file name="print.aardio" path="res\print.aardio" comment="res\print.aardio"/>
 		<file name="about.aardio" path="res\about.aardio" comment="res\about.aardio"/>
-		<file name="setup.aardio" path="res\setup.aardio" comment="res\setup.aardio"/>
 		<file name="login.aardio" path="res\login.aardio" comment="res\login.aardio"/>
+		<file name="print.aardio" path="res\print.aardio" comment="res\print.aardio"/>
+		<file name="setup.aardio" path="res\setup.aardio" comment="res\setup.aardio"/>
 	</folder>
 </project>

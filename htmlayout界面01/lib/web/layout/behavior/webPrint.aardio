@@ -1,5 +1,5 @@
-﻿//打印 myprint
-namespace web.layout.behavior.myprint.page
+﻿//webPrint打印浏览
+namespace web.layout.behavior.webPrint
 import web.form;
 import web.form.util; 
 import win.reg;
@@ -25,19 +25,20 @@ onElementControlCreated = function (ltTarget,ltOwner,reason,behaviorParams) {
 	wb = ..web.form( ltCtrl,0x4/*_UIFLAG_NO3DBORDER*/  , , ,true/*securityTrusted*/ ) 
 	ltCtrl.translateAccelerator = function( msg ){
 		var message,vk = msg.message,msg.wParam;
-		if ( (message == 0x100/*_WM_KEYDOWN*/) || (message== 0x101/*_WM_KEYUP*/) ) { 
-			if( ( ( vk == 'N'# ) && ( ( ::GetKeyState(0x11/*_VK_CTRL*/) & 0x8000 ) == 0x8000 ) ) ) {
-				return true; 
-			}
-		}
-		return wb._host.tranacc(msg)
+    	if (   (message == 0x100/*_WM_KEYDOWN*/) || (message== 0x101/*_WM_KEYUP*/) ) { 
+        	if( /**( vk == 0x74/*_VK_F5*/ )
+            	|| **/( ( vk == 'N'# ) && ( ( ::GetKeyState(0x11/*_VK_CTRL*/) & 0x8000 ) == 0x8000 ) ) ) 
+        	{
+            	return true;   
+        	}
+    	}
+    	return wb._host.tranacc(msg)
 	}
-	
 	if( !_STUDIO_INVOKED ){
 		wb.noScriptErr = true;
 	}
 	var homepage = ltOwner.getCustomAttribute("homepage");
-	if( #homepage ) wb.go(  ltOwner.getCustomAttribute("homepage"));
+	if( #homepage ) wb.go(  ltOwner.getCustomAttribute("homepage"))   
 	ltOwner.sendEvent("onBrowserCreated",1);
 }
      
@@ -48,10 +49,16 @@ onSize = function (ltOwner) {
 		ltCtrl.adjust(0,0,0);
 	}
 }
- 
-//打印调用的，参数数组，data 为需要打印的内容
-print = function(data){
-	wb.jQuery("#container").html(data)
-	wb.execWb(7,1);//打印预览
-    //wb.execWb(6,6);//直接打印,不会弹出打印机窗口
-} 
+
+onButtonClick = {
+    //打印预览
+    //点击按钮默认操作是打印预览
+    default = function(ltTarget, ltEle, x, y, mouseParams){
+    	//指定要打印的区域
+    	var area = ltEle.root().queryElement("#"++ltEle.getAttribute("data-id")); 
+		var html = area.innerHTML;
+        wb.jQuery("#print_content").html(html)
+		wb.execWb(7,1);//打印预览
+		//wb.execWb(6,6);//直接打印,不会弹出打印机窗口
+    }
+}

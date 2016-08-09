@@ -64,7 +64,7 @@ leftnav = "print";
 				</tbody>
 			</table>
 		</div>
-		<div class="margin bg-white border"><button class="btn btn_print" data-id="print_content"><i class="fa">&#x49;</i> 打印上面表格</button></div>
+		<div class="margin bg-white border"><button class="btn btn-primary btn_print" data-id="print_content"><i class="fa">&#x49;</i> 打印上面表格</button></div>
 
 		<div class="margin bg-white border" id="print_content1">
 			<table class="table" id="table1">
@@ -98,7 +98,7 @@ leftnav = "print";
 				</tbody>
 			</table>
 		</div>
-		<div class="margin bg-white border"><button class="btn btn_print" data-id="print_content1"><i class="fa">&#x49;</i> 打印数据</button></div>
+		<div class="margin bg-white border"><button class="btn btn-primary btn_print" data-id="print_content1"><i class="fa">&#x49;</i> 打印数据</button></div>
 		
 
 		<!-- 打印需要承载的控件 -->

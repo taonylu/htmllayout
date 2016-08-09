@@ -22,9 +22,7 @@ leftnav = "home";
 	<div id="bodyer" class="bg yscroll">
 		<h1 class="title margin">
 			登录界面
-		</h1>
-	
-		
+		</h1>		
 		<div class="margin bg-white border">
 			<div class="padding">
 				登录界面展示<br>

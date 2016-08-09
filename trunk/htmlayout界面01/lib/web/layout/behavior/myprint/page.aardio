@@ -1,0 +1,57 @@
+﻿//打印 myprint
+namespace web.layout.behavior.myprint.page
+import web.form;
+import web.form.util; 
+import win.reg;
+
+//ie11浏览器
+web.form.util.emulation(11000);
+
+//注册了准备打印
+var reg = win.reg("HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\PageSetup");
+ 
+//不要页眉页脚
+reg.setSzValue("header","") ;
+reg.setSzValue("footer","") ;
+ 
+//把页边距全部设置为0
+reg.setDwValue("margin_bottom",0) ;
+reg.setDwValue("margin_left",0)
+reg.setDwValue("margin_top",0) ;
+reg.setDwValue("margin_right",0)
+
+onElementControlCreated = function (ltTarget,ltOwner,reason,behaviorParams) {
+	var ltCtrl = ltOwner.getCtrl(); 
+	wb = ..web.form( ltCtrl,0x4/*_UIFLAG_NO3DBORDER*/  , , ,true/*securityTrusted*/ ) 
+	ltCtrl.translateAccelerator = function( msg ){
+		var message,vk = msg.message,msg.wParam;
+		if ( (message == 0x100/*_WM_KEYDOWN*/) || (message== 0x101/*_WM_KEYUP*/) ) { 
+			if( ( ( vk == 'N'# ) && ( ( ::GetKeyState(0x11/*_VK_CTRL*/) & 0x8000 ) == 0x8000 ) ) ) {
+				return true; 
+			}
+		}
+		return wb._host.tranacc(msg)
+	}
+	
+	if( !_STUDIO_INVOKED ){
+		wb.noScriptErr = true;
+	}
+	var homepage = ltOwner.getCustomAttribute("homepage");
+	if( #homepage ) wb.go(  ltOwner.getCustomAttribute("homepage"));
+	ltOwner.sendEvent("onBrowserCreated",1);
+}
+     
+//尺寸改变时调用    
+onSize = function (ltOwner) {
+	var ltCtrl = ltOwner.getCtrl();
+	if( ltCtrl ) {
+		ltCtrl.adjust(0,0,0);
+	}
+}
+ 
+//打印调用的，参数数组，data 为需要打印的内容
+print = function(data){
+	wb.jQuery("#container").html(data)
+	wb.execWb(7,1);//打印预览
+    //wb.execWb(6,6);//直接打印,不会弹出打印机窗口
+} 

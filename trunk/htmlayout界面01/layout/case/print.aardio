@@ -1,0 +1,68 @@
+<? 
+headnav = "case";
+leftnav = "print";
+?>
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="/layout/styles/yimao.css" />
+	<link rel="stylesheet" href="/layout/styles/main.css" />
+	<link rel="stylesheet" href="/layout/styles/styles.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head> 
+<body>
+<div id="container">
+	<div id="header">
+		<include src="../include/header.aardio">加载失败</include>
+	</div>
+	<div id="navbar">
+		<include src="navbar.aardio">加载失败</include>
+		<include src="../include/setup.aardio">加载失败</include>
+	</div>
+	<div id="bodyer" class="bg yscroll">
+		<h1 class="title margin">
+			演示打印功能
+		</h1>		
+		<div class="margin bg-white border" id="print_content">
+			<div class="padding">演示打印下面的表格内容</div>
+			<table class="table" id="table1">
+				<thead>
+					<tr>
+						<th width="20"><input class="checkall" type="checkbox" data-id="table1" /></th>
+						<th width="30">ID</th>
+						<th>客户名称</th>
+						<th>行业</th>
+						<th>所有者</th>
+						<th>金额</th>
+						<th width="120">操作</th>
+					</tr>
+				</thead>
+				<tbody style="context-menu:selector(menu#context);">
+					<? for(i=1; 5; 1){?>
+					<tr>
+						<td><input class="check" type="checkbox" /></td>
+						<td><?=i?></td>
+						<td>电信集团有限公司</td>
+						<td>通信</td>
+						<td>李度</td>
+						<td>￥4,480.00</td>
+						<td>
+							<a href="#">视图</a>
+							<a href="#">修改</a>
+							<a href="#">删除</a>
+						</td>
+					</tr>
+					<? } ?>
+				</tbody>
+			</table>
+		</div>
+		<div class="margin bg-white border"><button class="btn btn_print" id="print" data-id="print_content"><i class="fa">&#x49;</i> 打印表格</button></div>
+		<!-- 打印需要承载的控件 -->
+		<widget cls="static" id="print_page"></widget>
+	</div>
+	<div id="footer">
+		<include src="../include/footer.aardio">加载失败</include>
+	</div>
+</div>
+</body>
+</html>

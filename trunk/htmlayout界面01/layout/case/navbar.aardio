@@ -2,5 +2,6 @@
 	≡ 使用案例
 </div>
 <div class="navbar-bodyer">
-	<a href="/layout/case/home.aardio" <? if (leftnav=="home") { ?> selected=true <? } ?>><i class="fa">&#xaf;</i> 登录演示</a>
+	<a href="/layout/case/home.aardio" <? if (leftnav=="home") { ?> selected=true <? } ?>><i class="fa">&#xaf;</i> 登录界面</a>
+	<a href="/layout/case/print.aardio" <? if (leftnav=="print") { ?> selected=true <? } ?>><i class="fa">&#x49;</i> 打印功能</a>
 </div>

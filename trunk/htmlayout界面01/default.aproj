@@ -31,9 +31,15 @@
 		<folder name="case" path="layout\case" comment="layout\case">
 			<file name="home.aardio" path="layout\case\home.aardio" comment="layout\case\home.aardio"/>
 			<file name="navbar.aardio" path="layout\case\navbar.aardio" comment="layout\case\navbar.aardio"/>
+			<file name="print.aardio" path="layout\case\print.aardio" comment="layout\case\print.aardio"/>
+		</folder>
+		<folder name="print" path="layout\print" comment="layout\print">
+			<file name="print.html" path="layout\print\print.html" comment="layout\print\print.html"/>
+			<file name="print_tpl.html" path="layout\print\print_tpl.html" comment="layout\print\print_tpl.html"/>
 		</folder>
 	</folder>
 	<folder name="res" path="res" comment="res" embed="false">
+		<file name="print.aardio" path="res\print.aardio" comment="res\print.aardio"/>
 		<file name="about.aardio" path="res\about.aardio" comment="res\about.aardio"/>
 		<file name="setup.aardio" path="res\setup.aardio" comment="res\setup.aardio"/>
 		<file name="login.aardio" path="res\login.aardio" comment="res\login.aardio"/>

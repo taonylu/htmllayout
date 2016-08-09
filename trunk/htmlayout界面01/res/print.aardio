@@ -1,0 +1,206 @@
+import win.ui;
+/*DSG{{*/
+var winform = win.form(text="HTMLayout 无边框窗体";right=759;bottom=469;border="none";parent=...)
+winform.add()
+/*}}*/
+
+import web.layout;
+import web.layout.behavior.windowCommand;//导入behavior:windowCommand; 
+var wbLayout = web.layout( winform );//在窗体上创建HTMLayout对象
+ 
+//开发环境中启用HTMLayout调试功能
+if( _STUDIO_INVOKED ){
+    import web.layout.debug;
+    wbLayout.attachEventHandler( web.layout.debug );
+}
+
+//自定义网页打印库
+namespace web.layout.behavior.myprint{
+    import web.form;
+    import web.form.util; 
+    web.form.util.emulation(11000);//ie11浏览器
+    import win.reg;
+     
+    var reg = win.reg("HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\PageSetup")   //注册了准备打印
+     
+    //不要页眉页脚
+    reg.setSzValue("header","") ;
+    reg.setSzValue("footer","") ;
+     
+    //把页边距全部设置为0
+    reg.setDwValue("margin_bottom",0) ;
+    reg.setDwValue("margin_left",0)
+    reg.setDwValue("margin_top",0) ;
+    reg.setDwValue("margin_right",0)
+     
+     
+    onElementControlCreated = function (ltTarget,ltOwner,reason,behaviorParams) {
+            var ltCtrl = ltOwner.getCtrl(); 
+            wb = ..web.form( ltCtrl,0x4/*_UIFLAG_NO3DBORDER*/  , , ,true/*securityTrusted*/ ) 
+            ltCtrl.translateAccelerator = function( msg ){
+                var message,vk = msg.message,msg.wParam;
+                if ( (message == 0x100/*_WM_KEYDOWN*/) || (message== 0x101/*_WM_KEYUP*/) ) { 
+                    if( ( ( vk == 'N'# ) && ( ( ::GetKeyState(0x11/*_VK_CTRL*/) & 0x8000 ) == 0x8000 ) ) ) {
+                        return true;   
+                    } 
+                }  
+                return wb._host.tranacc(msg)
+            }
+            if( !_STUDIO_INVOKED ){
+                wb.noScriptErr = true;
+            }
+            var homepage = ltOwner.getCustomAttribute("homepage");
+            if( #homepage ) wb.go(  ltOwner.getCustomAttribute("homepage"))   
+            ltOwner.sendEvent("onBrowserCreated",1);
+        }
+         
+    //尺寸改变时调用    
+    onSize = function (ltOwner) {
+        var ltCtrl = ltOwner.getCtrl();
+        if( ltCtrl ) {
+            ltCtrl.adjust(0,0,0);
+        }
+    }
+     
+     
+    //打印调用的，参数数组
+    print = function(data){
+        wb.getEle("prname").innerText = data.name;
+        wb.getEle("prtel").innerText = data.tel;
+        wb.getEle("prtime").innerText = data.time;
+
+        var htm = "我是打印的内容" ;
+        wb.jQuery("#reports").html(data.content)
+        //添加备注
+        wb.getEle("prbeizhu").innerText = "备注内容";
+        wb.execWb(7,1) ; //预览
+        //wb.execWb(6,6)   //打印,不会弹出打印机窗口     
+    } 
+}
+ 
+wbLayout.html = /**  
+<!doctype html>
+<html>
+<body>
+    <!-- 界面顶栏 -->
+    <div id="header"> 
+		<div class="titlebox"><a command="window-min">0</a><a command="window-max">1</a><a command="window-close" >r</a></div>
+        <div class="title-bar" command="window-caption"> <span class=title> 我 的 软 件 </span></div>
+    </div> 
+     
+    <!-- 界面中部内容栏 -->
+    <div id="container"> 
+        <div class="rside">
+                <div class="v-bricks" id="jszjtab">             
+                <table class="layout-grid" fixedrows="1">
+                <thead>
+                    <tr>
+                    <th>品名</th><th >品牌&型号</th><th >价格</th><th >数量</th><th >备注</th><th  >操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <? for(i=1; 8; 1){?>
+                        <tr><td>品名<? =i ?></td><td>型号</td><td>0</td><td  >0</td><td></td><td><a href = "#">删除</a></td>
+                    </tr> 
+                 <? } ?>                     
+                </tbody>
+                </table>
+            	<widget cls="static" id="static"  style="width:100%%;height:100%%;display:none ;"></widget>  
+            </div>         
+         </div>  
+    </div>
+     
+    <!-- 界面底栏 -->
+    <div id="footer"><button id="print">打印</button></div>
+</body>
+</html>
+**/
+ 
+wbLayout.css = /**
+html,body{margin:0;height:100%;background:#fff;}
+ body{overflow:hidden;}
+body[maximize]{border-radius:0;}
+ body[maximize] #header{border-radius:0;}
+#header{height:32px;background:rgb(52,152,220);cursor:default;behavior:windowCommand;overflow:hidden;}
+ #header .title-bar{margin-right:95px;padding-left:15px;height:28px;line-height: 28px;font:system;color:#fff;} 
+ #header .titlebox{width:max-intrinsic;height:28px;float:right;margin-right:8px;overflow-x:hidden;}
+ #header .titlebox a{display:inline-block;width:max-intrinsic;height:14px;font-family:"Marlett";font-size:14px;padding:4px;color:#fff;cursor:default;}
+#header .titlebox a[command]:hover{background:#6ebccf;}
+ #header .titlebox a[command]:active{background:#FF0000;} 
+ #header a[command="window-restore"]{content:"2";}  
+ #container{width:100%;height:100%%;flow: horizontal;margin:0 auto;overflow:hidden;background:#ac0;}
+ #container .rside{height:100%;background:#FFF;}
+ #container .rside > *{margin:2px;font-size:9pt;}
+ div .v-bricks{flow:vertical;overflow:auto;height:100%%;}
+
+#static{border:1px solid #bdbccc;behavior:myprint;width:100%%;height:*;-homepage:"/layout/print/print.html";} 
+table.layout-grid{background:white;border:1px solid #999;width:100%%;height:100%%;overflow:auto;flow: table-fixed;font-size:9pt;border-spacing:0;}
+table.layout-grid th{color: #666;font-size:9pt;border-right:1px solid #DDD;border-bottom:1px solid #EEE;padding:4px;background-color: white;font-weight:normal;}
+.layout-grid thead tr th {padding:4px;border-right:1px solid silver;border-bottom:1px solid silver;background-color:#efefef;text-align: left;}
+table.layout-grid tr{height:30px;border-bottom:1px solid #EEE;} 
+table.layout-grid tr:hover{background-color: #FAFAFA;}
+table.layout-grid tr:current{background-color:#ff9933;}
+table.layout-grid td {white-space: nowrap;height:20px;overflow:hidden;text-overflow:ellipsis;padding: 4px;border-right:1px solid #EEE;}
+table.layout-grid td:hover {color: #F00;}
+ #footer {background:rgb(239,237,238);height:25px;text-align:right;padding:10px 20px;}
+ #footer button{padding:4px 13px;font-size:12px;background:rgb(27,174,93);color:white;}
+ #footer button:hover {background:rgb(33,127,188);cursor:pointer;} 
+**/
+  
+import process;
+wbLayout.onButtonClick = {
+    //打印预览
+    print = function (layoutEle,reason,behaviorParams) {
+        web.layout.behavior.myprint.print(getdata()); 
+    }
+}
+ 
+ 
+ 
+ 
+getTdContent = function(tablehl){
+    var rows = tablehl.$("tr");
+    if !rows return ; 
+    var row = rows[1];
+    var cells = row.childCount();
+    var data = {};
+    for(i=2;#rows;1){
+        var tab = {};   
+        for(m=1;cells;1){
+        var str = rows[i].child(m).innerText:""     ;              //没有则设置为空
+        ..table.push(tab,str)
+        }
+        ..table.push(data,tab)
+    }
+    return data; 
+}
+ 
+ 
+ 
+getdata = function(){     
+    var tabhl = wbLayout.getEle("jszjtab") ;
+    var tab = getTdContent(tabhl) ;   //取表数据
+    var  printdata = {};
+    printdata.name = "隔壁老王"  ;
+	printdata.tel = "189999999"  ;
+    printdata.time = tostring(..time(),"%Y年%m月%d日 ");
+    printdata.receivables = heji:"";    //合计
+    printdata.beizhu = beizhu?"备注："++beizhu:"";
+    printdata.content = wbLayout.getEle("jszjtab").innerHTML  ;   //表格数据
+    return  printdata; 
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+import win.ui.shadow;
+win.ui.shadow(winform); //添加阴影边框
+ 
+winform.show();
+win.loopMessage();

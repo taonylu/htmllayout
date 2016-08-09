@@ -1,5 +1,6 @@
-html,body{margin:0;height:100%;background:#fff;overflow:hidden;font-family:"Microsoft YaHei","simsun","Helvetica Neue",Arial,Helvetica,sans-serif;font-size:14px;color:#333;}
+html,body{margin:0;height:100%;background:#fff;overflow:hidden;font-size:14px;}
 body[maximize]{border-radius:0}
+html,body,div,ul,li,table,a,p,td,th{font-family:"Microsoft YaHei","simsun","Helvetica Neue",Arial,Helvetica,sans-serif;color:#333;}
 a{color:#333;text-decoration:none}
 a:focus,a:hover{color:#0a8}
 

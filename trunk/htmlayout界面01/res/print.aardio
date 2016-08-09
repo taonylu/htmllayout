@@ -82,13 +82,10 @@ wbLayout.html = /**
 <!doctype html>
 <html>
 <body>
-    <!-- 界面顶栏 -->
     <div id="header"> 
 		<div class="titlebox"><a command="window-min">0</a><a command="window-max">1</a><a command="window-close" >r</a></div>
         <div class="title-bar" command="window-caption"> <span class=title> 我 的 软 件 </span></div>
-    </div> 
-     
-    <!-- 界面中部内容栏 -->
+    </div>
     <div id="container"> 
         <div class="rside">
                 <div class="v-bricks" id="jszjtab">             
@@ -109,8 +106,6 @@ wbLayout.html = /**
             </div>         
          </div>  
     </div>
-     
-    <!-- 界面底栏 -->
     <div id="footer"><button id="print">打印</button></div>
 </body>
 </html>
@@ -133,7 +128,7 @@ body[maximize]{border-radius:0;}
  #container .rside > *{margin:2px;font-size:9pt;}
  div .v-bricks{flow:vertical;overflow:auto;height:100%%;}
 
-#static{border:1px solid #bdbccc;behavior:myprint;width:100%%;height:*;-homepage:"/layout/print/print.html";} 
+#static{border:1px solid #bdbccc;behavior:myprint;width:100%%;height:*;-homepage:"/layout/styles/print.html";} 
 table.layout-grid{background:white;border:1px solid #999;width:100%%;height:100%%;overflow:auto;flow: table-fixed;font-size:9pt;border-spacing:0;}
 table.layout-grid th{color: #666;font-size:9pt;border-right:1px solid #DDD;border-bottom:1px solid #EEE;padding:4px;background-color: white;font-weight:normal;}
 .layout-grid thead tr th {padding:4px;border-right:1px solid silver;border-bottom:1px solid silver;background-color:#efefef;text-align: left;}
@@ -154,9 +149,6 @@ wbLayout.onButtonClick = {
         web.layout.behavior.myprint.print(getdata()); 
     }
 }
- 
- 
- 
  
 getTdContent = function(tablehl){
     var rows = tablehl.$("tr");
@@ -189,16 +181,7 @@ getdata = function(){
     printdata.content = wbLayout.getEle("jszjtab").innerHTML  ;   //表格数据
     return  printdata; 
 }
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
 import win.ui.shadow;
 win.ui.shadow(winform); //添加阴影边框
  

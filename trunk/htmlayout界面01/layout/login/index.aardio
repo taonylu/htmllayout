@@ -12,10 +12,18 @@
 		<div class="tool"><a command="window-close" onclick="closeWindow()">r</a></div>		
 	</div>
 	<div id="bodyer">
-		登录
+		<div class="face" style="background-image: url('/layout/styles/images/face.jpg');"></div>
+		<div class="loginfrom">
+			<div class="username"> <i class="fa">&#x28;</i> <input type="text" class="input" novalue="登录账号"></div>
+			<div class="password"> <i class="fa">&#x3f;</i> <input type="password" class="input" novalue="登录密码"></div>
+			<div class="text">
+				<label><input type="checkbox" id="remember"> 记住密码</label>
+				<label><input type="checkbox" id="autologin"> 自动登录</label>
+			</div>
+		</div>
 	</div>
 	<div id="footer">
-		<button class="btn">登录</button>
+		<button class="btn btn-primary">登录</button>
 	</div>
 </div>
 </body>

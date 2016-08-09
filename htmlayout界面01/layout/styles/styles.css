@@ -29,3 +29,7 @@
 .icon_list>div code{display: block; text-align: center; margin-top: 5px; font-size: 12px; background-color:#188ae2; color: #FFF; }
 
 #login1{behavior:~"case.login";}
+
+/*打印功能*/
+#print_page{behavior:"myprint.page";width:*;height:*;-homepage:"/layout/print/print_tpl.html";display: none;}
+.btn_print{behavior:~"myprint.btn";}

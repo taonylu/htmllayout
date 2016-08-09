@@ -11,6 +11,8 @@ import web.layout.behavior.windowCommand;
 import web.layout.behavior.tabs;
 import web.layout.behavior.navbar.footer;
 import web.layout.behavior.case.login;
+import web.layout.behavior.myprint.page;
+import web.layout.behavior.myprint.btn;
 import web.layout.behavior.checkall;
 import web.layout.behavior.checkone;
 

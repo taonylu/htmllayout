@@ -30,6 +30,3 @@
 
 #login1{behavior:~"case.login";}
 
-/*打印功能*/
-#print_page{behavior:"web-print";width:100%%;height:100%%;-homepage:"/layout/styles/print_tpl.html";display: none;}
-.btn_print{behavior:~"web-print";}

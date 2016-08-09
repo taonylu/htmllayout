@@ -54,9 +54,10 @@ onButtonClick = {
     //打印预览
     //点击按钮默认操作是打印预览
     default = function(ltTarget, ltEle, x, y, mouseParams){
-    	//指定要打印的区域
+    	//指定要打印的区域HTMl代码
     	var area = ltEle.root().queryElement("#"++ltEle.getAttribute("data-id")); 
 		var html = area.innerHTML;
+		//将要打印的内容直接插入到打印模板页面
         wb.jQuery("#print_content").html(html)
 		wb.execWb(7,1);//打印预览
 		//wb.execWb(6,6);//直接打印,不会弹出打印机窗口

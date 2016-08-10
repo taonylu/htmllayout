@@ -1,0 +1,21 @@
+﻿//sqlite 数据库
+namespace db.sqlite;
+import sqlite;
+import sqlite.aes128;
+
+class client{
+
+	db_file_path = "/db/yimao.db";//sqlite文件路径
+	db_password = "123456";//sqlite访问密码
+
+	ctor(){
+		connect, err, errcode = sqlite.aes128(db_file_path, db_file_path);
+		if( !connect ){
+			..win.msgboxErr('错误提示：连接数据库失败。\r\n1、请检查数据库是否存在;\r\n2、请检查数据库密码是否正确。',"提示");
+		}
+	}
+}
+
+
+
+

@@ -1,0 +1,38 @@
+﻿<? 
+headnav = "home";
+leftnav = "readme";
+?>
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="/layout/styles/yimao.css" />
+	<link rel="stylesheet" href="/layout/styles/main.css" />
+	<link rel="stylesheet" href="/layout/styles/styles.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head> 
+<body>
+<div id="container">
+	<div id="header">
+		<include src="include/header.aardio">加载失败</include>
+	</div>
+	<div id="navbar">
+		<include src="navbar.aardio">加载失败</include>
+		<include src="include/setup.aardio">加载失败</include>
+	</div>
+	<div id="bodyer" class="yscroll bg">
+		<h1 class="title margin">
+			更新记录
+		</h1>
+		<div class="margin padding bg-white border">
+			<div class="padding-left padding-right bg-primary">2016-08-10 初始化</div>
+			<p>1、UI样式包括：表格，按钮，背景，表单，切换，字体图标，下拉/右击菜单</p>
+			<p>2、案例包括：登录框，打印功能</p>
+			<p>3、其它包括界面上的互动弹出窗口等</p>
+		</div>
+	</div>
+	<div id="footer">
+		<include src="include/footer.aardio">加载失败</include>
+	</div>
+</div>
+</body>
+</html>

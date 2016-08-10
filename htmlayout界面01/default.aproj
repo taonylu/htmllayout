@@ -3,99 +3,43 @@
 	<file name="main.aardio" path="main.aardio" comment="启动程序代码"/>
 	<folder name="资源文件(web.layout)" path="layout" comment="" embed="true">
 		<file name="main.aardio" path="layout\main.aardio" comment="layout\main.aardio"/>
-		<file name="home.aardio" path="layout\home.aardio" comment="layout\home.aardio"/>
 		<file name="navbar.aardio" path="layout\navbar.aardio" comment="layout\navbar.aardio"/>
+		<file name="home.aardio" path="layout\home.aardio" comment="layout\home.aardio"/>
+		<file name="readme.aardio" path="layout\readme.aardio" comment="layout\readme.aardio"/>
+		<folder name="ui" path="layout\ui" comment="layout\ui">
+			<file name="navbar.aardio" path="layout\ui\navbar.aardio" comment="layout\ui\navbar.aardio"/>
+			<file name="menu.aardio" path="layout\ui\menu.aardio" comment="layout\ui\menu.aardio"/>
+			<file name="table.aardio" path="layout\ui\table.aardio" comment="layout\ui\table.aardio"/>
+			<file name="backgroup.aardio" path="layout\ui\backgroup.aardio" comment="layout\ui\backgroup.aardio"/>
+			<file name="buttons.aardio" path="layout\ui\buttons.aardio" comment="layout\ui\buttons.aardio"/>
+			<file name="iconfont.aardio" path="layout\ui\iconfont.aardio" comment="layout\ui\iconfont.aardio"/>
+			<file name="from.aardio" path="layout\ui\from.aardio" comment="layout\ui\from.aardio"/>
+			<file name="fontawesome.aardio" path="layout\ui\fontawesome.aardio" comment="layout\ui\fontawesome.aardio"/>
+			<file name="tabs.aardio" path="layout\ui\tabs.aardio" comment="layout\ui\tabs.aardio"/>
+		</folder>
+		<folder name="include" path="layout\include" comment="layout\include">
+			<file name="footer.aardio" path="layout\include\footer.aardio" comment="layout\include\footer.aardio"/>
+			<file name="setup.aardio" path="layout\include\setup.aardio" comment="layout\include\setup.aardio"/>
+			<file name="header.aardio" path="layout\include\header.aardio" comment="layout\include\header.aardio"/>
+		</folder>
 		<folder name="about" path="layout\about" comment="layout\about">
 			<file name="index.aardio" path="layout\about\index.aardio" comment="layout\about\index.aardio"/>
 			<file name="setup.aardio" path="layout\about\setup.aardio" comment="layout\about\setup.aardio"/>
+		</folder>
+		<folder name="login" path="layout\login" comment="layout\login">
+			<file name="index.aardio" path="layout\login\index.aardio" comment="layout\login\index.aardio"/>
 		</folder>
 		<folder name="case" path="layout\case" comment="layout\case">
 			<file name="home.aardio" path="layout\case\home.aardio" comment="layout\case\home.aardio"/>
 			<file name="navbar.aardio" path="layout\case\navbar.aardio" comment="layout\case\navbar.aardio"/>
 			<file name="print.aardio" path="layout\case\print.aardio" comment="layout\case\print.aardio"/>
 		</folder>
-		<folder name="include" path="layout\include" comment="layout\include">
-			<file name="footer.aardio" path="layout\include\footer.aardio" comment="layout\include\footer.aardio"/>
-			<file name="header.aardio" path="layout\include\header.aardio" comment="layout\include\header.aardio"/>
-			<file name="setup.aardio" path="layout\include\setup.aardio" comment="layout\include\setup.aardio"/>
-		</folder>
-		<folder name="login" path="layout\login" comment="layout\login">
-			<file name="index.aardio" path="layout\login\index.aardio" comment="layout\login\index.aardio"/>
-		</folder>
-		<folder name="styles" path="layout\styles" comment="layout\styles">
-			<file name="alert.css" path="layout\styles\alert.css" comment="layout\styles\alert.css"/>
-			<file name="login.css" path="layout\styles\login.css" comment="layout\styles\login.css"/>
-			<file name="main.css" path="layout\styles\main.css" comment="layout\styles\main.css"/>
-			<file name="print.html" path="layout\styles\print.html" comment="layout\styles\print.html"/>
-			<file name="print_tpl.html" path="layout\styles\print_tpl.html" comment="layout\styles\print_tpl.html"/>
-			<file name="styles.css" path="layout\styles\styles.css" comment="layout\styles\styles.css"/>
-			<file name="yimao.css" path="layout\styles\yimao.css" comment="layout\styles\yimao.css"/>
-			<folder name="fonts" path="layout\styles\fonts" comment="layout\styles\fonts">
-				<file name="fontawesome-webfont.fcp" path="layout\styles\fonts\fontawesome-webfont.fcp" comment="layout\styles\fonts\fontawesome-webfont.fcp"/>
-				<file name="fontawesome.ttf" path="layout\styles\fonts\fontawesome.ttf" comment="layout\styles\fonts\fontawesome.ttf"/>
-			</folder>
-			<folder name="images" path="layout\styles\images" comment="layout\styles\images">
-				<file name="chart-bg.png" path="layout\styles\images\chart-bg.png" comment="layout\styles\images\chart-bg.png"/>
-				<file name="face.jpg" path="layout\styles\images\face.jpg" comment="layout\styles\images\face.jpg"/>
-				<file name="icon-jb.png" path="layout\styles\images\icon-jb.png" comment="layout\styles\images\icon-jb.png"/>
-				<file name="icon-tz.png" path="layout\styles\images\icon-tz.png" comment="layout\styles\images\icon-tz.png"/>
-				<file name="icon-user.png" path="layout\styles\images\icon-user.png" comment="layout\styles\images\icon-user.png"/>
-				<file name="loading.png" path="layout\styles\images\loading.png" comment="layout\styles\images\loading.png"/>
-				<file name="logo.png" path="layout\styles\images\logo.png" comment="layout\styles\images\logo.png"/>
-				<file name="logo_128x128.png" path="layout\styles\images\logo_128x128.png" comment="layout\styles\images\logo_128x128.png"/>
-				<file name="logo_160x160.png" path="layout\styles\images\logo_160x160.png" comment="layout\styles\images\logo_160x160.png"/>
-				<file name="logo_16x16.png" path="layout\styles\images\logo_16x16.png" comment="layout\styles\images\logo_16x16.png"/>
-				<file name="logo_32x32.png" path="layout\styles\images\logo_32x32.png" comment="layout\styles\images\logo_32x32.png"/>
-				<file name="logo_64x64.png" path="layout\styles\images\logo_64x64.png" comment="layout\styles\images\logo_64x64.png"/>
-				<file name="logo_about.jpg" path="layout\styles\images\logo_about.jpg" comment="layout\styles\images\logo_about.jpg"/>
-				<file name="logo_login.png" path="layout\styles\images\logo_login.png" comment="layout\styles\images\logo_login.png"/>
-				<file name="scrollbar.png" path="layout\styles\images\scrollbar.png" comment="layout\styles\images\scrollbar.png"/>
-				<file name="scrollbar_bg.png" path="layout\styles\images\scrollbar_bg.png" comment="layout\styles\images\scrollbar_bg.png"/>
-				<file name="scrollbar_hover.png" path="layout\styles\images\scrollbar_hover.png" comment="layout\styles\images\scrollbar_hover.png"/>
-				<file name="scrollbar_next.png" path="layout\styles\images\scrollbar_next.png" comment="layout\styles\images\scrollbar_next.png"/>
-				<file name="scrollbar_next_hover.png" path="layout\styles\images\scrollbar_next_hover.png" comment="layout\styles\images\scrollbar_next_hover.png"/>
-				<file name="scrollbar_prev.png" path="layout\styles\images\scrollbar_prev.png" comment="layout\styles\images\scrollbar_prev.png"/>
-				<file name="scrollbar_prev_hover.png" path="layout\styles\images\scrollbar_prev_hover.png" comment="layout\styles\images\scrollbar_prev_hover.png"/>
-				<folder name="icons" path="layout\styles\images\icons" comment="layout\styles\images\icons">
-					<file name="help-white.png" path="layout\styles\images\icons\help-white.png" comment="layout\styles\images\icons\help-white.png"/>
-					<file name="help.png" path="layout\styles\images\icons\help.png" comment="layout\styles\images\icons\help.png"/>
-					<file name="home-white.png" path="layout\styles\images\icons\home-white.png" comment="layout\styles\images\icons\home-white.png"/>
-					<file name="home.png" path="layout\styles\images\icons\home.png" comment="layout\styles\images\icons\home.png"/>
-					<file name="logout-white.png" path="layout\styles\images\icons\logout-white.png" comment="layout\styles\images\icons\logout-white.png"/>
-					<file name="logout.png" path="layout\styles\images\icons\logout.png" comment="layout\styles\images\icons\logout.png"/>
-					<file name="order-white.png" path="layout\styles\images\icons\order-white.png" comment="layout\styles\images\icons\order-white.png"/>
-					<file name="order.png" path="layout\styles\images\icons\order.png" comment="layout\styles\images\icons\order.png"/>
-					<file name="plan-white.png" path="layout\styles\images\icons\plan-white.png" comment="layout\styles\images\icons\plan-white.png"/>
-					<file name="plan.png" path="layout\styles\images\icons\plan.png" comment="layout\styles\images\icons\plan.png"/>
-					<file name="project-white.png" path="layout\styles\images\icons\project-white.png" comment="layout\styles\images\icons\project-white.png"/>
-					<file name="project.png" path="layout\styles\images\icons\project.png" comment="layout\styles\images\icons\project.png"/>
-					<file name="sell-white.png" path="layout\styles\images\icons\sell-white.png" comment="layout\styles\images\icons\sell-white.png"/>
-					<file name="sell.png" path="layout\styles\images\icons\sell.png" comment="layout\styles\images\icons\sell.png"/>
-					<file name="setup-white.png" path="layout\styles\images\icons\setup-white.png" comment="layout\styles\images\icons\setup-white.png"/>
-					<file name="setup.png" path="layout\styles\images\icons\setup.png" comment="layout\styles\images\icons\setup.png"/>
-					<file name="user-white.png" path="layout\styles\images\icons\user-white.png" comment="layout\styles\images\icons\user-white.png"/>
-					<file name="user.png" path="layout\styles\images\icons\user.png" comment="layout\styles\images\icons\user.png"/>
-					<file name="work-white.png" path="layout\styles\images\icons\work-white.png" comment="layout\styles\images\icons\work-white.png"/>
-					<file name="work.png" path="layout\styles\images\icons\work.png" comment="layout\styles\images\icons\work.png"/>
-				</folder>
-			</folder>
-		</folder>
-		<folder name="ui" path="layout\ui" comment="layout\ui">
-			<file name="backgroup.aardio" path="layout\ui\backgroup.aardio" comment="layout\ui\backgroup.aardio"/>
-			<file name="buttons.aardio" path="layout\ui\buttons.aardio" comment="layout\ui\buttons.aardio"/>
-			<file name="fontawesome.aardio" path="layout\ui\fontawesome.aardio" comment="layout\ui\fontawesome.aardio"/>
-			<file name="from.aardio" path="layout\ui\from.aardio" comment="layout\ui\from.aardio"/>
-			<file name="iconfont.aardio" path="layout\ui\iconfont.aardio" comment="layout\ui\iconfont.aardio"/>
-			<file name="menu.aardio" path="layout\ui\menu.aardio" comment="layout\ui\menu.aardio"/>
-			<file name="navbar.aardio" path="layout\ui\navbar.aardio" comment="layout\ui\navbar.aardio"/>
-			<file name="table.aardio" path="layout\ui\table.aardio" comment="layout\ui\table.aardio"/>
-			<file name="tabs.aardio" path="layout\ui\tabs.aardio" comment="layout\ui\tabs.aardio"/>
-		</folder>
 	</folder>
 	<folder name="res" path="res" comment="res" embed="false">
-		<file name="about.aardio" path="res\about.aardio" comment="res\about.aardio"/>
-		<file name="login.aardio" path="res\login.aardio" comment="res\login.aardio"/>
 		<file name="print.aardio" path="res\print.aardio" comment="res\print.aardio"/>
+		<file name="dbsqlite.aardio" path="res\dbsqlite.aardio" comment="res\dbsqlite.aardio"/>
+		<file name="about.aardio" path="res\about.aardio" comment="res\about.aardio"/>
 		<file name="setup.aardio" path="res\setup.aardio" comment="res\setup.aardio"/>
+		<file name="login.aardio" path="res\login.aardio" comment="res\login.aardio"/>
 	</folder>
 </project>

@@ -5,6 +5,7 @@ mainForm = win.form(text="Yimao软件设计";right=999;bottom=599;border="none")
 mainForm.add()
 /*}}*/
 
+import config;
 import web.layout; 
 import web.layout.behavior;
 import web.layout.behavior.windowCommand;
@@ -16,7 +17,8 @@ import web.layout.behavior.webPrint;//打印
 import web.layout.behavior.checkall;//表格全选
 import web.layout.behavior.checkone;//表格单选变色
 
-wbLayout = web.layout( mainForm )  
+mainForm.text = config.__appName + "_" + config.__appVersion;
+wbLayout = web.layout( mainForm );
 
 if( _STUDIO_INVOKED ){
 	import web.layout.debug;
@@ -29,5 +31,5 @@ wbLayout.go("/layout/home.aardio");
 import win.ui.shadow;
 win.ui.shadow(mainForm); //添加阴影边框
 
-mainForm.show() 
+mainForm.show();
 return win.loopMessage(); 

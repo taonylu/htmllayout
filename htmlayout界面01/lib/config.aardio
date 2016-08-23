@@ -4,9 +4,9 @@ config  = ..fsys.config("/config/");
 
 //不需要序列化的配置名字前请添加下划线
 namespace config {
-	__appName = "应用程序名";
+	__appName = "Yimao软件设计";
 	__appVersion = "1.0.0.01";
-	__appDescription = "这是一个测试程序";
+	__appDescription = "Yimao软件设计-基于aardio开发的一个Htmlayout界面库。";
 	__website = "http://www.aardio.com/";
 }
 

@@ -1,7 +1,11 @@
 ﻿//sqlite 数据库
 namespace db.sqlite;
+
+import config;
 import sqlite;
 import sqlite.aes128;
+
+
 
 class client{
 
